@@ -4,6 +4,8 @@ $dark-gray: #aaaaaa;
 $red: #F84836;
 $lighter-red: #F95F4E;
 $white-red: #FEEDEB;
+$belleza: Belleza, sans-serif;
+$serif: Merriweather, serif;
 
 * {
     margin: 0;
@@ -102,6 +104,8 @@ $white-red: #FEEDEB;
   }
   span {
     line-height: 60px;
+    font-family: $belleza;
+    font-size: 20px;
   }
 }
 
