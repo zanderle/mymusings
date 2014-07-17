@@ -5,7 +5,7 @@ $red: #F84836;
 $lighter-red: #F95F4E;
 $white-red: #FEEDEB;
 $belleza: Belleza, sans-serif;
-$serif: Merriweather, serif;
+$serif: 'Droid Serif', serif;
 
 * {
     margin: 0;
@@ -20,6 +20,7 @@ $serif: Merriweather, serif;
   margin: 0 auto -45px;
   /* Pad bottom by footer height */
   padding: 0 0 45px;
+  background-color: $light-gray;
 }
 
 /* Set the fixed height of the footer here */
@@ -115,4 +116,50 @@ $serif: Merriweather, serif;
 
 .site-nav {
   display: none;
+}
+
+.page-content {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  .content-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+  font-family: $serif;
+  font-size: 16px;
+}
+
+h1.post-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  a {
+    display: inline-block;
+    max-width: 80%;
+    font-size: 26px;
+    font-family: $belleza;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.fleur {
+  vertical-align: top;
+  margin: 0 15px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: image-url("fleur_de_lis.png", false, false) 50% 50% no-repeat;
+  background-size:(90%, auto);
+}
+
+.post {
+  margin-bottom: 50px;
+  .line {
+    // width: 90%;
+    margin-top: 40px;
+    border-bottom: 1px solid $red;
+    // margin: 0 auto;
+  }
 }
