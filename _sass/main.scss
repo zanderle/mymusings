@@ -1,6 +1,9 @@
 $light-gray: #fafafa;
 $medium-gray: #eeeeee;
 $dark-gray: #aaaaaa;
+$red: #F84836;
+$lighter-red: #F95F4E;
+$white-red: #FEEDEB;
 
 * {
     margin: 0;
@@ -24,26 +27,86 @@ $dark-gray: #aaaaaa;
 }
 
 .logo-wrapper {
-  margin-top: 10px;
+  // margin-top: 10px;
   position: relative;
+  float: left;
+  width: 50%;
 
   .main-logo {
     position: relative;
     margin: 0 auto;
-    width: 180px;
+    width: 160px;
     height: 90px;
     display: block;
-    background: image-url("main_logo.png", false, false) 50% 50% no-repeat;
+    background: image-url("logo_white.png", false, false) 50% 50% no-repeat;
+    background-size:(100%, auto);
+  }
+}
+
+.social-media-nav {
+  float: left;
+  width: 24%;
+  margin-top: 30px;
+  a {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    margin: 5px;
+  }
+  a:first-child {
+    margin-left: 8%;
+  }
+  .twitter {
+    background: image-url("twitter.png", false, false) 50% 50% no-repeat;
+    background-size:(100%, auto);
+  }
+  .instagram {
+    background: image-url("instagram.png", false, false) 50% 50% no-repeat;
+    background-size:(100%, auto);
+  }
+  .rss-feed {
+    background: image-url("rss.png", false, false) 50% 50% no-repeat;
+    background-size:(100%, auto);
+  }
+}
+
+.menu-wrapper {
+  width: 24%;
+  float: left;
+  margin-top: 30px;
+  .menu-icon {
+    float: right;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: image-url("menu-icon.png", false, false) 50% 50% no-repeat;
     background-size:(100%, auto);
   }
 }
 
 .site-header {
-  background-color: $light-gray;
+  background-color: $red;
   height: 100px;
   padding: 10px;
   padding-bottom: 0;
-  border-bottom: 1px solid $medium-gray;
+}
+
+.subheader {
+  background-color: $lighter-red;
+  height: 60px;
+  text-align: center;
+  position: relative;
+  .white {
+    color: $white-red;
+  }
+  span {
+    line-height: 60px;
+  }
+}
+
+.white {
+  color: #fff;
 }
 
 .site-nav {
