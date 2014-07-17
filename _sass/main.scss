@@ -1,3 +1,7 @@
+$light-gray: #fafafa;
+$medium-gray: #eeeeee;
+$dark-gray: #aaaaaa;
+
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +23,29 @@
   background-color: #f5f5f5;
 }
 
-.main-logo {
-  width: 180px;
-  height: 90px;
-  display: block;
-  background: image-url("main_logo.png", false, false) 50% 50% no-repeat;
-  background-size:(100%, auto);
+.logo-wrapper {
+  margin-top: 10px;
+  position: relative;
+
+  .main-logo {
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    height: 90px;
+    display: block;
+    background: image-url("main_logo.png", false, false) 50% 50% no-repeat;
+    background-size:(100%, auto);
+  }
+}
+
+.site-header {
+  background-color: $light-gray;
+  height: 100px;
+  padding: 10px;
+  padding-bottom: 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.site-nav {
+  display: none;
 }
