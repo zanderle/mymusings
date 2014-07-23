@@ -245,3 +245,12 @@ h1.post-title a {
   margin-top: 40px;
   border-bottom: 1px solid #f84836;
 }
+/* line 165, ../_sass/main.scss */
+.post a {
+  text-decoration: none;
+  color: #f84836;
+}
+/* line 169, ../_sass/main.scss */
+.post a:hover, .post a:focus {
+  color: orange;
+}
