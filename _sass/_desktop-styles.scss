@@ -121,14 +121,30 @@ a:hover { color: $secondary-color; }
 }
 
 .pagination-box {
-    border: 1px solid $dark-gray;
-    padding: 10px;
-    @include border-radius(5px);
+    margin-top: 40px;
+    border: 1px solid $default-color-shade;
+    @include border-radius(2px);
+    overflow: hidden;
     .page-box {
-        padding: 10px;
-        border-left: 1px solid $dark-gray;
+        @include transition(all, 0.2s, ease);
+        padding: 8px 12px;
+        border-left: 1px solid $default-color-shade;
+        color: $default-color;
+        margin-left: -4px;
+    }
+    .page-box:hover {
+        background-color: $default-color;
+        color: $default-color-white;
     }
     .page-box:first-child {
         border-left: 0;
+    }
+    .inactive:hover {
+        color: $default-color;
+        background-color: $light-gray;
+    }
+    .active {
+        background-color: $default-color;
+        color: $default-color-white;
     }
 }
