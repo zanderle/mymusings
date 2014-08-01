@@ -34,6 +34,35 @@ layout: default
 </div>
 {% endfor %}
 
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination text-center row clear">
+  <div class="pagination-box inline-block">
+    {% if paginator.previous_page %}
+      <a class="page-box" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span class="page-box">&laquo; Prev</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em class="page-box">{{ page }}</em>
+      {% elsif page == 1 %}
+        <a class="page-box" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a class="page-box" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a class="page-box" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span class="page-box">Next &raquo;</span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
 </div>
 
 <script type="text/javascript">

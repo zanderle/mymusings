@@ -129,3 +129,16 @@ a:hover { color: $secondary-color; }
 .gray {
     color: $dark-gray;
 }
+
+.pagination-box {
+    border: 1px solid $dark-gray;
+    padding: 10px;
+    @include border-radius(5px);
+    .page-box {
+        padding: 10px;
+        border-left: 1px solid $dark-gray;
+    }
+    .page-box:first-child {
+        border-left: 0;
+    }
+}
