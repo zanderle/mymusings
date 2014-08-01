@@ -3,16 +3,6 @@
 // ==========================================================================
 
 
-// Mixin not where it should be, because it doesn't load it from _custom_mixins.scss
-@mixin transition($transition-property, $transition-time, $method) {
-    -webkit-transition: $transition-property $transition-time $method;
-    -moz-transition: $transition-property $transition-time $method;
-    -ms-transition: $transition-property $transition-time $method;
-    -o-transition: $transition-property $transition-time $method;
-    transition: $transition-property $transition-time $method;
-}
-
-
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
