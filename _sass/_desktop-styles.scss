@@ -2,20 +2,31 @@
 // Desktop Custom Styles
 // ==========================================================================
 
+
+// Mixin not where it should be, because it doesn't load it from _custom_mixins.scss
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -45px;
+  margin: 0 auto -40px;
   /* Pad bottom by footer height */
-  padding: 0 0 45px;
+  padding: 0 0 40px;
   background-color: $light-gray;
 }
 
 /* Set the fixed height of the footer here */
-#footer {
-  height: 45px;
+footer {
+  height: 40px;
   background-color: #f5f5f5;
 }
 
@@ -42,10 +53,13 @@ a:hover { color: $secondary-color; }
   .social-media-nav {
       margin-top: 28px;
       a {
+        @include transition(all, 0.5s, ease);
         width: 23px;
         height: 23px;
         margin: 5px;
         margin-right: 15px;
+        color: $default-color-low;
+        font-size: 28px;
       }
       a:first-child {
         margin-left: 8%;
@@ -53,28 +67,23 @@ a:hover { color: $secondary-color; }
       a:last-child {
         margin-right: 0;
       }
-      .twitter {
-        background: image-url("twitter.png", false, false) 50% 50% no-repeat;
-        background-size:(100%, auto);
-      }
-      .instagram {
-        background: image-url("instagram.png", false, false) 50% 50% no-repeat;
-        background-size:(100%, auto);
-      }
-      .rss-feed {
-        background: image-url("rss.png", false, false) 50% 50% no-repeat;
-        background-size:(100%, auto);
+      a:hover {
+        color: $default-color-white;
       }
     }
 
   .menu-wrapper {
       margin-top: 25px;
-      .menu-icon {
-        margin-right: 30px;
+      .icon-menu {
+        font-size: 30px;
+        @include transition(all, 0.5s, ease);
+        color: $default-color-low;
+        margin-right: 40px;
         width: 30px;
         height: 30px;
-        background: image-url("menu-icon.png", false, false) 50% 50% no-repeat;
-        background-size:(100%, auto);
+      }
+      a:hover {
+        color: $default-color-white;
       }
     }
 }
@@ -88,7 +97,7 @@ a:hover { color: $secondary-color; }
 }
 
 .content {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .content .post-title {
@@ -102,4 +111,21 @@ a:hover { color: $secondary-color; }
   height: 25px;
   background: image-url("fleur_de_lis.png", false, false) 50% 50% no-repeat;
   background-size:(90%, auto);
+}
+
+.post {
+  margin-bottom: 20px;
+  .line {
+    // width: 90%;
+    margin-top: 40px;
+    border-bottom: 1px solid $default-color-gray;
+    // margin: 0 auto;
+  }
+  a {
+    @include transition(all, 0.2s, ease);
+  }
+}
+
+.gray {
+    color: $dark-gray;
 }
