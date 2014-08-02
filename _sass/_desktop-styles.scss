@@ -152,3 +152,9 @@ a:hover { color: $secondary-color; }
 .post-header {
     margin-bottom: 30px;
 }
+
+article h4 {
+    color: $dark-gray;
+    font-style: italic;
+    text-align: center;
+}

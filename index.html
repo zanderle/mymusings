@@ -6,7 +6,7 @@ layout: default
 
 {% for post in paginator.posts %}
 <div class="post">
-  <h2 class="post-title text-center heading row clear">
+  <h2 class="post-title text-center heading row">
     <div class="col col-4">
       <span class="fleur block right"></span>
     </div>
@@ -17,9 +17,9 @@ layout: default
       <span class="fleur block left"></span>
     </div>
   </h2>
-  <div class="content">
+  <article class="content">
     {{ post.content }}
-  </div>
+  </article>
   <div class="text-center">
     <i class="icon-calendar-empty inline-block"></i>
     <span class="inline-block">{{ post.date | date: "%-d. %B %Y" }}</span>
