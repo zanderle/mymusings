@@ -3,6 +3,10 @@
 // ==========================================================================
 
 
+html, body {
+  height: 100%;
+}
+
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -157,4 +161,20 @@ article h4 {
     color: $dark-gray;
     font-style: italic;
     text-align: center;
+}
+
+.circle {
+  @include border-radius(50%);
+}
+
+.breathe {
+  margin: 10px;
+}
+
+.left.breathe {
+  margin-right: 25px;
+}
+
+.right.breathe {
+  margin-left: 25px;
 }

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<img src="/img/zan.jpg" alt="Me" class="left circle col-3 breathe">
+I'm a 23 year old student of computer science from Bled, Slovenia. I'm passionate about travels, photography and above all - music. I like different kinds of music and I'm always excited to hear something new to me, but what I love the most is jazz, blues, soul and generally older music. I got into jazz about 6 years and last year I started writing this blog. Make sure to also check my [photography page](https://zanderle.tumblr.com)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I believe music can be a form of perfection - with nothing added or subtracted, flawless just the way it is. With its excellence, music has an amazing ability to evoke emotions, feelings and thoughts we wouldn’t have otherwise. That ability reminds us we’re human and it’s one of the things that makes life worthwhile. And that is why I write my blog. I write it because I believe talking, thinking, reading and writing about music intensifies the experience of listening to music. On top of that, I’m always happy when someone introduces me to new music I like, so with my blog, I hope others will be able to discover new music they like too.
+I will write mostly about Jazz and Blues, but other stuff as well - why even bother categorizing music - what's good, is good.
