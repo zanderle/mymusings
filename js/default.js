@@ -2,6 +2,9 @@
   Base Default JavaScript
   -- Table of Contents --
 */
-
-
-// JS functions and initiations go here...
+$(document).ready(function() {
+    $('#menu').on('click', function(e) {
+        e.preventDefault();
+        $('nav.site-nav').toggle();
+    });
+});
