@@ -69,6 +69,7 @@ a:hover { color: $secondary-color; }
   .menu-wrapper {
       margin-top: 25px;
       .icon-menu {
+        position: relative;
         font-size: 30px;
         @include transition(all, 0.5s, ease);
         color: $default-color-low;
@@ -180,30 +181,38 @@ article h4 {
 }
 
 .site-nav {
-  // display: none;
-  position: absolute;
-  right: 0;
-  border: 1px solid $dark-gray;
-  @include border-radius(3px);
+  position:absolute;
+  margin-top: 15px;
+  right: 30px;
+  padding-right: 100px;
+  background-color: $default-color-shade;
+  @include border-radius(5px);
   overflow: hidden;
-  background-color: $light-gray;
-  z-index: 10;
-  margin-right: 50px;
-  margin-top: 60px;
-  li {
-    border-bottom: 1px solid $dark-gray;
-  }
-  li:last-child {
-    border-bottom: 0;
+  li:first-child a {
+    margin-left: 0;
   }
   a {
+    @include transition(all, 0.2s, ease);
+    display: inline-block;
+    margin-left: -4px;
+    padding: 14px 14px;
+    padding-left: 16px;
+    color: $default-color-white;
     font-family: $heading-font-family;
-    font-size: ($default-font-size + 3px);
-    padding: 10px;
-    display: block;
+    font-size: ($default-font-size + 5px);
+    border: 1px solid $default-color-shade;
+  }
+  li:first-child a:hover {
+    border: 1px solid $default-color-white;
+    @include border-left-radius(5px);
+    background-color: $default-color;
   }
   a:hover {
-    background-color: $medium-gray;
-    // color: $default-color-white;
+    border: 1px solid $default-color-white;
+    background-color: $default-color;
   }
+}
+
+.higher {
+  z-index: 5;
 }

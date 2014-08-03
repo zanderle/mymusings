@@ -9,16 +9,23 @@
       <a class="main-logo container block" href="{{ site.baseurl }}/"></a>
     </div>
     <div class="menu-wrapper col col-3">
-      <a class="icon-menu right inline-block"></a>
+      <a class="icon-menu right inline-block higher"></a>
     </div>
-
-    <nav class="site-nav">
-      <div class="trigger">
+    <nav class="site-nav right">
+      <ul class="no-padding no-margin">
+        <li class="inline-block">
+          <a class="page-link" href="#">Home</a>
+        </li>
         {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+            {% if page.title %}
+          <li class="inline-block">
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+            {% endif %}
         {% endfor %}
-      </div>
+      </ul>
     </nav>
+
 
 
 </header>
