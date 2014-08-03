@@ -178,3 +178,32 @@ article h4 {
 .right.breathe {
   margin-left: 25px;
 }
+
+.site-nav {
+  // display: none;
+  position: absolute;
+  right: 0;
+  border: 1px solid $dark-gray;
+  @include border-radius(3px);
+  overflow: hidden;
+  background-color: $light-gray;
+  z-index: 10;
+  margin-right: 50px;
+  margin-top: 60px;
+  li {
+    border-bottom: 1px solid $dark-gray;
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
+  a {
+    font-family: $heading-font-family;
+    font-size: ($default-font-size + 3px);
+    padding: 10px;
+    display: block;
+  }
+  a:hover {
+    background-color: $medium-gray;
+    // color: $default-color-white;
+  }
+}
