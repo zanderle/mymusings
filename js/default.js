@@ -5,6 +5,6 @@
 $(document).ready(function() {
     $('#menu').on('click', function(e) {
         e.preventDefault();
-        $('nav.site-nav').toggle();
+        $('nav.site-nav').slideToggle(200);
     });
 });
