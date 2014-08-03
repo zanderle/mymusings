@@ -206,11 +206,11 @@ article h4 {
   li:first-child a:hover {
     border: 1px solid $default-color-white;
     @include border-left-radius(5px);
-    background-color: $default-color;
+    // background-color: $default-color;
   }
   a:hover {
     border: 1px solid $default-color-white;
-    background-color: $default-color;
+    // background-color: $default-color;
   }
 }
 
