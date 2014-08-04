@@ -45,24 +45,27 @@ a:hover { color: $secondary-color; }
   }
 
   .social-media-nav {
-      margin-top: 28px;
+      margin-top: 14px;
       a {
         @include transition(all, 0.5s, ease);
         width: 23px;
         height: 23px;
         margin: 5px;
-        margin-right: 15px;
+        margin-right: 5px;
         color: $default-color-low;
         font-size: 28px;
-      }
-      a:first-child {
-        margin-left: 8%;
-      }
-      a:last-child {
-        margin-right: 0;
+
       }
       a:hover {
         color: $default-color-white;
+      }
+      @include respond-to(handhelds) {
+        margin-top: 0;
+      }
+      li {
+        @include respond-to(handhelds) {
+          display: block;
+        }
       }
     }
 
@@ -76,6 +79,9 @@ a:hover { color: $secondary-color; }
         margin-right: 40px;
         width: 30px;
         height: 30px;
+        @include respond-to(handhelds) {
+          margin-right: 8px;
+        }
       }
       a:hover {
         color: $default-color-white;
@@ -197,6 +203,11 @@ article h4 {
   background-color: $default-color-shade;
   @include border-radius(5px);
   overflow: hidden;
+  @include respond-to(handhelds) {
+    right: 0;
+    margin-top: 0;
+    opacity: 0.9;
+  }
   li:first-child a {
     margin-left: 0;
   }
@@ -210,6 +221,9 @@ article h4 {
     font-family: $heading-font-family;
     font-size: ($default-font-size + 5px);
     border: 1px solid $default-color-shade;
+    @include respond-to(handhelds) {
+      padding: 30px 15px;
+    }
   }
   li:first-child a:hover {
     border: 1px solid $default-color-white;

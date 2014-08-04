@@ -5,3 +5,15 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
 }
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $mobile-breakpoint) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $tablet-breakpoint + 1) and (max-width: $desktop-breakpoint - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $desktop-breakpoint) { @content; }
+  }
+}

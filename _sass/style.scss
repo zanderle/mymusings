@@ -7,6 +7,7 @@
 // ==========================================================================
 
   @import "compass/css3";
+  @import "_custom_mixins";
   @import "base/_variables";    // Global Variables
 
   @import "base/_mixins";       // Base Mixins
@@ -27,7 +28,6 @@
   @import "base/_mobile-grid";  // Mobile Grid
   @import "base/_print";        // Print Page Styles
 
-  @import "_custom_mixins";
   @import "_fontello";
 
   @import "_desktop-styles";
