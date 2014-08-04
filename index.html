@@ -7,15 +7,15 @@ layout: default
 
 {% for post in paginator.posts %}
 <div class="post">
-  <h2 class="post-title text-center heading row">
-    <div class="col col-4 tablet-col-3 mobile-col-1">
-      <span class="fleur block right"></span>
+  <h2 class="post-title text-center heading row mobile-no-padding">
+    <div class="col col-4 tablet-col-3">
+      <span class="fleur block right no-mobile"></span>
     </div>
-    <div class="col col-4 tablet-col-6 mobile-col-10">
+    <div class="col col-4 tablet-col-6 mobile-full">
       <a href="{{ post.url }}">{{ post.title }}</a>
     </div>
-    <div class="col col-4 tablet-col-3 mobile-col-1">
-      <span class="fleur block left"></span>
+    <div class="col col-4 tablet-col-3">
+      <span class="fleur block left no-mobile"></span>
     </div>
   </h2>
   <article class="content">
