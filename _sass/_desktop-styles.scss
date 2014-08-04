@@ -86,8 +86,11 @@ a:hover { color: $secondary-color; }
 .subheader {
   background-color: $default-color-shade;
   height: 60px;
+  line-height: 60px;
   .heading {
-    line-height: 60px;
+    vertical-align: middle;
+    // @media-query ($)
+    line-height: ($default-line-height - 2px);
   }
 }
 
@@ -95,14 +98,15 @@ a:hover { color: $secondary-color; }
     margin-top: 25px;
 }
 
-.content .post-title {
-    a { color: black; }
+.post-title {
+    a { color: $darker-gray; }
     a:hover { color: $secondary-color; }
 }
 
 .fleur {
+  opacity: 0.8;
   transform: translateY(35%);
-  width: 25px;
+  width: 23px;
   height: 25px;
   background: image-url("fleur_de_lis.png", false, false) 50% 50% no-repeat;
   background-size:(90%, auto);
@@ -119,6 +123,10 @@ a:hover { color: $secondary-color; }
   a {
     @include transition(all, 0.2s, ease);
   }
+}
+
+.single-post {
+  margin-top: 25px;
 }
 
 .gray {
