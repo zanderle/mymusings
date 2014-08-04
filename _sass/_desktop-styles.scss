@@ -150,6 +150,9 @@ a:hover { color: $secondary-color; }
         border-left: 1px solid $default-color-shade;
         color: $default-color;
         margin-left: -4px;
+        @include respond-to(handhelds) {
+          padding: 6px 8px; 
+        }
     }
     .page-box:hover {
         background-color: $default-color;

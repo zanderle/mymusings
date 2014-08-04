@@ -21,13 +21,19 @@ layout: default
   <article class="content">
     {{ post.content }}
   </article>
-  <div class="text-center">
+  <div class="text-center misc">
+    <div class="mobile-full inline-block">
     <i class="icon-calendar-empty inline-block"></i>
     <span class="inline-block">{{ post.date | date: "%-d. %B %Y" }}</span>
+    </div>
+    <div class="mobile-full inline-block">
     <i class="icon-comment-empty inline-block"></i>
-    <a href="{{ post.url }}#disqus_thread"></a>
+    <a href="{{ post.url | prepend: site.url }}#disqus_thread"></a>
+    </div>
+    <div class="mobile-full inline-block">
     <i class="icon-tag inline-block"></i>
     <span class="inline-block tags">Jazz, Blues</span>
+    </div>
   </div>
   {% unless forloop.last %}
     <div class="line"></div>
