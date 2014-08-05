@@ -6,9 +6,9 @@ updated: 2012-10-24 21:47:34 UTC
 comments: true
 tags: Jazz Jazz Vipers New Orleans
 ---
-![](/img/2F-X6L-dV5v-AI2FUIhcyq3zmrI2FAAAAAAAABN42FmQyN3FFBUWM2Fs16002F280912_0407.jpg)
+![The Spotted Cat by Žan Anderle](/img/2F-X6L-dV5v-AI2FUIhcyq3zmrI2FAAAAAAAABN42FmQyN3FFBUWM2Fs16002F280912_0407.jpg)
 
-The Spotted Cat by Žan Anderle
+
 
 This year in September I was in New Orleans. Going to New Orleans had been my
 wish for a very long time, but I didn’t want to go before I turned 21, since
@@ -38,9 +38,8 @@ thing hearing them live. It’s hearing them live when you can so easily feel
 all the energy and joy that they exuberate.  
   
 
-![](/img/2F-Rmpt1qZydzY2FUIhc3mbGzFI2FAAAAAAAABOA2F1eHNhrQBUEA2Fs16002F300912_0133.jpg)
+![Jazz Vipers by Žan Anderle](/img/2F-Rmpt1qZydzY2FUIhc3mbGzFI2FAAAAAAAABOA2F1eHNhrQBUEA2Fs16002F300912_0133.jpg)
 
-Jazz Vipers by Žan Anderle
 
 All of them are great, but Joe Braun, the saxophone player and singer on some
 songs, is really something special. Seeing him on and off the stage, talking

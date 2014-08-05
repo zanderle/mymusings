@@ -6,9 +6,8 @@ updated: 2012-11-19 01:10:16 UTC
 comments: true
 tags: Billie Holiday Blues Dinah Washington Etta James Jazz Soul Women
 ---
-![](/img/2F20122F012Fetta-james.jpg)
+![Etta James](/img/2F20122F012Fetta-james.jpg)
 
-Etta James
 
 Here’s a singer! Nicknamed ‘Miss Peaches’, Etta James was born in 1938 and her
 amazing career spanned from the 50’s to around 2010. She left a great legacy

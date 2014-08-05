@@ -8,8 +8,6 @@ tags: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
 ---
 ![](/img/2Fde5a94de355bd1ad9956f94fafba00632Ftumblr_mepw2dlwCh1rln1mco1_1280.jpg)
 
-Christmas Spirit by [ŽAnderle](http://zanderle.com/)
-
 There are many reasons why I decided to do a Christmas Special. For one, I
 LOVE Christmas. As a little kid, I used to count down days till Christmas and
 my birthday (which is near Christmas) one month in advance. I don’t do that
@@ -41,20 +39,15 @@ but whoever doesn’t, should listen to it as soon as possible. Vince Guaraldi
 and his [A Charlie Brown Christmas](http://www.amazon.com/gp/product/B0090X4H0
 W/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative
 =9325&creativeASIN=B0090X4H0W)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B0090X4H0W).
-It’s a perfect
-combination of holiday playfulness, jazz, warm sounds and of course -
+It’s a perfect combination of holiday playfulness, jazz, warm sounds and of course -
 Christmas spirit. It tastes exactly like those roasted nuts and mulled wine
 did. It’s on top of my ‘most played albums during holidays’ list. Below is a
 little taste of it. Now go and get it!  
   
 
-
-
   
 
-  
-
-![](/img/2Fwikipedia2Fen2F72F7b2FWynton_Marsalis_Christmas_Jazz_Jam.jpg)
+<img class="small right" src="/img/2Fwikipedia2Fen2F72F7b2FWynton_Marsalis_Christmas_Jazz_Jam.jpg">
 
 If we’re already at the more jazzy side of Christmas, I have to mention Wynton
 Marsalis’ [Christmas Jazz Jam](http://www.amazon.com/gp/product/B002SROHI4/ref

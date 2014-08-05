@@ -6,9 +6,8 @@ updated: 2012-12-03 10:24:52 UTC
 comments: true
 tags: Jazz Nina Strnad Women
 ---
-![](/img/2Ftumblr_mdysrzSCi21rln1mco1_1280.jpg)
+![Nina Strnad by Žan Anderle](/img/2Ftumblr_mdysrzSCi21rln1mco1_1280.jpg)
 
-Nina Strnad by Žan Anderle
 
   
 This women in jazz series has come to an end and for the last post I decided

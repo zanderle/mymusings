@@ -8,7 +8,6 @@ tags: Blues Solomon Burke Soul
 ---
 ![](/img/2F_SJ03wRhNrzE2FTLIT3coRuxI2FAAAAAAAAAj42FLlV6LIcyZtw2Fs16002Fsolomon-burke-color.jpg)
 
-Solomon Burke
 
 Solomon Burke, also known as the king of Rock’ n’ Soul,  was a phenomenal
 singer full of energy, one of the pioneers of Soul music and also an

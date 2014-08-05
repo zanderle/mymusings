@@ -6,9 +6,7 @@ updated: 2013-01-17 10:55:46 UTC
 comments: true
 tags: Ella Fitzgerald Jazz Louis Armstrong Women
 ---
-![](/img/2F-hLvxzTcTaRY2FT5cbwILMT1I2FAAAAAAAAB9s2FM4mF1PXA9jQ2Fs16002Fella-fitzgerald-milano-68.jpg)
-
-The First Lady Of Song
+<img class="right breathe" src="/img/2F-hLvxzTcTaRY2FT5cbwILMT1I2FAAAAAAAAB9s2FM4mF1PXA9jQ2Fs16002Fella-fitzgerald-milano-68.jpg" alt="The First Lady Of Song">
 
 Next up in this women in jazz series is the magnificent Ella Fitzgerald. I
 feel a bit intimidated writing about her - she was just that good! Her voice

@@ -6,9 +6,8 @@ updated: 2013-01-17 10:38:58 UTC
 comments: true
 tags: Acoustic Blues Blues Robert Johnson
 ---
-![](http://upload.wikimedia.org/wikipedia/en/thumb/b/bb/RobertJohson.png/220px-RobertJohson.png)
+![Robert Johnson](http://upload.wikimedia.org/wikipedia/en/thumb/b/bb/RobertJohson.png/220px-RobertJohson.png)
 
-Robert Johnson
 
 Today, my two greatest passions in music are definitely Jazz and Blues. But it
 wasn’t always so and there are two musicians who got me interested in this

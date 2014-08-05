@@ -6,9 +6,8 @@ updated: 2012-11-26 00:13:50 UTC
 comments: true
 tags: Blues Jazz Nina Simone Soul Women
 ---
-![](/img/2Fwp-content2Fuploads2F20122F082FNina2BSimone.jpg)
+![Nina Simone](/img/2Fwp-content2Fuploads2F20122F082FNina2BSimone.jpg)
 
-Nina Simone
 
 I don’t know as much about Nina Simone and her music as I would like to, but I
 enjoy her music very much so I decided to do a quick mention of her anyway. I

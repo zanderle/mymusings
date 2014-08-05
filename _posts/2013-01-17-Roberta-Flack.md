@@ -8,7 +8,6 @@ tags: Jazz Roberta Flack Soul Women
 ---
 ![](/img/2Fserve2F_2F58388072FRoberta2BFlack.jpg)
 
-Roberta Flack
 
 Ugh, I haven’t posted in almost two weeks now, it’s almost like I slept
 through the holidays. Anyway I’m back now, so let’s get right to it.  

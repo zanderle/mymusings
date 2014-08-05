@@ -30,9 +30,9 @@ makes sure everyone else is happy too. In a sense, Kermit, like his great
 idol, Louis Armstrong, is just a simple guy trying to draw a smile on your
 face with his music. He’s warm, unpretentious and humble.  
 
-![](/img/2F-jDShhHgBF2k2FUI3Vcx9yXnI2FAAAAAAAABOY2FFlPGlmHWLc82Fs16002F240912_0513.jpg)
+![Kermit's Treme Speakeasy by Žan Anderle](/img/2F-jDShhHgBF2k2FUI3Vcx9yXnI2FAAAAAAAABOY2FFlPGlmHWLc82Fs16002F240912_0513.jpg)
 
-Kermit's Treme Speakeasy by Žan Anderle
+
 
 We went to many bars in New Orleans, but Kermit’s Treme Speakeasy felt
 different. I’ve never been in a bar where I felt so at home. It just felt so

@@ -8,7 +8,6 @@ tags: Acoustic Blues Keith Richards Robert Johnson
 ---
 ![](/img/2F20102F042Frobert_johnson2.jpg)
 
-Robert Johnson
 
 Robert Johnson is my favourite bluesman of all times, so I wanted the post
 about him to be really good. Otherwise I would feel I'm not doing him justice
