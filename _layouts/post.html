@@ -8,8 +8,10 @@ layout: default
     <div class="text-center">
         <i class="icon-calendar-empty inline-block"></i>
         <span class="inline-block">{{ page.date | date: "%-d. %B %Y" }}</span>
+        {% if page.comments %}
         <i class="icon-comment-empty inline-block"></i>
         <a href="{{ page.url }}#disqus_thread"></a>
+        {% endif %}
         <i class="icon-tag inline-block"></i>
         <span class="inline-block tags">{{ page.tags | join: ', ' }}</span>
     </div>
@@ -19,6 +21,7 @@ layout: default
   {{ content }}
   </article>
 
+{% if page.comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -33,6 +36,6 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
 
 </div>
+{% endif %}

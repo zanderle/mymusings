@@ -26,9 +26,11 @@ layout: default
     <i class="icon-calendar-empty inline-block"></i>
     <span class="inline-block">{{ post.date | date: "%-d. %B %Y" }}</span>
     </div>
+    {% if post.comments %}
     <div class="mobile-full inline-block">
     <i class="icon-comment-empty inline-block"></i>
     <a href="{{ post.url | prepend: site.url }}#disqus_thread"></a>
+    {% endif %}
     </div>
     <div class="col-12 mobile-full inline-block">
     <i class="icon-tag inline-block"></i>
