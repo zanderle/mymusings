@@ -29,7 +29,7 @@ layout: default
     {% if post.comments %}
     <div class="mobile-full inline-block">
     <i class="icon-comment-empty inline-block"></i>
-    <a href="{{ post.url | prepend: site.url }}" data-disqus-identifier="{{ post.url }}"></a>
+    <a class="count-disqus-comments" href="{{ post.url | prepend: site.url }}#disqus_thread" data-disqus-url="{{ post.url | prepend: site.url }}"></a>
     {% endif %}
     </div>
     <div class="col-12 mobile-full inline-block">
