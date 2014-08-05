@@ -22,7 +22,6 @@ write about.
   
   
 
-![](/img/2Fserve2F_2F297629192FBen2BHarper2BAnd2BThe2BBlind2BBoys2BOf2BAlabama.jpg)
 
 Enough about that, let me talk about what I’m here to talk about. In 2004 Ben
 Harper and the Blind Boys of Alabama recorded an album called [There Will Be A Light](http://www.amazon.com/gp/product/B000TDIE7Y/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000TDIE7Y&linkCode=as2&tag=mythougonmusi-20)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000TDIE7Y). It is one of my
@@ -35,6 +34,8 @@ short of magical. The reason I’m bringing this up is because the way Ben
 Harper and the Blind Boys Of Alabama work together on these 11 songs is an
 epitome of what I’m trying to say.
 
+![](/img/2Fserve2F_2F297629192FBen2BHarper2BAnd2BThe2BBlind2BBoys2BOf2BAlabama.jpg)
+
 Before I listened to this album, I knew Ben Harper’s music as quite eclectic,
 but the part I was interested in was a mixture of indie, rock, folk and maybe
 blues, with most of his songs being introspective and somewhat melancholic.
@@ -43,7 +44,6 @@ Which I love. Here are a few great songs, so you can hear what I mean.
   
   
 
-![](/img/2Fimages2Fstories2Fmarch20032Fapril20102Fmay20102Fjune20102Fblind2520boys2520of2520alabama252001.jpg)
 The Blind Boys of Alabama is a gospel
 group that’s been active for well over 70 years now and they’re one of the
 best in their field. And if you’re wondering, yes, they’re actually blind
@@ -68,6 +68,7 @@ and heartwarming singing. Add to that a great instrumental accompaniment and
 you get this incredible piece of music. Here are, in my opinion, the
 highlights of the album:
 
+![](/img/2Fimages2Fstories2Fmarch20032Fapril20102Fmay20102Fjune20102Fblind2520boys2520of2520alabama252001.jpg)
   
   
 

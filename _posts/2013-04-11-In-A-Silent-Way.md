@@ -39,7 +39,7 @@ the years ranges far beyond these three albums.
   
   
 
-![](/img/2F-B1a2Tm9SnFk2FUWctVDOlvKI2FAAAAAAAABTY2F-svjWC-iVoo2Fs16002Fmiles-davis-by-jan-persson.jpg)When I first started listening to
+When I first started listening to
 jazz and heard about Miles Davis, I just didn’t get it why he’s supposed to be
 so good. Sure, I liked Kind Of Blue, but that’s about it. It was making me
 kind of annoyed, that everyone was praising him so much. I thought he was
@@ -49,6 +49,8 @@ fusion thingy, I just couldn’t take. His [weird
 appearance](http://www.youtube.com/watch?v=y7mHNEA7z2U) on stage didn’t help
 with that. So, very early on, I decided that I don’t really care for Miles
 Davis and that I hate jazz fusion.
+
+![](/img/2F-B1a2Tm9SnFk2FUWctVDOlvKI2FAAAAAAAABTY2F-svjWC-iVoo2Fs16002Fmiles-davis-by-jan-persson.jpg)
 
 Four years of listening to jazz (but avoiding Miles and anything similar)
 later, I suddenly found myself getting more and more interested in Bebop,

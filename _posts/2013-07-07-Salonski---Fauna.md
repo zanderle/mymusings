@@ -56,10 +56,7 @@ warmly backs his vocals, I was already digging it and after the whole band
 joins in, I knew I was in for something great. I’m glad to say, I wasn’t
 mistaken.
 
-![](/img/2F-gE1UCtp2d2c2FUdm8wIkPMzI2FAAAAAAAABZQ2FH3ad8Cy2ljI2Fs16002F16213_446663092085578_778926986_n.jpg)
-
-Photo by Sabina Pirnat
-
+<img src="/img/2F-gE1UCtp2d2c2FUdm8wIkPMzI2FAAAAAAAABZQ2FH3ad8Cy2ljI2Fs16002F16213_446663092085578_778926986_n.jpg" alt="Photo by Sabina Pirnat" class="right breathe">
   
 
 The album is truly amazing. Its genres range from folk, etno, doo wop to rap,

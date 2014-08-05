@@ -6,7 +6,7 @@ updated: 2014-07-02 19:48:27 UTC
 comments: true
 tags: Jazz Louis Armstrong Story
 ---
-![](/img/2F-xOBj9x28df02FU7RhzavFqjI2FAAAAAAAABo42FsrzLXZOH9uE2Fs16002F63.jpg)
+<img src="/img/2F-xOBj9x28df02FU7RhzavFqjI2FAAAAAAAABo42FsrzLXZOH9uE2Fs16002F63.jpg" alt="WALL-E" class="small">
 
 It has been too long. I haven’t written a post for over a year. I devoted all
 my focus to other things in my life, but recently I found myself wanting to
