@@ -12,12 +12,13 @@ $(document).ready(function() {
     var disqusShortname = "mymusingsonmusic"; // Replace with your own shortname
 
     var urlArray = [];
-    $('.count-disqus-comments').each(function () {
-        var url = $(this).attr('data-disqus-url');
+    countComments = $('.count-disqus-comments');
+    for (var i = 0; i < countComments.length; i++) {
+        var url = $(countComments[i]).attr('data-disqus-url');
         urlArray.push('link:' + url);
-    });
+    }
 
-    if (urlArray) {
+    if (urlArray.length > 0) {
         $.ajax({
             type: 'GET',
             url: "https://disqus.com/api/3.0/threads/set.jsonp",
