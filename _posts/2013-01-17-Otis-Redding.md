@@ -11,9 +11,8 @@ tags: Otis Redding Sam Cooke Solomon Burke Soul
 Otis Redding
 
 After talking about [Sam
-Cooke](http://musingsonmusic.com/2012/11/sam-cooke.html) and
-[Solomon Burke](http://musingsonmusic.com/2012/11/dont-give-
-up-on-me.html), here’s another Soul giant. Otis Redding was one of the
+Cooke]({% post_url 2012-11-03-Sam-Cooke %}) and
+[Solomon Burke]({% post_url 2013-01-11-Don't-Give-Up-On-Me %}), here’s another Soul giant. Otis Redding was one of the
 pioneers of Soul music and was truly amazing. He had a signature raspy voice
 and amazing ability to convey raw emotion. There are three words that apply
 perfectly to what Otis was all about: Passion, Energy and Emotion. He’s

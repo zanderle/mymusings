@@ -11,7 +11,7 @@ tags: Bobby McFerrin collaboration concert Jazz Jazz at Lincoln Center Wynton Ma
 Photo by Frank Stewart
 
 Back in October 2012, in [my post about Bobby
-McFerrin](http://musingsonmusic.com/2012/10/bobby-
+McFerrin](http://musiceverlastingmusic.blogspot.com/2012/10/bobby-
 mcferrin_12.html) I mentioned I attended a concert in New York, but never
 talked more about it, so I wanted to do that now.  
 Last September I went on a trip through New York, Washington and my beloved
@@ -28,7 +28,7 @@ always appreciate a nice atmosphere at a concert. The concert’s theme was
 Bobby McFerrin’s biography, but I felt that wasn’t exactly the main thing of
 the night, it was more of a way to convey this great collaboration. I
 mentioned Jazz at Lincoln Center in one of [my previous
-posts](http://musingsonmusic.com/2012/10/eric-clapton-wynton-
+posts](http://musiceverlastingmusic.blogspot.com/2012/10/eric-clapton-wynton-
 marsalis-play-blues.html) and they are truly amazing. It’s a band consisting
 of only great musicians and I really enjoy their sound and like pretty much
 anything they do. At the concert it felt like they could make anyone sound

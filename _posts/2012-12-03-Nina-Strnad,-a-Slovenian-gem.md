@@ -29,7 +29,7 @@ singing and shocked that we have this voice in Slovenia and that I hadn’t
 heard about her. Immediately I wanted to find out who she was and I got so
 excited that I found some new music to listen to (I explained why I get so
 excited over new music in [this
-post](http://musingsonmusic.com/2012/10/eric-clapton-wynton-
+post](http://musiceverlastingmusic.blogspot.com/2012/10/eric-clapton-wynton-
 marsalis-play-blues.html)). After that, I started paying attention to her name
 and whenever I heard she’s playing somewhere, I’d try to go and listen. She
 was (and still is) just too good to pass on.  

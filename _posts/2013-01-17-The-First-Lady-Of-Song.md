@@ -17,10 +17,9 @@ comforting. Her singing is so effortless that she makes it seem like it’s easy
 to sing like that. Sometimes I imagine what it would be like to have Ella for
 a grandma. Whenever someone felt blue, she would just sing their troubles
 away. While I love [Billie
-Holiday](http://musingsonmusic.com/2012/10/fine-and-
+Holiday](http://musiceverlastingmusic.blogspot.com/2012/10/fine-and-
 mellow.html) and [Dinah
-Washington](http://musingsonmusic.com/2012/11/dinah-
-washington.html), they never make me feel as good as Ella always does. It’s
+Washington]({% post_url 2012-11-20-Dinah-Washington %}), they never make me feel as good as Ella always does. It’s
 easy to get caught up in her music and forget about your worries.  
   
 I got to know Ella through my love of Louis Armstrong. As you may know, Lady

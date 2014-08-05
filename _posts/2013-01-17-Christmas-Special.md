@@ -78,8 +78,7 @@ it, I was a bit disappointed to hear there are only 6 out of 14 songs by
 Louis. This makes it more of a compilation with a focus on Satchmo than an
 album done by him. Nevertheless it’s a wonderful album that’s easy to enjoy.
 It features names like [Dinah
-Washington](http://musingsonmusic.com/2012/11/dinah-
-washington.html), Duke Ellington, Peggy Lee, Louis Jordan and Lena Horne. All
+Washington]({% post_url 2012-11-20-Dinah-Washington %}), Duke Ellington, Peggy Lee, Louis Jordan and Lena Horne. All
 in all, it’s an even better combination than Christmas Jazz Jam - Jazz and
 Christmas AND Louis Armstrong! Just thinking about it, makes me feel all warm
 and fuzzy inside. The only thing that leaves you sad after listening to the

@@ -104,10 +104,8 @@ previous decision that Jazz is not for me. Suddenly I was drawn to it. Most of
 it was still a sound I wasn't used to, but I decided to start exploring it. I
 watched a great documentary - Jazz, by Ken Burns, which in turn, introduced me
 to many important figures of jazz history. I started listening to [Ella
-Fitzgerald](http://musingsonmusic.com/2012/11/the-first-lady-
-of-song.html), Duke Ellington, Clifford Brown, Fats Waller, [Robert
-Johnson](http://musingsonmusic.com/2013/01/robert-
-johnson.html) and many more. I relished their music. And with every new
+Fitzgerald]({% post_url 2013-01-17-The-First-Lady-Of-Song %}), Duke Ellington, Clifford Brown, Fats Waller, [Robert
+Johnson]({% post_url 2013-01-17-Robert-Johnson %}) and many more. I relished their music. And with every new
 artist, every song, every record, one thing became clearer and clearer. I
 found my passion.
 
