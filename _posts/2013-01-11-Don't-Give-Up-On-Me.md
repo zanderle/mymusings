@@ -6,8 +6,7 @@ updated: 2013-01-11 08:52:47 UTC
 comments: false
 categories: Blues Solomon Burke Soul
 ---
-![](http://3.bp.blogspot.com/_SJ03wRhNrzE/TLIT3coRuxI/AAAAAAAAAj4/LlV6LIcyZtw/
-s1600/solomon-burke-color.jpg)
+![](http://3.bp.blogspot.com/_SJ03wRhNrzE/TLIT3coRuxI/AAAAAAAAAj4/LlV6LIcyZtw/s1600/solomon-burke-color.jpg)
 
 Solomon Burke
 

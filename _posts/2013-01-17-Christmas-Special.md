@@ -6,8 +6,7 @@ updated: 2013-01-17 10:53:12 UTC
 comments: false
 categories: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
 ---
-![](http://25.media.tumblr.com/de5a94de355bd1ad9956f94fafba0063/tumblr_mepw2dl
-wCh1rln1mco1_1280.jpg)
+![](http://25.media.tumblr.com/de5a94de355bd1ad9956f94fafba0063/tumblr_mepw2dlwCh1rln1mco1_1280.jpg)
 
 Christmas Spirit by [ŽAnderle](http://zanderle.com/)
 
@@ -36,14 +35,13 @@ and frustration, I found a couple of Christmas albums which I just love and
 today, I wanted to share them with you. Hopefully you’ll enjoy them as much as
 I do and they will bring you some Christmas cheer.  
   
-![](http://www.vinylphilemag.com/images/vince_guaraldi_trio:a_charlie_brown_ch
-ristmas.jpeg)  
+![](http://www.vinylphilemag.com/images/vince_guaraldi_trio:a_charlie_brown_christmas.jpeg)  
 The first one is my favourite Christmas album ever. Most of you will know it,
 but whoever doesn’t, should listen to it as soon as possible. Vince Guaraldi
 and his [A Charlie Brown Christmas](http://www.amazon.com/gp/product/B0090X4H0
 W/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative
-=9325&creativeASIN=B0090X4H0W)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B0090X4H0W). It’s a perfect
+=9325&creativeASIN=B0090X4H0W)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B0090X4H0W).
+It’s a perfect
 combination of holiday playfulness, jazz, warm sounds and of course -
 Christmas spirit. It tastes exactly like those roasted nuts and mulled wine
 did. It’s on top of my ‘most played albums during holidays’ list. Below is a
@@ -56,14 +54,12 @@ little taste of it. Now go and get it!
 
   
 
-![](http://upload.wikimedia.org/wikipedia/en/7/7b/Wynton_Marsalis_Christmas_Ja
-zz_Jam.jpg)
+![](http://upload.wikimedia.org/wikipedia/en/7/7b/Wynton_Marsalis_Christmas_Jazz_Jam.jpg)
 
 If we’re already at the more jazzy side of Christmas, I have to mention Wynton
 Marsalis’ [Christmas Jazz Jam](http://www.amazon.com/gp/product/B002SROHI4/ref
 =as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325
-&creativeASIN=B002SROHI4)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B002SROHI4). This one’s a bit
+&creativeASIN=B002SROHI4)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B002SROHI4). This one’s a bit
 more demanding than A Charlie Brown Christmas, so it may not be to everyone’s
 liking, but it’s a great album. It has many wonderful moments like Good King
 Wenceslas and O Little Town Of Bethlehem to name just two. Whenever I listen
@@ -72,14 +68,12 @@ Jazz and Christmas. Does it get any better than jazzy Christmas?
   
   
 
-![](http://cps-
-static.rovicorp.com/3/JPG_250/MI0002/454/MI0002454500.jpg?partner=allrovi.com)
+![](http://cps-static.rovicorp.com/3/JPG_250/MI0002/454/MI0002454500.jpg?partner=allrovi.com)
 
 Still on Christmas with jazz, here’s Louis Armstrong & Friends doing [What a
 Wonderful Christmas](http://www.amazon.com/gp/product/B000005KPO/ref=as_li_tf_
 tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeA
-SIN=B000005KPO)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000005KPO). When I first heard
+SIN=B000005KPO)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000005KPO). When I first heard
 it, I was a bit disappointed to hear there are only 6 out of 14 songs by
 Louis. This makes it more of a compilation with a focus on Satchmo than an
 album done by him. Nevertheless it’s a wonderful album that’s easy to enjoy.
@@ -93,8 +87,7 @@ album is that Louis Armstrong didn’t record more Christmas songs, because he�
 so incredibly good at it. Here’s Winter Wonderland done by him. Listen and see
 what I’m talking about.  
   
-([Here’s](http://dippermouth.blogspot.com/2011/12/very-satchmo-
-christmas-2011-edition.html) a post about it in Ricky Riccardi’s blog)  
+([Here’s](http://dippermouth.blogspot.com/2011/12/very-satchmo-christmas-2011-edition.html) a post about it in Ricky Riccardi’s blog)  
   
 That’s it for now but I’m not done yet. Next time I’ll continue with other
 great, maybe a bit unexpected but great Christmas albums. Until then, tell me,

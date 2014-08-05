@@ -28,16 +28,9 @@ I don’t care too much for either of these songs and I’m not sure why. I gues
 they just don’t move me. But I do love and respect Roberta and the reason for
 that is her first three albums - [First Take](http://www.amazon.com/gp/product
 /B000002J5S/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=178
-9&creative=9325&creativeASIN=B000002J5S)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002J5S), [Chapter Two](http
-://www.amazon.com/gp/product/B000002I60/ref=as_li_tf_tl?ie=UTF8&tag=mythougonm
-usi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B000002I60)![](http:/
-/www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002I60) and
-[Quiet Fire](http://www.amazon.com/gp/product/B004KRTA4G/ref=as_li_tf_tl?ie=UT
-F8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B004
-KRTA4G)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B004KRTA4G). They’re soft,
-sophisticated and soulful. In life in general, I appreciate things that slowly
+9&creative=9325&creativeASIN=B000002J5S)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002J5S), [Chapter Two](http://www.amazon.com/gp/product/B000002I60/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B000002I60)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002I60)
+and [Quiet Fire](http://www.amazon.com/gp/product/B004KRTA4G/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B004KRTA4G)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B004KRTA4G)
+. They’re soft, sophisticated and soulful. In life in general, I appreciate things that slowly
 build up to their peak, may that be in music, movies, books, shows or food. I
 feel that if something builds up to its full intensity gradually, it’s much
 more powerful than it would be, if it was as forceful from the very beginning.
@@ -52,11 +45,8 @@ to get a feeling of what kind of music to expect.
 
   
 Roberta is still creating new music. Just last year she recorded an album [Let
-It Be Roberta: Roberta Flack Sings The Beatles](http://www.amazon.com/gp/produ
-ct/B00687XM22/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1
-789&creative=9325&creativeASIN=B00687XM22)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B00687XM22). I really like The
-Beatles and I used to be obsessed with them so when I saw that she made an
+It Be Roberta: Roberta Flack Sings The Beatles](http://www.amazon.com/gp/product/B00687XM22/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B00687XM22)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B00687XM22)
+. I really like The Beatles and I used to be obsessed with them so when I saw that she made an
 album full of their songs I was excited. As soon as I started listening to the
 album, the excitement was replaced with disappointment. With the exception of
 [one song](http://www.youtube.com/watch?v=Q3ZqvbQw-YY&feature=youtu.be), it’s

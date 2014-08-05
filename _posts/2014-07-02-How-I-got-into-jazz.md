@@ -6,8 +6,7 @@ updated: 2014-07-02 19:48:27 UTC
 comments: false
 categories: Jazz Louis Armstrong Story
 ---
-![](http://1.bp.blogspot.com/-xOBj9x28df0/U7RhzavFqjI/AAAAAAAABo4/srzLXZOH9uE/
-s1600/63.jpg)
+![](http://1.bp.blogspot.com/-xOBj9x28df0/U7RhzavFqjI/AAAAAAAABo4/srzLXZOH9uE/s1600/63.jpg)
 
 It has been too long. I haven’t written a post for over a year. I devoted all
 my focus to other things in my life, but recently I found myself wanting to

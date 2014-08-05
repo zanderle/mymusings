@@ -26,20 +26,17 @@ just getting into jazz. He wasn’t being praised so much for nothing...
   
 His renown, in part, comes from his great album [Time Out](http://www.amazon.c
 om/gp/product/B000002AGN/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode
-=as2&camp=1789&creative=9325&creativeASIN=B000002AGN)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002AGN), which is something
-you have to hear at least once in your life, but the reason I love Dave
+=as2&camp=1789&creative=9325&creativeASIN=B000002AGN)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000002AGN)
+, which is something you have to hear at least once in your life, but the reason I love Dave
 Brubeck is [The Real Ambassadors](http://www.amazon.com/gp/product/B006O9MER8/
 ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9
-325&creativeASIN=B006O9MER8)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B006O9MER8), a project with his
-wife Iola, created specifically with Louis Armstrong in mind. Regarding the
+325&creativeASIN=B006O9MER8)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B006O9MER8)
+, a project with his wife Iola, created specifically with Louis Armstrong in mind. Regarding the
 project much can be found in Ricky Riccardi’s
 [blog](http://dippermouth.blogspot.com/) and book [What a Wonderful World](htt
 p://www.amazon.com/gp/product/0307473295/ref=as_li_tf_tl?ie=UTF8&tag=mythougon
-musi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0307473295)![](http:
-//www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=0307473295). I
-won’t go into detail about it (I will come back about this as this is material
+musi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0307473295)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=0307473295)
+. I won’t go into detail about it (I will come back about this as this is material
 for a post on its own) but I will say it’s a masterpiece ahead of its time and
 it’s one of my favourite Louis Armstrong’s albums.  
 [Here’s](http://www.youtube.com/watch?v=YtTL-Z5EyEY) a song out of the album.

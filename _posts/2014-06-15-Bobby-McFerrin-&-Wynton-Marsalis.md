@@ -6,8 +6,7 @@ updated: 2014-06-15 18:42:08 UTC
 comments: false
 categories: Bobby McFerrin collaboration concert Jazz Jazz at Lincoln Center Wynton Marsalis
 ---
-![](http://1.bp.blogspot.com/-D5qdlIIUh8Q/UP6Mt6uzd9I/AAAAAAAABRg/KvokTWlz8Ns/
-s1600/533796_10151133921932976_375791819_n.jpg)
+![](http://1.bp.blogspot.com/-D5qdlIIUh8Q/UP6Mt6uzd9I/AAAAAAAABRg/KvokTWlz8Ns/s1600/533796_10151133921932976_375791819_n.jpg)
 
 Photo by Frank Stewart
 
@@ -82,12 +81,7 @@ yourself and enjoy this beautiful performance. I think Bobby McFerrin and
 Wynton Marsalis have some special energy between them and you can hear it
 firsthand.  
 It’s actually one of my wishes, that they record an album together. They’re
-just so amazing together. Listen to a song they recorded together on [one of
-Wynton's albums](http://www.amazon.com/gp/product/B0001CNQNU/ref=as_li_qf_sp_a
-sin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0001CNQNU&linkCode=as2&ta
-g=mythougonmusi-20)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B0001CNQNU) \- [Baby, I Love
-You](http://www.youtube.com/watch?v=HLD8i8CMw14). The kind of chemistry they
+just so amazing together. Listen to a song they recorded together on [one of Wynton's albums](http://www.amazon.com/gp/product/B0001CNQNU/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0001CNQNU&linkCode=as2&tag=mythougonmusi-20)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B0001CNQNU) \- [Baby, I Love You](http://www.youtube.com/watch?v=HLD8i8CMw14). The kind of chemistry they
 have is simply infectious.  
   
 What about you, what do you think? Thoughts on the concert, Bobby, Wynton,

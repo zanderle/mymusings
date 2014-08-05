@@ -6,8 +6,8 @@ updated: 2013-04-01 21:46:23 UTC
 comments: false
 categories: Ben Harper Blues collaboration Gospel The Blind Boys of Alabama
 ---
-![](http://www.paul-altobelli.com/wp-content/uploads/2011/04/Ben-Harper-There-
-will-be-a-light.jpeg)Two months ago I began making some decisions about my
+![](http://www.paul-altobelli.com/wp-content/uploads/2011/04/Ben-Harper-There-will-be-a-light.jpeg)
+Two months ago I began making some decisions about my
 studies and consequently I was focusing on college and neglected my blog and
 photography. I’ve simply put it on hold. I thought I didn’t miss it that much,
 but then, a couple of days ago, I was reading one of my older posts. It made
@@ -22,15 +22,10 @@ write about.
   
   
 
-![](http://userserve-
-ak.last.fm/serve/_/29762919/Ben+Harper+And+The+Blind+Boys+Of+Alabama.jpg)
+![](http://userserve-ak.last.fm/serve/_/29762919/Ben+Harper+And+The+Blind+Boys+Of+Alabama.jpg)
 
 Enough about that, let me talk about what I’m here to talk about. In 2004 Ben
-Harper and the Blind Boys of Alabama recorded an album called [There Will Be A
-Light](http://www.amazon.com/gp/product/B000TDIE7Y/ref=as_li_qf_sp_asin_tl?ie=
-UTF8&camp=1789&creative=9325&creativeASIN=B000TDIE7Y&linkCode=as2&tag=mythougo
-nmusi-20)![](http://www.assoc-
-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000TDIE7Y). It is one of my
+Harper and the Blind Boys of Alabama recorded an album called [There Will Be A Light](http://www.amazon.com/gp/product/B000TDIE7Y/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000TDIE7Y&linkCode=as2&tag=mythougonmusi-20)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000TDIE7Y). It is one of my
 favourite albums of all time and one of the best collaboration albums I know.
 I’ve always been completely blown away by good collaborations. It’s simply
 beyond me how two groups are able to melt into one so completely so that they
@@ -48,8 +43,8 @@ Which I love. Here are a few great songs, so you can hear what I mean.
   
   
 
-![](http://cliffviewpilot.com/images/stories/march2003/april2010/may2010/june2
-010/blind%20boys%20of%20alabama%2001.jpg)The Blind Boys of Alabama is a gospel
+![](http://cliffviewpilot.com/images/stories/march2003/april2010/may2010/june2010/blind%20boys%20of%20alabama%2001.jpg)
+The Blind Boys of Alabama is a gospel
 group that’s been active for well over 70 years now and they’re one of the
 best in their field. And if you’re wondering, yes, they’re actually blind
 (apart from one member I believe). They were performing in Ljubljana a couple

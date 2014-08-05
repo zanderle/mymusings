@@ -56,8 +56,7 @@ warmly backs his vocals, I was already digging it and after the whole band
 joins in, I knew I was in for something great. I’m glad to say, I wasn’t
 mistaken.
 
-![](http://3.bp.blogspot.com/-gE1UCtp2d2c/Udm8wIkPMzI/AAAAAAAABZQ/H3ad8Cy2ljI/
-s1600/16213_446663092085578_778926986_n.jpg)
+![](http://3.bp.blogspot.com/-gE1UCtp2d2c/Udm8wIkPMzI/AAAAAAAABZQ/H3ad8Cy2ljI/s1600/16213_446663092085578_778926986_n.jpg)
 
 Photo by Sabina Pirnat
 

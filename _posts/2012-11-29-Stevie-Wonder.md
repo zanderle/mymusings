@@ -6,8 +6,7 @@ updated: 2012-11-29 19:53:26 UTC
 comments: false
 categories: R'n'B Soul Stevie Wonder
 ---
-![](http://revivalist.okayplayer.com/wp-content/uploads/Stevie+Wonder+PNG-
-1024x906.png)
+![](http://revivalist.okayplayer.com/wp-content/uploads/Stevie+Wonder+PNG-1024x906.png)
 
 I’ve put this women in jazz series on hold for now, as I want to prepare
 something different and special for the last one. For now, I wanted to write

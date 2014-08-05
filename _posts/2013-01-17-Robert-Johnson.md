@@ -6,8 +6,7 @@ updated: 2013-01-17 10:38:58 UTC
 comments: false
 categories: Acoustic Blues Blues Robert Johnson
 ---
-![](http://upload.wikimedia.org/wikipedia/en/thumb/b/bb/RobertJohson.png
-/220px-RobertJohson.png)
+![](http://upload.wikimedia.org/wikipedia/en/thumb/b/bb/RobertJohson.png/220px-RobertJohson.png)
 
 Robert Johnson
 

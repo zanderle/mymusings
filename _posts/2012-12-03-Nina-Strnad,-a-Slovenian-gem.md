@@ -46,8 +46,7 @@ songs before, but I feel like I’m hearing them for the first time when she
 does them. I really appreciate that she’s doing her own thing with these
 Slovenian songs instead of doing just jazz standards.  
 
-![](http://3.bp.blogspot.com/--K1SWflnb5Q/ULv2CX_8P1I/AAAAAAAABO4/WC4eyVFj8SQ/
-s320/231112_0033.jpg)
+![](http://3.bp.blogspot.com/--K1SWflnb5Q/ULv2CX_8P1I/AAAAAAAABO4/WC4eyVFj8SQ/s320/231112_0033.jpg)
 
 Nina's gig by Žan Anderle
 

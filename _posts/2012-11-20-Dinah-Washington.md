@@ -6,8 +6,7 @@ updated: 2012-11-20 11:42:28 UTC
 comments: false
 categories: Billie Holiday Blues Dinah Washington Jazz Women
 ---
-![](http://1.bp.blogspot.com/-dxAkPzVfz4s/T9gtvYq461I/AAAAAAAALPg/mHZsMf_dIvY/
-s1600/Dinah+Washington.jpg)
+![](http://1.bp.blogspot.com/-dxAkPzVfz4s/T9gtvYq461I/AAAAAAAALPg/mHZsMf_dIvY/s1600/Dinah+Washington.jpg)
 
 Yesterday, I did a [post on Etta
 James](http://musiceverlastingmusic.blogspot.com/2012/11/etta-james.html) and

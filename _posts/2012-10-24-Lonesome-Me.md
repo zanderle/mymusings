@@ -6,8 +6,7 @@ updated: 2012-10-24 21:47:34 UTC
 comments: false
 categories: Jazz Jazz Vipers New Orleans
 ---
-![](http://4.bp.blogspot.com/-X6L-dV5v-
-AI/UIhcyq3zmrI/AAAAAAAABN4/mQyN3FFBUWM/s1600/280912_0407.jpg)
+![](http://4.bp.blogspot.com/-X6L-dV5v-AI/UIhcyq3zmrI/AAAAAAAABN4/mQyN3FFBUWM/s1600/280912_0407.jpg)
 
 The Spotted Cat by Žan Anderle
 
@@ -39,8 +38,7 @@ thing hearing them live. It’s hearing them live when you can so easily feel
 all the energy and joy that they exuberate.  
   
 
-![](http://4.bp.blogspot.com/-Rmpt1qZydzY/UIhc3mbGzFI/AAAAAAAABOA/1eHNhrQBUEA/
-s1600/300912_0133.jpg)
+![](http://4.bp.blogspot.com/-Rmpt1qZydzY/UIhc3mbGzFI/AAAAAAAABOA/1eHNhrQBUEA/s1600/300912_0133.jpg)
 
 Jazz Vipers by Žan Anderle
 
