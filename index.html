@@ -30,9 +30,9 @@ layout: default
     <i class="icon-comment-empty inline-block"></i>
     <a href="{{ post.url | prepend: site.url }}#disqus_thread"></a>
     </div>
-    <div class="mobile-full inline-block">
+    <div class="col-12 mobile-full inline-block">
     <i class="icon-tag inline-block"></i>
-    <span class="inline-block tags">Jazz, Blues</span>
+    <span class="inline-block tags">{{ post.tags | join: ' ' | truncate: 80 }}</span>
     </div>
   </div>
   {% unless forloop.last %}

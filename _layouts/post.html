@@ -11,7 +11,7 @@ layout: default
         <i class="icon-comment-empty inline-block"></i>
         <a href="{{ page.url }}#disqus_thread"></a>
         <i class="icon-tag inline-block"></i>
-        <span class="inline-block tags">Jazz, Blues</span>
+        <span class="inline-block tags">{{ page.tags | join: ', ' }}</span>
     </div>
   </header>
 
