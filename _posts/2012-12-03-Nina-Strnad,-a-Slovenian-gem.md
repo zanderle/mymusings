@@ -3,7 +3,7 @@ layout: post
 title: Nina Strnad, a Slovenian gem
 date: 2012-12-03 10:24:52 UTC
 updated: 2012-12-03 10:24:52 UTC
-comments: false
+comments: true
 tags: Jazz Nina Strnad Women
 ---
 ![](/img/2Ftumblr_mdysrzSCi21rln1mco1_1280.jpg)

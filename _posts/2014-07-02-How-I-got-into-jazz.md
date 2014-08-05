@@ -3,7 +3,7 @@ layout: post
 title: How I got into jazz
 date: 2014-07-02 19:48:27 UTC
 updated: 2014-07-02 19:48:27 UTC
-comments: false
+comments: true
 tags: Jazz Louis Armstrong Story
 ---
 ![](/img/2F-xOBj9x28df02FU7RhzavFqjI2FAAAAAAAABo42FsrzLXZOH9uE2Fs16002F63.jpg)

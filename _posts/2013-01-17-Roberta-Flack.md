@@ -3,7 +3,7 @@ layout: post
 title: Roberta Flack
 date: 2013-01-17 10:41:55 UTC
 updated: 2013-01-17 10:41:55 UTC
-comments: false
+comments: true
 tags: Jazz Roberta Flack Soul Women
 ---
 ![](/img/2Fserve2F_2F58388072FRoberta2BFlack.jpg)

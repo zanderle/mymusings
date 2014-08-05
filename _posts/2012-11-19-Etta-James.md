@@ -3,7 +3,7 @@ layout: post
 title: Etta James
 date: 2012-11-19 01:10:16 UTC
 updated: 2012-11-19 01:10:16 UTC
-comments: false
+comments: true
 tags: Billie Holiday Blues Dinah Washington Etta James Jazz Soul Women
 ---
 ![](/img/2F20122F012Fetta-james.jpg)

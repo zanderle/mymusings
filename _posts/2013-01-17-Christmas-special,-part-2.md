@@ -3,7 +3,7 @@ layout: post
 title: Christmas special, part 2
 date: 2013-01-17 10:46:31 UTC
 updated: 2013-01-17 10:46:31 UTC
-comments: false
+comments: true
 tags: Christmas Ella Fitzgerald James Brown Jazz Ray Charles Soul
 ---
 ![](/img/2Ftumblr_mef1cyedO41rln1mco1_1280.jpg)

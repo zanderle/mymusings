@@ -3,7 +3,7 @@ layout: post
 title: Robert Johnson as told by Keith Richards
 date: 2013-01-15 20:56:36 UTC
 updated: 2013-01-15 20:56:36 UTC
-comments: false
+comments: true
 tags: Acoustic Blues Keith Richards Robert Johnson
 ---
 ![](/img/2F20102F042Frobert_johnson2.jpg)

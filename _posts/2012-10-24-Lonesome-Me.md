@@ -3,7 +3,7 @@ layout: post
 title: Lonesome Me
 date: 2012-10-24 21:47:34 UTC
 updated: 2012-10-24 21:47:34 UTC
-comments: false
+comments: true
 tags: Jazz Jazz Vipers New Orleans
 ---
 ![](/img/2F-X6L-dV5v-AI2FUIhcyq3zmrI2FAAAAAAAABN42FmQyN3FFBUWM2Fs16002F280912_0407.jpg)

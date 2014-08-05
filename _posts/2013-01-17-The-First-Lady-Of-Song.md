@@ -3,7 +3,7 @@ layout: post
 title: The First Lady Of Song
 date: 2013-01-17 10:55:46 UTC
 updated: 2013-01-17 10:55:46 UTC
-comments: false
+comments: true
 tags: Ella Fitzgerald Jazz Louis Armstrong Women
 ---
 ![](/img/2F-hLvxzTcTaRY2FT5cbwILMT1I2FAAAAAAAAB9s2FM4mF1PXA9jQ2Fs16002Fella-fitzgerald-milano-68.jpg)

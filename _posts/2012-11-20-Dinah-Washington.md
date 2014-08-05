@@ -3,7 +3,7 @@ layout: post
 title: Dinah Washington
 date: 2012-11-20 11:42:28 UTC
 updated: 2012-11-20 11:42:28 UTC
-comments: false
+comments: true
 tags: Billie Holiday Blues Dinah Washington Jazz Women
 ---
 ![](/img/2F-dxAkPzVfz4s2FT9gtvYq461I2FAAAAAAAALPg2FmHZsMf_dIvY2Fs16002FDinah2BWashington.jpg)

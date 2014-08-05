@@ -3,7 +3,7 @@ layout: post
 title: There Will Be a Light
 date: 2013-04-01 21:46:23 UTC
 updated: 2013-04-01 21:46:23 UTC
-comments: false
+comments: true
 tags: Ben Harper Blues collaboration Gospel The Blind Boys of Alabama
 ---
 ![](/img/2Fwp-content2Fuploads2F20112F042FBen-Harper-There-will-be-a-light.jpeg)

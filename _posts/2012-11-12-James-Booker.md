@@ -3,7 +3,7 @@ layout: post
 title: James Booker
 date: 2012-11-12 11:53:34 UTC
 updated: 2012-11-12 11:53:34 UTC
-comments: false
+comments: true
 tags: Anniversary Blues Dr. John James Booker Jazz New Orleans
 ---
 James Booker is easily my favourite New Orleans pianist and in light of the

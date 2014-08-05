@@ -3,7 +3,7 @@ layout: post
 title: Otis Redding
 date: 2013-01-17 10:44:45 UTC
 updated: 2013-01-17 10:44:45 UTC
-comments: false
+comments: true
 tags: Otis Redding Sam Cooke Solomon Burke Soul
 ---
 ![](/img/2Fwp-content2Fuploads2F20122F012FOtis-Redding.jpg)

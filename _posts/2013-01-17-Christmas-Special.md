@@ -3,7 +3,7 @@ layout: post
 title: Christmas Special
 date: 2013-01-17 10:53:12 UTC
 updated: 2013-01-17 10:53:12 UTC
-comments: false
+comments: true
 tags: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
 ---
 ![](/img/2Fde5a94de355bd1ad9956f94fafba00632Ftumblr_mepw2dlwCh1rln1mco1_1280.jpg)

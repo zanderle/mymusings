@@ -3,7 +3,7 @@ layout: post
 title: Nina Simone
 date: 2012-11-26 00:13:50 UTC
 updated: 2012-11-26 00:13:50 UTC
-comments: false
+comments: true
 tags: Blues Jazz Nina Simone Soul Women
 ---
 ![](/img/2Fwp-content2Fuploads2F20122F082FNina2BSimone.jpg)
