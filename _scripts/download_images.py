@@ -34,6 +34,7 @@ def get_path(url, safe=True):
     path = url_obj.path
     if safe:
         path = urllib.quote(path, '')
+    path = path.replace('%', '')
     return path
 
 def sub_image(matchobj):
@@ -41,6 +42,7 @@ def sub_image(matchobj):
     url = matchobj.group('url')
     path = '/img/' + get_path(url)
     is_saved = download_and_save(url, path)
+    # is_saved = True
     if is_saved:
         new_path = '![](' + path + ')'
         print "Changing path to %s" % new_path
@@ -55,7 +57,8 @@ def main():
         print "Opening post %s" % post_path
         with open(POSTS_PATH + post_path, 'r') as f:
             post = f.read()
-        (new_post, count) = re.subn(IMAGE_REGEX, sub_image, post)
+            post = post.replace('\n', ' ')
+        (new_post, count) = re.subn(IMAGE_REGEX, sub_image, post, re.M)
         if count > 0:
             with codecs.open(POSTS_PATH + post_path, 'w', 'utf-8') as f:
                 f.write(unicode(new_post, 'utf-8'))
