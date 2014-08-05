@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="635.35803"
+   height="316.41412"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/zan/Documents/My blog/logo3.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs2987">
+    <linearGradient
+       id="linearGradient5255"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#53a200;stop-opacity:1;"
+         offset="0"
+         id="stop5257" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3799"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3801" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3793"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3795" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3799"
+       id="linearGradient3803"
+       x1="68.762077"
+       y1="117.35838"
+       x2="573.93976"
+       y2="117.35838"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5255"
+       id="linearGradient5259"
+       x1="72.184975"
+       y1="118.45941"
+       x2="578.64728"
+       y2="118.45941"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="84.525304"
+     inkscape:cy="46.033922"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="40" />
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-5.9509111,-49.127965)">
+    <path
+       style="fill:none;stroke:none;stroke-width:1.14672135999999991;stroke-opacity:0.11415525000000000"
+       d="M 93.67448,322.09587 C 125.38808,196.8891 252.59719,121.09796 377.80392,152.8116 503.01067,184.52522 578.80181,311.73434 547.08815,436.94104 515.37455,562.14782 388.16545,637.93897 262.95872,606.22531 137.75196,574.5117 61.960822,447.30259 93.67448,322.09587 z"
+       id="path2993"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:-0.11000000000000000px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#fafafa;fill-opacity:1;stroke:none;stroke-opacity:1;font-family:Dream Orphans;-inkscape-font-specification:Dream Orphans"
+       id="text3764"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99982013,0.01896554,-0.01896554,0.99982013,7.652215,-6.0470882)"><textPath
+         xlink:href="#path2993"
+         id="textPath3776"
+         style="font-size:100px;font-weight:normal;letter-spacing:0.80000000999999998px;fill:#fafafa;fill-opacity:1;stroke:none;stroke-opacity:1;-inkscape-font-specification:Dream Orphans">MY MUSINGS ON</textPath></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3768"
+       style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3770"><rect
+           id="rect3772"
+           width="54.212765"
+           height="64.539009"
+           x="-291.71631"
+           y="-56.964542" /></flowRegion><flowPara
+         id="flowPara3774" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:133.58326721000000248px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:1.16453922000000021;stroke-opacity:1;font-family:Dream Orphans;-inkscape-font-specification:Dream Orphans"
+       x="164.73643"
+       y="345.86761"
+       id="text3807"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3809"
+         x="164.73643"
+         y="345.86761"
+         style="stroke-width:1.16453922000000021;fill:#fafafa;fill-opacity:1;stroke:none">MUSIC</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5282"
+       sodipodi:cx="258.5"
+       sodipodi:cy="278.5"
+       sodipodi:rx="194.5"
+       sodipodi:ry="194.5"
+       d="M 453,278.5 C 453,385.91938 365.91938,473 258.5,473 151.08062,473 64,385.91938 64,278.5 64,171.08062 151.08062,84 258.5,84 365.91938,84 453,171.08062 453,278.5 z"
+       transform="matrix(1.1199417,0,0,1.0635912,30.995061,63.289817)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect5284"
+       width="580"
+       height="271.2254"
+       x="37"
+       y="367.48529" />
+  </g>
+</svg>

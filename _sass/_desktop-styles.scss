@@ -40,8 +40,11 @@ a:hover { color: $secondary-color; }
   .main-logo {
     width: 160px;
     height: 90px;
-    background: image-url("logo_white.png", false, false) 50% 50% no-repeat;
+    background: image-url("logo_white.svg", false, false) 50% 50% no-repeat;
     background-size:(100%, auto);
+  }
+  .no-svg .main-logo {
+    background: image-url("logo_white.png", false, false) 50% 50% no-repeat;
   }
 
   .social-media-nav {
@@ -95,13 +98,35 @@ a:hover { color: $secondary-color; }
   line-height: 60px;
   .heading {
     vertical-align: middle;
-    // @media-query ($)
     line-height: ($default-line-height - 2px);
   }
 }
 
 .content {
     margin-top: 25px;
+}
+.content, .post-content {
+    img {
+      float: left;
+      max-width: 45%;
+      max-height: 450px;
+      margin: 5px 15px 15px 0px;
+      @include respond-to(handhelds) {
+        max-height: 80%;
+        max-width: 60%;
+      }
+    }
+    .small {
+      max-width: 20%;
+      max-height: 200px;
+    }
+    .medium {
+      max-width: 35%;
+      max-height: 400px;
+    }
+    .right {
+      float: right;
+    }
 }
 
 .post-title {
