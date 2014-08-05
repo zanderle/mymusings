@@ -4,7 +4,7 @@ title: The First Lady Of Song
 date: 2013-01-17 10:55:46 UTC
 updated: 2013-01-17 10:55:46 UTC
 comments: false
-categories: Ella Fitzgerald Jazz Louis Armstrong Women
+tags: Ella Fitzgerald Jazz Louis Armstrong Women
 ---
 ![](/img/2F-hLvxzTcTaRY2FT5cbwILMT1I2FAAAAAAAAB9s2FM4mF1PXA9jQ2Fs16002Fella-fitzgerald-milano-68.jpg)
 
@@ -17,9 +17,9 @@ comforting. Her singing is so effortless that she makes it seem like it’s easy
 to sing like that. Sometimes I imagine what it would be like to have Ella for
 a grandma. Whenever someone felt blue, she would just sing their troubles
 away. While I love [Billie
-Holiday](http://musiceverlastingmusic.blogspot.com/2012/10/fine-and-
+Holiday](http://musingsonmusic.com/2012/10/fine-and-
 mellow.html) and [Dinah
-Washington](http://musiceverlastingmusic.blogspot.com/2012/11/dinah-
+Washington](http://musingsonmusic.com/2012/11/dinah-
 washington.html), they never make me feel as good as Ella always does. It’s
 easy to get caught up in her music and forget about your worries.  
   

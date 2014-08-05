@@ -4,7 +4,7 @@ title: Etta James
 date: 2012-11-19 01:10:16 UTC
 updated: 2012-11-19 01:10:16 UTC
 comments: false
-categories: Billie Holiday Blues Dinah Washington Etta James Jazz Soul Women
+tags: Billie Holiday Blues Dinah Washington Etta James Jazz Soul Women
 ---
 ![](/img/2F20122F012Fetta-james.jpg)
 
@@ -45,7 +45,7 @@ addictions. You could say that, like Lady Day, she also not only sang the
 blues, but lived the blues. She explains that because she felt the pain, she
 could sing the songs the way she did.  
 Billie Holiday and Dinah Washington were her greatest influences. I talked
-about [Billie Holiday](http://musiceverlastingmusic.blogspot.com/2012/10/fine-
+about [Billie Holiday](http://musingsonmusic.com/2012/10/fine-
 and-mellow.html) before and I’ll talk about Dinah Washington next time, since
 they’re all connected in a way.  
 Etta admired Lady Day greatly. I was watching an interview with Etta, in which

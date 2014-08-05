@@ -4,7 +4,7 @@ title: In A Silent Way
 date: 2013-04-11 21:38:44 UTC
 updated: 2013-04-11 21:38:44 UTC
 comments: false
-categories: Instrumental music Jazz Miles Davis
+tags: Instrumental music Jazz Miles Davis
 ---
 ![](/img/2F-zgioX-rhAYY2FUWctQk0KOjI2FAAAAAAAABTQ2FpU4fCnTemww2Fs16002Fcover_481121122010.jpg)
 

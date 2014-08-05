@@ -4,12 +4,12 @@ title: Dinah Washington
 date: 2012-11-20 11:42:28 UTC
 updated: 2012-11-20 11:42:28 UTC
 comments: false
-categories: Billie Holiday Blues Dinah Washington Jazz Women
+tags: Billie Holiday Blues Dinah Washington Jazz Women
 ---
 ![](/img/2F-dxAkPzVfz4s2FT9gtvYq461I2FAAAAAAAALPg2FmHZsMf_dIvY2Fs16002FDinah2BWashington.jpg)
 
 Yesterday, I did a [post on Etta
-James](http://musiceverlastingmusic.blogspot.com/2012/11/etta-james.html) and
+James](http://musingsonmusic.com/2012/11/etta-james.html) and
 I promised I would write about Dinah today, and that led me to start a series
 of posts about women in music I listen to. Up next are Ella Fitzgerald, Nina
 Simone and some others. So if you’re into that, make sure you check the blog
@@ -26,7 +26,7 @@ someone even after they’ve found someone else, songs filled with sorrow and
 pain. In a way she could relate to those songs, since she had plenty of
 experiences to draw from. She was married 7 times, and after writing about
 Etta James and [Billie
-Holiday](http://musiceverlastingmusic.blogspot.com/2012/10/fine-and-
+Holiday](http://musingsonmusic.com/2012/10/fine-and-
 mellow.html), it almost sounds like I’m repeating myself. It’s the same story
 all over again.  
 In 1959, she hit the pop market with the hit song [What a Difference a Day

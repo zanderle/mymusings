@@ -4,7 +4,7 @@ title: Nina Strnad, a Slovenian gem
 date: 2012-12-03 10:24:52 UTC
 updated: 2012-12-03 10:24:52 UTC
 comments: false
-categories: Jazz Nina Strnad Women
+tags: Jazz Nina Strnad Women
 ---
 ![](/img/2Ftumblr_mdysrzSCi21rln1mco1_1280.jpg)
 
@@ -29,7 +29,7 @@ singing and shocked that we have this voice in Slovenia and that I hadn’t
 heard about her. Immediately I wanted to find out who she was and I got so
 excited that I found some new music to listen to (I explained why I get so
 excited over new music in [this
-post](http://musiceverlastingmusic.blogspot.com/2012/10/eric-clapton-wynton-
+post](http://musingsonmusic.com/2012/10/eric-clapton-wynton-
 marsalis-play-blues.html)). After that, I started paying attention to her name
 and whenever I heard she’s playing somewhere, I’d try to go and listen. She
 was (and still is) just too good to pass on.  

@@ -4,7 +4,7 @@ title: Roberta Flack
 date: 2013-01-17 10:41:55 UTC
 updated: 2013-01-17 10:41:55 UTC
 comments: false
-categories: Jazz Roberta Flack Soul Women
+tags: Jazz Roberta Flack Soul Women
 ---
 ![](/img/2Fserve2F_2F58388072FRoberta2BFlack.jpg)
 
@@ -15,7 +15,7 @@ through the holidays. Anyway I’m back now, so let’s get right to it.
   
 Roberta Flack, there’s an amazing singer! I’m not sure why I haven’t written
 about her in [my women in jazz
-series](http://musiceverlastingmusic.blogspot.com/search/label/Women), but I’m
+series](http://musingsonmusic.com/search/label/Women), but I’m
 making up for it now. I was introduced to her music by a good friend last year
 and I’m still grateful.  
 Roberta Flack is a singer and a songwriter, born in 1939 and most notably

@@ -4,7 +4,7 @@ title: Christmas Special
 date: 2013-01-17 10:53:12 UTC
 updated: 2013-01-17 10:53:12 UTC
 comments: false
-categories: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
+tags: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
 ---
 ![](/img/2Fde5a94de355bd1ad9956f94fafba00632Ftumblr_mepw2dlwCh1rln1mco1_1280.jpg)
 
@@ -78,7 +78,7 @@ it, I was a bit disappointed to hear there are only 6 out of 14 songs by
 Louis. This makes it more of a compilation with a focus on Satchmo than an
 album done by him. Nevertheless it’s a wonderful album that’s easy to enjoy.
 It features names like [Dinah
-Washington](http://musiceverlastingmusic.blogspot.com/2012/11/dinah-
+Washington](http://musingsonmusic.com/2012/11/dinah-
 washington.html), Duke Ellington, Peggy Lee, Louis Jordan and Lena Horne. All
 in all, it’s an even better combination than Christmas Jazz Jam - Jazz and
 Christmas AND Louis Armstrong! Just thinking about it, makes me feel all warm

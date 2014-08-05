@@ -4,7 +4,7 @@ title: Stevie Wonder
 date: 2012-11-29 19:53:26 UTC
 updated: 2012-11-29 19:53:26 UTC
 comments: false
-categories: R'n'B Soul Stevie Wonder
+tags: R'n'B Soul Stevie Wonder
 ---
 ![](http://revivalist.okayplayer.com/wp-content/uploads/Stevie+Wonder+PNG-1024x906.png)
 

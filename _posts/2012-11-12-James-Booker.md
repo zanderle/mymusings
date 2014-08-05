@@ -4,7 +4,7 @@ title: James Booker
 date: 2012-11-12 11:53:34 UTC
 updated: 2012-11-12 11:53:34 UTC
 comments: false
-categories: Anniversary Blues Dr. John James Booker Jazz New Orleans
+tags: Anniversary Blues Dr. John James Booker Jazz New Orleans
 ---
 James Booker is easily my favourite New Orleans pianist and in light of the
 anniversary of his passing (I’m a few days late, I hope it still counts), I

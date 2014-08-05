@@ -4,7 +4,7 @@ title: How I got into jazz
 date: 2014-07-02 19:48:27 UTC
 updated: 2014-07-02 19:48:27 UTC
 comments: false
-categories: Jazz Louis Armstrong Story
+tags: Jazz Louis Armstrong Story
 ---
 ![](/img/2F-xOBj9x28df02FU7RhzavFqjI2FAAAAAAAABo42FsrzLXZOH9uE2Fs16002F63.jpg)
 
@@ -104,9 +104,9 @@ previous decision that Jazz is not for me. Suddenly I was drawn to it. Most of
 it was still a sound I wasn't used to, but I decided to start exploring it. I
 watched a great documentary - Jazz, by Ken Burns, which in turn, introduced me
 to many important figures of jazz history. I started listening to [Ella
-Fitzgerald](http://musiceverlastingmusic.blogspot.com/2012/11/the-first-lady-
+Fitzgerald](http://musingsonmusic.com/2012/11/the-first-lady-
 of-song.html), Duke Ellington, Clifford Brown, Fats Waller, [Robert
-Johnson](http://musiceverlastingmusic.blogspot.com/2013/01/robert-
+Johnson](http://musingsonmusic.com/2013/01/robert-
 johnson.html) and many more. I relished their music. And with every new
 artist, every song, every record, one thing became clearer and clearer. I
 found my passion.

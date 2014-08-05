@@ -4,7 +4,7 @@ title: Christmas special, part 2
 date: 2013-01-17 10:46:31 UTC
 updated: 2013-01-17 10:46:31 UTC
 comments: false
-categories: Christmas Ella Fitzgerald James Brown Jazz Ray Charles Soul
+tags: Christmas Ella Fitzgerald James Brown Jazz Ray Charles Soul
 ---
 ![](/img/2Ftumblr_mef1cyedO41rln1mco1_1280.jpg)
 
@@ -36,7 +36,7 @@ it.
   
   
 ![](http://revivalist.okayplayer.com/wp-content/uploads/ella-fitzgerald.jpeg)
-[The First Lady of TheSong](http://musiceverlastingmusic.blogspot.com/2012/11/the-first-lady-of-song.html)
+[The First Lady of TheSong](http://musingsonmusic.com/2012/11/the-first-lady-of-song.html)
 recorded Christmas albums too. And good thing she did. Listen to
 [Ella Wishes You a Swinging Christmas](http://www.amazon.com/gp/product/B00006WL1Q/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B00006WL1Q)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B00006WL1Q)
 to hear how classic
@@ -45,7 +45,7 @@ Christmas songs were supposed to be sung. Here’s my favourite on the album,
 6nic8)’.  
   
 Last, but not least is one of my favourite musicians of all time,[ Ray
-Charles](http://musiceverlastingmusic.blogspot.com/2012/08/rainy-night-in-
+Charles](http://musingsonmusic.com/2012/08/rainy-night-in-
 georgia.html). In 1985, he recorded [The Spirit of Christmas](http://www.amazo
 n.com/gp/product/B002D3I1TO/ref=as_li_tf_tl?ie=UTF8&tag=mythougonmusi-20&linkC
 ode=as2&camp=1789&creative=9325&creativeASIN=B002D3I1TO)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B002D3I1TO). Before this year,

@@ -4,15 +4,15 @@ title: Otis Redding
 date: 2013-01-17 10:44:45 UTC
 updated: 2013-01-17 10:44:45 UTC
 comments: false
-categories: Otis Redding Sam Cooke Solomon Burke Soul
+tags: Otis Redding Sam Cooke Solomon Burke Soul
 ---
 ![](/img/2Fwp-content2Fuploads2F20122F012FOtis-Redding.jpg)
 
 Otis Redding
 
 After talking about [Sam
-Cooke](http://musiceverlastingmusic.blogspot.com/2012/11/sam-cooke.html) and
-[Solomon Burke](http://musiceverlastingmusic.blogspot.com/2012/11/dont-give-
+Cooke](http://musingsonmusic.com/2012/11/sam-cooke.html) and
+[Solomon Burke](http://musingsonmusic.com/2012/11/dont-give-
 up-on-me.html), here’s another Soul giant. Otis Redding was one of the
 pioneers of Soul music and was truly amazing. He had a signature raspy voice
 and amazing ability to convey raw emotion. There are three words that apply

@@ -4,7 +4,7 @@ title: Dave Brubeck
 date: 2013-01-17 10:54:38 UTC
 updated: 2013-01-17 10:54:38 UTC
 comments: false
-categories: Dave Brubeck Jazz Louis Armstrong
+tags: Dave Brubeck Jazz Louis Armstrong
 ---
 ![](/img/2Fwww.spinner.com2Fmedia2F20122F122Fdave-brubeck-456.jpg)
 

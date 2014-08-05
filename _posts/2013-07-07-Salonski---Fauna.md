@@ -4,7 +4,7 @@ title: Salonski - Fauna
 date: 2013-07-07 19:11:06 UTC
 updated: 2013-07-07 19:11:06 UTC
 comments: false
-categories: Band Cajun Doo Wop Etno Folk Instrumental music Rap Slovenian
+tags: Band Cajun Doo Wop Etno Folk Instrumental music Rap Slovenian
 ---
 ![](/img/2Fimg2Fa2753353365_2.jpg)
 

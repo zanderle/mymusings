@@ -4,7 +4,7 @@ title: Don't Give Up On Me
 date: 2013-01-11 08:52:47 UTC
 updated: 2013-01-11 08:52:47 UTC
 comments: false
-categories: Blues Solomon Burke Soul
+tags: Blues Solomon Burke Soul
 ---
 ![](/img/2F_SJ03wRhNrzE2FTLIT3coRuxI2FAAAAAAAAAj42FLlV6LIcyZtw2Fs16002Fsolomon-burke-color.jpg)
 

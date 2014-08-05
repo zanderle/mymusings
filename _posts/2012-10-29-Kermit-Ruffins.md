@@ -4,7 +4,7 @@ title: Kermit Ruffins
 date: 2012-10-29 01:08:30 UTC
 updated: 2012-10-29 01:08:30 UTC
 comments: false
-categories: Jazz Kermit Ruffins Louis Armstrong New Orleans
+tags: Jazz Kermit Ruffins Louis Armstrong New Orleans
 ---
   
 
