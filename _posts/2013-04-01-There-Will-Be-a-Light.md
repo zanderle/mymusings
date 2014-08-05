@@ -6,7 +6,7 @@ updated: 2013-04-01 21:46:23 UTC
 comments: false
 categories: Ben Harper Blues collaboration Gospel The Blind Boys of Alabama
 ---
-![](http://www.paul-altobelli.com/wp-content/uploads/2011/04/Ben-Harper-There-will-be-a-light.jpeg)
+![](/img/2Fwp-content2Fuploads2F20112F042FBen-Harper-There-will-be-a-light.jpeg)
 Two months ago I began making some decisions about my
 studies and consequently I was focusing on college and neglected my blog and
 photography. I’ve simply put it on hold. I thought I didn’t miss it that much,
@@ -22,7 +22,7 @@ write about.
   
   
 
-![](http://userserve-ak.last.fm/serve/_/29762919/Ben+Harper+And+The+Blind+Boys+Of+Alabama.jpg)
+![](/img/2Fserve2F_2F297629192FBen2BHarper2BAnd2BThe2BBlind2BBoys2BOf2BAlabama.jpg)
 
 Enough about that, let me talk about what I’m here to talk about. In 2004 Ben
 Harper and the Blind Boys of Alabama recorded an album called [There Will Be A Light](http://www.amazon.com/gp/product/B000TDIE7Y/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000TDIE7Y&linkCode=as2&tag=mythougonmusi-20)![](http://www.assoc-amazon.com/e/ir?t=mythougonmusi-20&l=as2&o=1&a=B000TDIE7Y). It is one of my
@@ -43,7 +43,7 @@ Which I love. Here are a few great songs, so you can hear what I mean.
   
   
 
-![](http://cliffviewpilot.com/images/stories/march2003/april2010/may2010/june2010/blind%20boys%20of%20alabama%2001.jpg)
+![](/img/2Fimages2Fstories2Fmarch20032Fapril20102Fmay20102Fjune20102Fblind2520boys2520of2520alabama252001.jpg)
 The Blind Boys of Alabama is a gospel
 group that’s been active for well over 70 years now and they’re one of the
 best in their field. And if you’re wondering, yes, they’re actually blind

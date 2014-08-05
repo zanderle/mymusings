@@ -6,7 +6,7 @@ updated: 2013-01-17 10:55:46 UTC
 comments: false
 categories: Ella Fitzgerald Jazz Louis Armstrong Women
 ---
-![](http://3.bp.blogspot.com/-hLvxzTcTaRY/T5cbwILMT1I/AAAAAAAAB9s/M4mF1PXA9jQ/s1600/ella-fitzgerald-milano-68.jpg)
+![](/img/2F-hLvxzTcTaRY2FT5cbwILMT1I2FAAAAAAAAB9s2FM4mF1PXA9jQ2Fs16002Fella-fitzgerald-milano-68.jpg)
 
 The First Lady Of Song
 

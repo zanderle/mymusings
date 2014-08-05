@@ -6,7 +6,7 @@ updated: 2012-12-03 10:24:52 UTC
 comments: false
 categories: Jazz Nina Strnad Women
 ---
-![](http://24.media.tumblr.com/tumblr_mdysrzSCi21rln1mco1_1280.jpg)
+![](/img/2Ftumblr_mdysrzSCi21rln1mco1_1280.jpg)
 
 Nina Strnad by Žan Anderle
 
@@ -46,7 +46,7 @@ songs before, but I feel like I’m hearing them for the first time when she
 does them. I really appreciate that she’s doing her own thing with these
 Slovenian songs instead of doing just jazz standards.  
 
-![](http://3.bp.blogspot.com/--K1SWflnb5Q/ULv2CX_8P1I/AAAAAAAABO4/WC4eyVFj8SQ/s320/231112_0033.jpg)
+![](/img/2F--K1SWflnb5Q2FULv2CX_8P1I2FAAAAAAAABO42FWC4eyVFj8SQ2Fs3202F231112_0033.jpg)
 
 Nina's gig by Žan Anderle
 

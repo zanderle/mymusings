@@ -6,7 +6,7 @@ updated: 2014-06-15 18:42:08 UTC
 comments: false
 categories: Bobby McFerrin collaboration concert Jazz Jazz at Lincoln Center Wynton Marsalis
 ---
-![](http://1.bp.blogspot.com/-D5qdlIIUh8Q/UP6Mt6uzd9I/AAAAAAAABRg/KvokTWlz8Ns/s1600/533796_10151133921932976_375791819_n.jpg)
+![](/img/2F-D5qdlIIUh8Q2FUP6Mt6uzd9I2FAAAAAAAABRg2FKvokTWlz8Ns2Fs16002F533796_10151133921932976_375791819_n.jpg)
 
 Photo by Frank Stewart
 

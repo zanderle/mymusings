@@ -12,7 +12,7 @@ categories: Jazz Kermit Ruffins Louis Armstrong New Orleans
 
   
 
-![](http://www1.pictures.zimbio.com/gi/Kermit+Ruffins+2011+New+Orleans+Jazz+Heritage+gJIrx1WbMf4l.jpg)
+![](/img/2Fgi2FKermit2BRuffins2B20112BNew2BOrleans2BJazz2BHeritage2BgJIrx1WbMf4l.jpg)
 Last time I wrote a bit about my time in New Orleans
 and I thought I would continue talking about it for another post.  
 On a Sunday afternoon, after walking around the French Quarter for the whole
@@ -30,7 +30,7 @@ makes sure everyone else is happy too. In a sense, Kermit, like his great
 idol, Louis Armstrong, is just a simple guy trying to draw a smile on your
 face with his music. He’s warm, unpretentious and humble.  
 
-![](http://3.bp.blogspot.com/-jDShhHgBF2k/UI3Vcx9yXnI/AAAAAAAABOY/FlPGlmHWLc8/s1600/240912_0513.jpg)
+![](/img/2F-jDShhHgBF2k2FUI3Vcx9yXnI2FAAAAAAAABOY2FFlPGlmHWLc82Fs16002F240912_0513.jpg)
 
 Kermit's Treme Speakeasy by Žan Anderle
 

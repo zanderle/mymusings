@@ -6,7 +6,7 @@ updated: 2013-07-07 19:11:06 UTC
 comments: false
 categories: Band Cajun Doo Wop Etno Folk Instrumental music Rap Slovenian
 ---
-![](http://f0.bcbits.com/img/a2753353365_2.jpg)
+![](/img/2Fimg2Fa2753353365_2.jpg)
 
 I’m finally writing about a band that’s not only still active but also
 Slovenian! Isn’t that something? But seriously, I’m actually really happy to
@@ -56,7 +56,7 @@ warmly backs his vocals, I was already digging it and after the whole band
 joins in, I knew I was in for something great. I’m glad to say, I wasn’t
 mistaken.
 
-![](http://3.bp.blogspot.com/-gE1UCtp2d2c/Udm8wIkPMzI/AAAAAAAABZQ/H3ad8Cy2ljI/s1600/16213_446663092085578_778926986_n.jpg)
+![](/img/2F-gE1UCtp2d2c2FUdm8wIkPMzI2FAAAAAAAABZQ2FH3ad8Cy2ljI2Fs16002F16213_446663092085578_778926986_n.jpg)
 
 Photo by Sabina Pirnat
 

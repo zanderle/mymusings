@@ -6,7 +6,7 @@ updated: 2012-11-26 00:13:50 UTC
 comments: false
 categories: Blues Jazz Nina Simone Soul Women
 ---
-![](http://cdn.madamenoire.com/wp-content/uploads/2012/08/Nina+Simone.jpg)
+![](/img/2Fwp-content2Fuploads2F20122F082FNina2BSimone.jpg)
 
 Nina Simone
 

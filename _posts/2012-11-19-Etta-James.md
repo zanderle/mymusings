@@ -6,7 +6,7 @@ updated: 2012-11-19 01:10:16 UTC
 comments: false
 categories: Billie Holiday Blues Dinah Washington Etta James Jazz Soul Women
 ---
-![](http://therogersrevue.files.wordpress.com/2012/01/etta-james.jpg)
+![](/img/2F20122F012Fetta-james.jpg)
 
 Etta James
 

@@ -6,7 +6,7 @@ updated: 2013-01-17 10:46:31 UTC
 comments: false
 categories: Christmas Ella Fitzgerald James Brown Jazz Ray Charles Soul
 ---
-![](http://25.media.tumblr.com/tumblr_mef1cyedO41rln1mco1_1280.jpg)
+![](/img/2Ftumblr_mef1cyedO41rln1mco1_1280.jpg)
 
 Snowy Snow by [Žan Anderle](http://zanderle.com/)
 

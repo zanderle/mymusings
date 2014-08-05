@@ -6,7 +6,7 @@ updated: 2013-01-15 20:56:36 UTC
 comments: false
 categories: Acoustic Blues Keith Richards Robert Johnson
 ---
-![](http://trueblueser.files.wordpress.com/2010/04/robert_johnson2.jpg)
+![](/img/2F20102F042Frobert_johnson2.jpg)
 
 Robert Johnson
 

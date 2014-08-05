@@ -6,7 +6,7 @@ updated: 2013-01-17 10:53:12 UTC
 comments: false
 categories: Christmas Jazz Louis Armstrong Vince Guaraldi Wynton Marsalis
 ---
-![](http://25.media.tumblr.com/de5a94de355bd1ad9956f94fafba0063/tumblr_mepw2dlwCh1rln1mco1_1280.jpg)
+![](/img/2Fde5a94de355bd1ad9956f94fafba00632Ftumblr_mepw2dlwCh1rln1mco1_1280.jpg)
 
 Christmas Spirit by [ŽAnderle](http://zanderle.com/)
 
@@ -35,7 +35,7 @@ and frustration, I found a couple of Christmas albums which I just love and
 today, I wanted to share them with you. Hopefully you’ll enjoy them as much as
 I do and they will bring you some Christmas cheer.  
   
-![](http://www.vinylphilemag.com/images/vince_guaraldi_trio:a_charlie_brown_christmas.jpeg)  
+![](/img/2Fimages2Fvince_guaraldi_trio3Aa_charlie_brown_christmas.jpeg)  
 The first one is my favourite Christmas album ever. Most of you will know it,
 but whoever doesn’t, should listen to it as soon as possible. Vince Guaraldi
 and his [A Charlie Brown Christmas](http://www.amazon.com/gp/product/B0090X4H0
@@ -54,7 +54,7 @@ little taste of it. Now go and get it!
 
   
 
-![](http://upload.wikimedia.org/wikipedia/en/7/7b/Wynton_Marsalis_Christmas_Jazz_Jam.jpg)
+![](/img/2Fwikipedia2Fen2F72F7b2FWynton_Marsalis_Christmas_Jazz_Jam.jpg)
 
 If we’re already at the more jazzy side of Christmas, I have to mention Wynton
 Marsalis’ [Christmas Jazz Jam](http://www.amazon.com/gp/product/B002SROHI4/ref
@@ -68,7 +68,7 @@ Jazz and Christmas. Does it get any better than jazzy Christmas?
   
   
 
-![](http://cps-static.rovicorp.com/3/JPG_250/MI0002/454/MI0002454500.jpg?partner=allrovi.com)
+![](/img/2F32FJPG_2502FMI00022F4542FMI0002454500.jpg)
 
 Still on Christmas with jazz, here’s Louis Armstrong & Friends doing [What a
 Wonderful Christmas](http://www.amazon.com/gp/product/B000005KPO/ref=as_li_tf_

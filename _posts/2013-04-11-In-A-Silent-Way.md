@@ -6,7 +6,7 @@ updated: 2013-04-11 21:38:44 UTC
 comments: false
 categories: Instrumental music Jazz Miles Davis
 ---
-![](http://3.bp.blogspot.com/-zgioX-rhAYY/UWctQk0KOjI/AAAAAAAABTQ/pU4fCnTemww/s1600/cover_481121122010.jpg)
+![](/img/2F-zgioX-rhAYY2FUWctQk0KOjI2FAAAAAAAABTQ2FpU4fCnTemww2Fs16002Fcover_481121122010.jpg)
 
 For some reason, I’m really afraid of writing about instrumental music. Even
 though I really want to, basically all my posts so far have been about music
@@ -39,7 +39,7 @@ the years ranges far beyond these three albums.
   
   
 
-![](http://1.bp.blogspot.com/-B1a2Tm9SnFk/UWctVDOlvKI/AAAAAAAABTY/-svjWC-iVoo/s1600/miles-davis-by-jan-persson.jpg)When I first started listening to
+![](/img/2F-B1a2Tm9SnFk2FUWctVDOlvKI2FAAAAAAAABTY2F-svjWC-iVoo2Fs16002Fmiles-davis-by-jan-persson.jpg)When I first started listening to
 jazz and heard about Miles Davis, I just didn’t get it why he’s supposed to be
 so good. Sure, I liked Kind Of Blue, but that’s about it. It was making me
 kind of annoyed, that everyone was praising him so much. I thought he was

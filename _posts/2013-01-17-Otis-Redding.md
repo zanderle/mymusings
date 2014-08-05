@@ -6,7 +6,7 @@ updated: 2013-01-17 10:44:45 UTC
 comments: false
 categories: Otis Redding Sam Cooke Solomon Burke Soul
 ---
-![](http://blackusa.com/wp-content/uploads/2012/01/Otis-Redding.jpg)
+![](/img/2Fwp-content2Fuploads2F20122F012FOtis-Redding.jpg)
 
 Otis Redding
 

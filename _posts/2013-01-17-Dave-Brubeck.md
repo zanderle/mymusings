@@ -6,7 +6,7 @@ updated: 2013-01-17 10:54:38 UTC
 comments: false
 categories: Dave Brubeck Jazz Louis Armstrong
 ---
-![](http://www.blogcdn.com/www.spinner.com/media/2012/12/dave-brubeck-456.jpg)
+![](/img/2Fwww.spinner.com2Fmedia2F20122F122Fdave-brubeck-456.jpg)
 
 I had something different in mind for today’s post, but something happened
 that is just too important not to write about. An American piano legend, Dave

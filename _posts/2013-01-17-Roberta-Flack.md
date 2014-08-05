@@ -6,7 +6,7 @@ updated: 2013-01-17 10:41:55 UTC
 comments: false
 categories: Jazz Roberta Flack Soul Women
 ---
-![](http://userserve-ak.last.fm/serve/_/5838807/Roberta+Flack.jpg)
+![](/img/2Fserve2F_2F58388072FRoberta2BFlack.jpg)
 
 Roberta Flack
 
