@@ -11,6 +11,8 @@ PATHS = os.listdir(POSTS_PATH)
 IMAGE_REGEX = "!\[.*?\]\((?P<url>http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)\)"
 
 def download_and_save(url, path=None):
+    if 'amazon' in url:
+        return False
     r = requests.get(url, stream=True)
     if not path:
         path = get_path(url)
@@ -57,7 +59,7 @@ def main():
         print "Opening post %s" % post_path
         with open(POSTS_PATH + post_path, 'r') as f:
             post = f.read()
-            post = post.replace('\n', ' ')
+            # post = post.replace('\n', ' ')
         (new_post, count) = re.subn(IMAGE_REGEX, sub_image, post, re.M)
         if count > 0:
             with codecs.open(POSTS_PATH + post_path, 'w', 'utf-8') as f:
