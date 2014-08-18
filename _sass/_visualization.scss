@@ -1,14 +1,30 @@
 // Styles for data visualization
 
-#sunra {
-    .axis line,
-    .axis path {
-        fill: none;
-        stroke: $dark-gray;
-    }
+#sunra-container {
+    min-height: 600px;
+    #sunra {
+        margin-bottom: 30px;
+        .axis line,
+        .axis path {
+            fill: none;
+            stroke: $dark-gray;
+        }
 
-    .record {
-        stroke: $default-color;
-        stroke-width: 2px;
+        .record {
+            fill: $dark-gray;
+            stroke: $dark-gray;
+            stroke-width: 2px;
+        }
+
+    }
+    .sunra-cover {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-size: 100% 100%;
+    }
+    .sunra-content {
+        display: inline-block;
+        display: none;
     }
 }

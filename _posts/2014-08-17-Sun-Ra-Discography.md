@@ -6,17 +6,41 @@ tags: Sun Ra Visualization
 ---
 ####Sun Ra's eclectic and prolific discography, visualized
 
-With over 1000 recorded songs and well over 100 albums, Sun Ra was one of the most prolific artists of the 20th century. I decided to make a little visualization of this enormous body of work. As I soon realized, this is no easy task. Sun Ra as a person and his whole life has been shrouded in mystery. His music was no different. For many albums, it is unknown where or when they were recorded. Often, they'll have a couple of different dates and personel stated.
+With over 1000 recorded songs spanned over more than 100 albums, Sun Ra was one of the most prolific artists of the 20th century. I decided to make a simple visualization of this enormous body of work. I soon realized, this is no easy task. For one, the discography data is confusing to say the least. For a lot of albums, it is unclear who was in the band or where or when it was recorded. The band members themselves often gave conflicting reports regarding these things. I did my best with the data I could find in the [discography online](http://www.the-temple.net/sunradisco/list.php).  
+After that confusion, I had to make a decision about which data to show. I eventually decided I am only going to visualize full-length albums (so excluding singles and records where Sun Ra appeared as guest).  
+
+  
+So here it is - a simple timeline of Sun Ra's recorded work. The albums are positioned on the timeline based on the year they were released (or if they have not been released - when they were recorded). If you hover over specific works, additional information will show up.
+I might eventually expand it with some more features, but that's it for now. I hope you like it :).  
+  
+
+Let me know what you think!
+  
 
 
+<span class="font-small gray">A few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. To get the data from the website I mentioned earlier, I used [import.io](http://import.io) (which was a joy to use, if I may add). And finally for parsing and cleaning up, Python was the way to go.</span>
+
+
+<div id="sunra-container">
 <div id="sunra"></div>
+<div class="sunra-cover left breathe col-2"></div>
+<div class="sunra-content left col-6">
+Year: <h2 class="year"><span></span></h2>
+Title: <h3 class="title"><span></span></h3>
+Author: <h3 class="author"><span></span></h3>
+</div>
+<div class="sunra-content left col-3">
+Recorded in: <h3 class="dates"><span></span></h3>
+in <h3 class="locations"><span></span></h3>
+</div>
+</div>
 <script type="text/javascript" src="{{ "/js/d3.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/sunra_disco.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 30, bottom: 30, left: 30};
 var width = $('.post').width() - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var height = 270 - margin.top - margin.bottom;
 
 // Other variables
 
@@ -32,8 +56,11 @@ var xScale = d3.scale.ordinal()
                     .rangeBands([0, width], 0.52, 0.05)
                     .domain(d3.range(d3.min(data, function(d) { return d.release_date - 1; }), d3.max(data, function(d) { return d.release_date + 1; })));
 var yScale = d3.scale.ordinal()
-                    .rangeBands([height/2, 0], 0, 0.1)
+                    .rangeBands([height, 0], 0, 0.1)
                     .domain(d3.range(0, maxPerYear));
+var cScale = d3.scale.ordinal()
+                .range(["#a6cee3","#1f78b4","#b2df8a","#555","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928", "#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
+                .domain(data, function(d) { return d.recording_locations.join(' or '); });
 // Scale helper
 var centered = function(i) {
 // Function that starts from the center of the interval and spreads out
@@ -82,11 +109,13 @@ var records = g.selectAll('circle')
     .attr('class', 'record')
     .attr('r', xScale.rangeBand())
     .attr('cy', function(d, i) { return yScale(centered(i)); })
-    .style('fill', function(d) { return 'url(#' + d.title.replace(/\s+|\(|\)|\'/g, '-') + ')'; });
+    .style('fill', function(d) { return 'url(#' + d.title.replace(/\s+|\(|\)|\'/g, '-') + ')'; })
+    .style('stroke', function(d) { return cScale(d.recording_locations); });
 
+// Add axis
 svg.append('g')
     .attr('class', 'x axis')
-    .attr('transform', function(d) { return 'translate(0, ' + height/2 + ')'; })
+    .attr('transform', function(d) { return 'translate(0, ' + height + ')'; })
     .call(xAxis);
 
 // Interactivity
@@ -94,17 +123,25 @@ records.on('mouseover', function(d) {
     d3.select(this)
         .transition()
         .duration(100)
-        .attr('r', 25);
+        .attr('r', 25)
+        .style('stroke-width', 4);
+    d3.select('.sunra-cover')
+        .style('background-image', function() { return 'url("' + d.cover + '")'; });
+    $('.sunra-content').show();
+    $('.sunra-content .year span').html(d.release_date);
+    $('.sunra-content .title span').html(d.title);
+    $('.sunra-content .author span').html(d.author);
+    $('.sunra-content .dates span').html(d.recording_dates.join(', '));
+    $('.sunra-content .locations span').html(d.recording_locations.join(', '));
 }).on('mouseout', function() {
     d3.select(this)
         .transition()
         .duration(200)
-        .attr('r', xScale.rangeBand());
+        .attr('r', xScale.rangeBand())
+        .style('stroke-width', 2);
 });
 
-// Hover
-// border glede na lokacijo
-// Posamezni albumi clickable
 // Razbij albume na recording sessions
+// Več informacij za posamezen album
 
 </script>
