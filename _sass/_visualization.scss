@@ -1,0 +1,14 @@
+// Styles for data visualization
+
+#sunra {
+    .axis line,
+    .axis path {
+        fill: none;
+        stroke: $dark-gray;
+    }
+
+    .record {
+        stroke: $default-color;
+        stroke-width: 2px;
+    }
+}
