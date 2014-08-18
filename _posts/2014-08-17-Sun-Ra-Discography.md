@@ -59,13 +59,16 @@ defs.selectAll('pattern')
     .attr('id', function(d) { return d.title.replace(/\s+|\(|\)|\'/g, '-'); })
     .attr('x', 0)
     .attr('y', 0)
-    .attr('height', function() { return xScale.rangeBand() * 2; })
-    .attr('width', function() { return xScale.rangeBand() * 2; })
+    .attr('height', 1)
+    .attr('width', 1)
+    .attr('viewBox', '0 0 100 100')
+    .attr('preserveAspectRatio', 'none')
     .append('image')
     .attr('x', 0)
     .attr('y', 0)
-    .attr('height', function() { return xScale.rangeBand() * 2; })
-    .attr('width', function() { return xScale.rangeBand() * 2; })
+    .attr('height', 100)
+    .attr('width', 100)
+    .attr('preserveAspectRatio', 'none')
     .attr('xlink:href', function(d) { return d.cover; });
 
 // Add albums
@@ -88,16 +91,10 @@ svg.append('g')
 
 // Interactivity
 records.on('mouseover', function(d) {    
-    // d3.select('#' + d.title.replace(/\s+|\(|\)|\'/g, '-'))
-    //     .attr('height', 30)
-    //     .attr('width', 30);
-    // d3.select('#' + d.title.replace(/\s+|\(|\)|\'/g, '-') + 'image')
-    //     .attr('height', 30)
-    //     .attr('width', 30); 
     d3.select(this)
         .transition()
         .duration(100)
-        .attr('r', 30);
+        .attr('r', 25);
 }).on('mouseout', function() {
     d3.select(this)
         .transition()
