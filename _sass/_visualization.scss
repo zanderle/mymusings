@@ -1,7 +1,9 @@
 // Styles for data visualization
 
 #sunra-container {
-    min-height: 600px;
+    min-height: 580px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $dark-gray;
     #sunra {
         margin-bottom: 30px;
         .axis line,
