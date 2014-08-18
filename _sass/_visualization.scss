@@ -1,6 +1,9 @@
 // Styles for data visualization
 
 #sunra-container {
+    @include respond-to(handhelds) {
+        display: none;
+    }
     min-height: 580px;
     margin-bottom: 10px;
     border-bottom: 1px solid $dark-gray;
