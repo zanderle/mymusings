@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<img src="/img/zan.jpg" alt="Me" class="left circle col-3 breathe">
-I'm a 23 year old student of computer science from Bled, Slovenia. I'm passionate about web development, UX, photography and above all - music. I like different kinds of music and I'm always excited to hear something new to me, but what I love the most is jazz, blues, or any other music with depth and soul. I got into jazz about 6 years ago and eventually decided to start writing this blog.
+<img src="/img/zan.jpg" alt="Zan Anderle" class="left circle col-3 breathe">
+Hi! My name is Žan Anderle and I'm a 23 year old student of computer science from Bled, Slovenia. I'm passionate about web development, UX, photography and above all - music. I like different kinds of music and I'm always excited to hear something new to me, but what I love the most is jazz, blues, or any other music with depth and soul. I got into jazz about 6 years ago and eventually decided to start writing this blog.
 
 
 ### About this blog
