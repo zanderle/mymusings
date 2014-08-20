@@ -1,8 +1,8 @@
 ---           
 layout: post
 title: Bobby McFerrin & Wynton Marsalis
-date: 2014-06-15 18:42:08 UTC
-updated: 2014-06-15 18:42:08 UTC
+date: 2014-01-22 18:42:08 UTC
+updated: 2014-01-22 18:42:08 UTC
 comments: true
 tags: Bobby McFerrin collaboration concert Jazz Jazz at Lincoln Center Wynton Marsalis
 ---

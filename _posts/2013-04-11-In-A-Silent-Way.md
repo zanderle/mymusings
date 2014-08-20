@@ -1,8 +1,8 @@
 ---           
 layout: post
 title: In A Silent Way
-date: 2013-04-11 21:38:44 UTC
-updated: 2013-04-11 21:38:44 UTC
+date: 2013-04-10 21:38:44 UTC
+updated: 2013-04-10 21:38:44 UTC
 comments: true
 tags: Instrumental music Jazz Miles Davis
 ---

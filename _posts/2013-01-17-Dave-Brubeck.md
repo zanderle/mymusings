@@ -1,8 +1,8 @@
 ---           
 layout: post
 title: Dave Brubeck
-date: 2013-01-17 10:54:38 UTC
-updated: 2013-01-17 10:54:38 UTC
+date: 2012-12-05 10:54:38 UTC
+updated: 2012-12-05 10:54:38 UTC
 comments: true
 tags: Dave Brubeck Jazz Louis Armstrong
 ---

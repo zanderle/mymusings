@@ -1,8 +1,8 @@
 ---           
 layout: post
 title: Otis Redding
-date: 2013-01-17 10:44:45 UTC
-updated: 2013-01-17 10:44:45 UTC
+date: 2012-12-23 10:44:45 UTC
+updated: 2012-12-23 10:44:45 UTC
 comments: true
 tags: Otis Redding Sam Cooke Solomon Burke Soul
 ---
