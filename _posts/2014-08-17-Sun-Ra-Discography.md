@@ -22,13 +22,15 @@ tags: Sun Ra Visualization
     </div>
     <div class="row clear review-content">
         <div class="col col-2">
-            Review by: <h3 class="review-by"><span>Lindsey Lohan</span></h3>
+            Review by: <h3 class="review-by"><span></span></h3>
         </div>
         <div class="col push-1 col-9"><blockquote class="review no-margin"></blockquote></div>
     </div>
 </div>
 
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
+
+[EDIT] Since I first posted this, I updated the visualization with some additional data from [allmusic](http://www.allmusic.com/artist/sun-ra-mn0000924232/discography).
 
 With over 1000 recorded songs spanned over more than 100 albums, Sun Ra was one of the most prolific artists of the 20th century. I decided to make a simple visualization of this enormous body of work. I soon realized, this is no easy task. For one, the discography data is confusing to say the least. For a lot of albums, it is unclear who was in the band or where or when it was recorded. The band members themselves often gave conflicting reports regarding these things. I did my best with the data I could find in the [discography online](http://www.the-temple.net/sunradisco/list.php).  
 After that confusion, I had to make a decision about which data to show. I eventually decided I am only going to visualize full-length albums (so excluding singles and records where Sun Ra appeared as guest).  
