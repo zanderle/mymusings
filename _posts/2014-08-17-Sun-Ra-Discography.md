@@ -7,17 +7,25 @@ tags: Sun Ra Visualization
 ####Sun Ra's eclectic and prolific discography, visualized
 
 <div id="sunra-container">
-<div id="sunra"></div>
-<div class="sunra-cover left breathe col-2"></div>
-<div class="sunra-content left col-6">
-Year: <h2 class="year"><span></span></h2>
-Title: <h3 class="title"><span></span></h3>
-Author: <h3 class="author"><span></span></h3>
-</div>
-<div class="sunra-content left col-3">
-Recorded in: <h3 class="dates"><span></span></h3>
-in <h3 class="locations"><span></span></h3>
-</div>
+    <div id="sunra"></div>
+    <div class="row clear">
+        <div class="sunra-cover left breathe col-2"></div>
+        <div class="sunra-content left col-6">
+            Year: <h2 class="year"><span></span></h2>
+            Title: <h3 class="title"><span></span></h3>
+            Author: <h3 class="author"><span></span></h3>
+        </div>
+        <div class="sunra-content left col-3">
+            Recorded in: <h3 class="dates"><span></span></h3>
+            in <h3 class="locations"><span></span></h3>
+        </div>
+    </div>
+    <div class="row clear review-content">
+        <div class="col col-2">
+            Review by: <h3 class="review-by"><span>Lindsey Lohan</span></h3>
+        </div>
+        <div class="col push-1 col-9"><blockquote class="review no-margin"></blockquote></div>
+    </div>
 </div>
 
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
@@ -122,26 +130,56 @@ svg.append('g')
     .call(xAxis);
 
 // Interactivity
-records.on('mouseover', function(d) {    
-    d3.select(this)
-        .transition()
-        .duration(100)
-        .attr('r', 25)
-        .style('stroke-width', 4);
-    d3.select('.sunra-cover')
-        .style('background-image', function() { return 'url("' + d.cover + '")'; });
-    $('.sunra-content').show();
-    $('.sunra-content .year span').html(d.release_date);
-    $('.sunra-content .title span').html(d.title);
-    $('.sunra-content .author span').html(d.author);
-    $('.sunra-content .dates span').html(d.recording_dates.join(', '));
-    $('.sunra-content .locations span').html(d.recording_locations.join(', '));
+var lock = false;
+records.on('mouseover', function(d) {
+    if (!lock) {
+        d3.select(this)
+            .transition()
+            .duration(100)
+            .attr('r', 25)
+            .style('stroke-width', 4);
+        d3.select('.sunra-cover')
+            .style('background-image', function() { return 'url("' + d.cover + '")'; });
+        $('.sunra-content').show();
+        $('.sunra-content .year span').html(d.release_date);
+        $('.sunra-content .title span').html(d.title);
+        $('.sunra-content .author span').html(d.author);
+        $('.sunra-content .dates span').html(d.recording_dates.join(', '));
+        $('.sunra-content .locations span').html(d.recording_locations.join(', '));
+        if (d.review != "") {
+            $('.review-content').fadeIn(200);
+            $('.review-content .review').html(d.review)
+                                        .attr('cite', d.allmusic_url);
+            $('.review-content .review-by span').html(d.review_by);
+        }
+        else {
+            $('.review-content').fadeOut(400);
+        }
+    }
+}).on('click', function() {
+    if (lock) {
+        d3.select(this)
+            .transition()
+            .duration(100)
+            .attr('r', 25)
+            .style('stroke-width', 4);
+        lock = false;
+    } else {
+        d3.select(this)
+            .transition()
+            .duration(100)
+            .attr('r', 30)
+            .style('stroke-width', 5);
+        lock = true;
+    }
 }).on('mouseout', function() {
-    d3.select(this)
-        .transition()
-        .duration(200)
-        .attr('r', xScale.rangeBand())
-        .style('stroke-width', 2);
+    if (!lock) {
+        d3.select(this)
+            .transition()
+            .duration(200)
+            .attr('r', xScale.rangeBand())
+            .style('stroke-width', 2);
+    }
 });
 
 // Razbij albume na recording sessions

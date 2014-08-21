@@ -20,6 +20,9 @@
             stroke: $dark-gray;
             stroke-width: 2px;
         }
+        .record:hover {
+            cursor: pointer;
+        }
 
     }
     .sunra-cover {
@@ -30,6 +33,13 @@
     }
     .sunra-content {
         display: inline-block;
+        display: none;
+    }
+    .review {
+        color: $dark-gray;
+        font-size: ($default-font-size - 2px);
+    }
+    .review-content {
         display: none;
     }
 }
