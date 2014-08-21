@@ -278,3 +278,32 @@ article h4 {
 .font-small {
   font-size: ($default-font-size - 2px);
 }
+
+.button-container {
+    .button {
+        border: 1px solid $default-color-shade;
+        @include border-radius(2px);
+        @include transition(all, 0.2s, ease);
+        padding: 8px 12px;
+        color: $default-color;
+        @include respond-to(handhelds) {
+          padding: 6px 8px; 
+        }
+    }
+    .button:hover {
+        background-color: $default-color;
+        color: $default-color-white;
+    }
+    .inactive:hover {
+        color: $default-color;
+        background-color: $light-gray;
+    }
+    .active {
+        background-color: $default-color;
+        color: $default-color-white;
+    }
+}
+
+.belleza {
+  font-family: $heading-font-family;
+}

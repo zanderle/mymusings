@@ -8,6 +8,11 @@ tags: Sun Ra Visualization
 
 <div id="sunra-container">
     <div id="sunra"></div>
+    <div class="row text-center no-margin no-padding">
+        <div class="button-container">
+            <a href="#" class="button belleza" id="ratings-button">Show Allmusic Ratings</a>
+        </div>
+    </div>
     <div class="row clear">
         <div class="sunra-cover left breathe col-2"></div>
         <div class="sunra-content left col-6">
@@ -22,7 +27,8 @@ tags: Sun Ra Visualization
     </div>
     <div class="row clear review-content">
         <div class="col col-2">
-            Review by: <h3 class="review-by"><span></span></h3>
+            Review by: <h3 class="review-by"><span></span></h3> <br/>
+            <a href="#" class="allmusic-link" target="_blank">Allmusic page</a>
         </div>
         <div class="col push-1 col-9"><blockquote class="review no-margin"></blockquote></div>
     </div>
@@ -44,7 +50,7 @@ Let me know what you think!
   
 
 
-<span class="font-small gray">A few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. To get the data from the website I mentioned earlier, I used [import.io](http://import.io) (which was a joy to use, if I may add). And finally for parsing and cleaning up, Python was the way to go.</span>
+<span class="font-small">A few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. To get the data from the website I mentioned earlier, I used [import.io](http://import.io) (which was a joy to use, if I may add). And finally for parsing and cleaning up, Python was the way to go.</span>
 
 
 <script type="text/javascript" src="{{ "/js/d3.min.js" | prepend: site.baseurl }}"></script>
@@ -74,6 +80,13 @@ var yScale = d3.scale.ordinal()
 var cScale = d3.scale.ordinal()
                 .range(["#a6cee3","#1f78b4","#b2df8a","#555","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928", "#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
                 .domain(data, function(d) { return d.recording_locations.join(' or '); });
+var oScale = d3.scale.linear()
+                .range([0.2, 1.0])
+                .domain([0, 10]);
+var rScale = d3.scale.linear()
+                .range([xScale.rangeBand()*0.7, xScale.rangeBand()*1.5])
+                .domain([0, 10]);
+
 // Scale helper
 var centered = function(i) {
 // Function that starts from the center of the interval and spreads out
@@ -153,6 +166,7 @@ records.on('mouseover', function(d) {
             $('.review-content .review').html(d.review)
                                         .attr('cite', d.allmusic_url);
             $('.review-content .review-by span').html(d.review_by);
+            $('.review-content .allmusic-link').attr('href', d.allmusic_url);
         }
         else {
             $('.review-content').fadeOut(400);
@@ -176,13 +190,41 @@ records.on('mouseover', function(d) {
     }
 }).on('mouseout', function() {
     if (!lock) {
-        d3.select(this)
-            .transition()
-            .duration(200)
-            .attr('r', xScale.rangeBand())
-            .style('stroke-width', 2);
+        if ($('#ratings-button').hasClass('active')) {
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .attr('r', function(d) { return rScale(d.allmusic_rating); })
+                .style('stroke-width', 2);
+        } else {
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .attr('r', xScale.rangeBand())
+                .style('stroke-width', 2);
+        }
     }
 });
+
+$('#ratings-button').on('click', function(e) {
+    lock = false;
+    e.preventDefault();
+    var button = $('#ratings-button');
+    button.toggleClass('active');
+    if (button.hasClass('active')) {
+        records.transition()
+                .duration(200)
+                .style('opacity', function(d) { return oScale(d.allmusic_rating); })
+                .style('stroke-width', 2)
+                .attr('r', function(d) { return rScale(d.allmusic_rating); });
+    } else {
+        records.transition()
+                .duration(200)
+                .style('opacity', 1)
+                .style('stroke-width', 2)
+                .attr('r', xScale.rangeBand());
+    }
+})
 
 // Razbij albume na recording sessions
 // Več informacij za posamezen album
