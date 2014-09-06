@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+title: Cecile McLorin Salvant
 comments: true
 tags: Female Jazz Vocal CecileMclorinSalvant
 ---
