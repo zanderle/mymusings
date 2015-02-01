@@ -9,7 +9,7 @@ paginate: 5
 # Build settings
 markdown: kramdown
 permalink: pretty
-destination: /home/zan/websites/zanderle.github.io
+destination: ../zanderle.github.io
 exclude: [LICENSE, README.md, feed.xml]
 
 #Social media
