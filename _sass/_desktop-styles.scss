@@ -286,7 +286,7 @@ article h4 {
   font-size: ($default-font-size - 2px);
 }
 
-.button-container {
+.button-container, .invitation {
     .button {
         border: 1px solid $default-color-shade;
         @include border-radius(2px);
@@ -309,6 +309,15 @@ article h4 {
         background-color: $default-color;
         color: $default-color-white;
     }
+}
+
+.invitation {
+  margin: 15px 0;
+  color: $dark-gray;
+  line-height: 20px;
+  .button {
+    margin: 20px 0;
+  }
 }
 
 .belleza {
