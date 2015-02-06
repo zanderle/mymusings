@@ -7,6 +7,22 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    {% if page.social_share %}
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@z_anderle" />
+    <meta name="twitter:title" content="{% if page.stitle %}{{ page.stitle }}{% else %}{{ page.title }}{% endif %}" />
+    <meta name="twitter:description" content="{{ page.sdescription }}" />
+    <meta name="twitter:image" content="{{ page.simage | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- Facebook card -->
+    <meta property="og:title" content="{% if page.stitle %}{{ page.stitle }}{% else %}{{ page.title }}{% endif %}" /> 
+    <meta property="og:image" content="{{ page.simage | prepend: site.baseurl | prepend: site.url }}" /> 
+    <meta property="og:description" content="{{ page.sdescription }}" /> 
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+
     <!-- Custom CSS -->
 <!--    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
     <link href='http://fonts.googleapis.com/css?family=Belleza|Droid+Serif' rel='stylesheet' type='text/css'>

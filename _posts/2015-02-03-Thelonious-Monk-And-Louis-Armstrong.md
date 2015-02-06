@@ -3,6 +3,9 @@ layout: post
 title: Thelonious Monk and Louis Armstrong
 comments: true
 tags: Louis Armstrong Theloniuos Monk
+social_share: true
+sdescription: What do Thelonious Monk and Louis Armstrong have in common?
+simage: /img/thelonious_monk.jpg
 ---
 
 ####"Genius is nothing more nor less than childhood recaptured at will" ― Charles Baudelaire
