@@ -5,6 +5,9 @@ date: 2013-07-07 19:11:06 UTC
 updated: 2013-07-07 19:11:06 UTC
 comments: true
 tags: Band Cajun Doo Wop Etno Folk Instrumental music Rap Slovenian
+social_share: true
+sdescription: An awesome debut album by Salonski
+simage: /img/2Fimg2Fa2753353365_2.jpg
 ---
 ![](/img/2Fimg2Fa2753353365_2.jpg)
 
@@ -44,7 +47,7 @@ just something they do on the side.
 
   
 
-You can listen to Fauna on this [link](http://salonski.bandcamp.com/), where
+You can listen to Fauna on this <a href="http://salonski.bandcamp.com/" target="_blank">link</a>, where
 you can also purchase it.
 
   
