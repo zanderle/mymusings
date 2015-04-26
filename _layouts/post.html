@@ -10,7 +10,7 @@ layout: default
         <span class="inline-block">{{ page.date | date: "%-d. %B %Y" }}</span>
         {% if page.comments %}
         <i class="icon-comment-empty inline-block"></i>
-        <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>
+        <a href="{{ page.url }}#disqus_thread" data-disqus-url="{{ page.url | prepend: site.url }}"></a>
         {% endif %}
         <i class="icon-tag inline-block"></i>
         <span class="inline-block tags">{{ page.tags | join: ', ' }}</span>
