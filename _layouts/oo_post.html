@@ -1,0 +1,60 @@
+---
+layout: oo_default
+---
+<div class="post single-post">
+
+  <header class="post-header">
+    <h1 class="text-center heading">{{ page.title }}</h1>
+    <!-- <div class="text-center misc">
+        <i class="icon-calendar-empty inline-block"></i>
+        <span class="inline-block">{{ page.date | date: "%-d. %B %Y" }}</span>
+        {% if page.comments %}
+        <i class="icon-comment-empty inline-block"></i>
+        <a href="{{ page.url }}#disqus_thread" data-disqus-url="{{ page.url | prepend: site.url }}"></a>
+        {% endif %}
+        <i class="icon-tag inline-block"></i>
+        <span class="inline-block tags">{{ page.tags | join: ', ' }}</span>
+    </div> -->
+  </header>
+
+  <article class="post-content">
+  {{ content }}
+<!--   <div class="invitation text-center">Did you like this post? Subscribe to my blog and be notified whenever I post something new!
+    <br/>
+    <br/>
+    <a href="http://eepurl.com/bc2g2v" target="_blank" class="button">Subscribe >></a>
+</div> -->
+  </article>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'mymusingsonmusic'; // required: replace example with your forum shortname
+    var disqus_identifier = '{{ page.url }}';
+    var disqus_url = '{{ page.url | prepend: site.url }}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'mymusingsonmusic'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+{% endif %}

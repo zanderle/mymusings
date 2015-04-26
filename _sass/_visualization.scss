@@ -42,3 +42,43 @@
         display: none;
     }
 }
+
+#satchmo-container {
+    @include respond-to(handhelds) {
+        display: none;
+    }
+    #session-info {
+        position: absolute;
+        text-align: center;
+        width: 500px;
+        padding: 5px;
+        font: 12px sans-serif;
+        pointer-events: none;
+        .first-section {
+            margin-bottom: 10px;
+        }
+        .split {
+            width: 45%;
+        }
+        .no-split {
+            width: 100%;
+            clear: both;
+            margin-top: 10px;
+        }
+    }
+    .axis line,
+    .axis path {
+        fill: none;
+        stroke: $dark-gray;
+    }
+    .important-event {
+        width: 300px;
+        position: absolute;
+        p {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
