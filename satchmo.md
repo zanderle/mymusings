@@ -8,6 +8,8 @@ published: true
 ####Louis Armstrong's lifework visualized
 
 <div id="satchmo-container">
+    <div class="plot-clip">
+    </div>
     <div id="satchmo" style="width: 100%; overflow: auto;"></div>
     <div class="tooltip">
         <div class="gig"></div>
@@ -65,33 +67,37 @@ var margin = {top: 40, right: 40, bottom: 40, left: 40};
 var width = $('.post').width() - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
-// Other variables
+$('.plot-clip').width(width)
+                .height(height)
+                .css({'left': margin.left, 'top': margin.top});
 
-// // Prepare data
-// var yearlyData = d3.nest()
-//                     .key(function(d) { return d.release_date; })
-//                     .sortKeys(d3.ascending)
-//                     .entries(data);
-// var maxPerYear = d3.max(yearlyData, function(d) { return d.values.length; });
+
+// Other variables
 
 // Date formater
 var dateFormat = d3.time.format('%0d.%0m.%Y');
 
 // Set scales
+var minDate = dateFormat.parse('4.8.1901');
+var maxDate = dateFormat.parse('6.7.1971');
 
 var xScale = d3.time.scale()
-                    .range([0, width])
-                    .domain([dateFormat.parse('4.8.1901'), dateFormat.parse('6.7.1971')]);
+            .range([0, width])
+            .domain([minDate, maxDate]);
 
 var cScale = d3.scale.ordinal()
-                    .range(["#a6cee3","#1f78b4","#b2df8a","#555","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928", "#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
-                    .domain(satchmo_data, function (d) { d.location; });
+            .range(["#a6cee3","#1f78b4","#b2df8a","#555","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928", "#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
+            .domain(satchmo_data, function (d) { d.location; });
+
+var rScale = d3.scale.linear()
+            .range([5, 18])
+            .domain(d3.extent(satchmo_data, function (d) { return d.members.length; }));
 
 // Zoom
 
 var zoom = d3.behavior.zoom()
     .x(xScale)
-    .scaleExtent([1,10])
+    .scaleExtent([1,100])
     .on('zoom', zoomed);
 
 // Moving average
@@ -110,9 +116,8 @@ var yValue = function(d) {
 };
 
 var yScale = d3.scale.linear()
-                    .range([3*height/4, height/2])
+                    .range([5*height/6, height/2])
                     .domain([0, d3.max(satchmo_data, function(d) { return yValue(dateFormat.parse(d.display_date)); })]);
-                    // .domain([0, 16]);
 
 var lineFunction = d3.svg.line()
                         .x(function (d) { return xScale(d); })
@@ -144,10 +149,19 @@ var svg = d3.select("#satchmo").append("svg")
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr('class', 'main')
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var plotArea = svg.append('g')
+    .attr('clip-path', 'url(#plotAreaClip)')
     .call(zoom);
 
-var rect = svg.append("rect")
+plotArea.append('clipPath')
+    .attr('id', 'plotAreaClip')
+    .append('rect')
+    .attr('width', width)
+    .attr('height',height);
+
+var rect = plotArea.append("rect")
     .attr("width", width)
     .attr("height", height)
     .style("fill", "none")
@@ -156,10 +170,10 @@ var rect = svg.append("rect")
 var dates = d3.time.day.range(new Date(1900,1,1), new Date(1971,7,8), 180);
 
 // Add sessions
-var sessions = svg.selectAll('circle').data(satchmo_data).enter()
+var sessions = plotArea.selectAll('circle').data(satchmo_data).enter()
         .append('circle')
         .attr('class', 'session')
-        .attr('r', '5px')
+        .attr('r', function (d) { return rScale(d.members.length); })
         .attr('cx', function (d) { return xScale(dateFormat.parse(d.display_date)); })
         .attr('cy', function (d) { return yScale(yValue(dateFormat.parse(d.display_date))); })
         .attr('fill', function (d) { return cScale(d.location); })
@@ -174,14 +188,15 @@ var sessions = svg.selectAll('circle').data(satchmo_data).enter()
 
 
 // Interactivity
+
 var source   = $("#session-template").html();
 var sessionTemplate = Handlebars.compile(source);
 var sessionInfo = d3.select('#session-info');
 
 sessions.on('mouseover', function (d) {
     sessionInfo.html(sessionTemplate(d))
-                .style('left', ($('#satchmo-container').position().left + margin.left + xScale(dateFormat.parse(d.display_date))) + 'px')
-                .style('top', margin.top + $('#satchmo-container').position().top + height/4 + 50 + 'px');
+                .style('left', (margin.left + xScale(dateFormat.parse(d.display_date))) + 'px')
+                .style('top', margin.top + height/4 + 50 + 'px');
 });
 
 // Events
@@ -195,16 +210,20 @@ var importantEvents = [{
     date: '04.08.1901'
 }];
 
-d3.select('#satchmo-container').selectAll('.important-event')
+
+// Plot Events
+
+var plotEvents = d3.select('#satchmo-container .plot-clip').selectAll('.important-event')
         .data(importantEvents)
         .enter()
         .append('div')
         .attr('class', 'important-event')
-        .style('left', function (d) { return ($('#satchmo-container').position().left + margin.left + xScale(dateFormat.parse(d.date)) + 'px'); })
-        .style('top', $('#satchmo-container').position().top + 80 + 'px')
+        // .style('clip-path', 'url(#plotAreaClip)')
+        .style('left', function (d) { return (margin.left + xScale(dateFormat.parse(d.date)) + 'px'); })
+        .style('top', 80 + 'px')
         .html(function (d) { return eventTemplate(d); });
 
-svg.selectAll('line')
+plotArea.selectAll('line')
     .data(importantEvents)
     .enter()
     .append('line')
@@ -216,16 +235,29 @@ svg.selectAll('line')
     .attr('y2', height - 25);
 
 // Add axis
+
 svg.append('g')
     .attr('class', 'x axis')
     .attr('transform', function (d) { return 'translate(0, ' + height + ')'; })
     .call(xAxis);
 
-// Zoom function
+// Zoom functions
 
 function zoomed() {
+    if (xScale.domain()[0] < minDate) {
+        var x = zoom.translate()[0] - xScale(minDate) + xScale.range()[0];
+        zoom.translate([x, 0]);
+    } else if (xScale.domain()[1] > maxDate) {
+        var x = zoom.translate()[0] - xScale(maxDate) + xScale.range()[1];
+        zoom.translate([x, 0]);
+    }
+    redrawChart();
+}
+
+function redrawChart() {
     svg.select('.x.axis').call(xAxis);
-    d3.select('g.main').attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    sessions.attr('cx', function (d) { return xScale(dateFormat.parse(d.display_date)); });
+    plotEvents.style('left', function (d) { return (margin.left + xScale(dateFormat.parse(d.date)) + 'px'); })
 }
 
 </script>
