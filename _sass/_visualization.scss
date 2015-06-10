@@ -72,10 +72,26 @@
             margin-top: 10px;
         }
     }
-    .axis line,
-    .axis path {
-        fill: none;
-        stroke: $dark-gray;
+    .axis {
+        font-family: 'Droid', sans-serif;
+        font-size: 14px;
+        path {
+            fill: none;
+            stroke: #aaa;
+        }
+        line {
+            fill: none;
+            stroke: $dark-gray;
+        }
+    }
+    .axis-label {
+        font-family: 'Droid', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .legend {
+        font-family: 'Droid', sans-serif;
+        font-size: 14px;
     }
     .important-event {
         width: 300px;
