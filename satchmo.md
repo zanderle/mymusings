@@ -22,7 +22,8 @@ published: true
 </div>
 
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
-  
+
+<em class="ie-warning">This visualization might not work properly under your browser. Consider upgrading or getting a different browser.</em>
 
 <span class="font-small">A few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. To get the data from the website I mentioned earlier, I used [import.io](http://import.io) (which was a joy to use, if I may add). And finally for parsing and cleaning up, Python was the way to go.</span>
 
