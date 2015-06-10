@@ -21,6 +21,14 @@ published: true
     <div id="session-info"></div>
 </div>
 
+<form action="#">
+    <label for="song-selection">Select a song</label>
+    <select id="song-selection" multiple='multiple'>
+      <option value="AL">What a Wonderful world</option>
+      <option value="WY">Heebiee Jeebies</option>
+    </select>
+</form>
+
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
 
 <em class="ie-warning">This visualization might not work properly under your browser. Consider upgrading or getting a different browser.</em>
@@ -63,6 +71,10 @@ published: true
 </script>
 
 <script async type="text/javascript">
+
+$(document).ready(function() {
+  $("#song-selection").select2();
+});
 
 // d3.selection.prototype.moveToFront = function() {
 //   return this.each(function(){
