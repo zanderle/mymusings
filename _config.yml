@@ -21,3 +21,6 @@ subscribe_url: "http://eepurl.com/bc2g2v"
 
 #RSS feed generator
 name: My Musings on Music
+
+# Google Analytics
+ga: true
