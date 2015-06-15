@@ -327,3 +327,12 @@ article h4 {
 .ie-warning {
   display: none;
 }
+
+.song-selection {
+  form {
+    text-align: center;
+    label {
+      margin-right: 10px;
+    }
+  }
+}
