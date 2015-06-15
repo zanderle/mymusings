@@ -20,14 +20,13 @@ published: true
     </div>
     <div id="session-info"></div>
 </div>
-
-<form action="#">
-    <label for="song-selection">Select a song</label>
-    <select id="song-selection" multiple='multiple'>
-      <option value="AL">What a Wonderful world</option>
-      <option value="WY">Heebiee Jeebies</option>
-    </select>
-</form>
+<div class="row clear song-selection">
+    <form action="#">
+        <label for="song-selection">Select a song: </label>
+        <select id="song-selection" multiple='multiple' class='col-6'>
+        </select>
+    </form>
+</div>
 
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
 
@@ -73,7 +72,9 @@ published: true
 <script async type="text/javascript">
 
 $(document).ready(function() {
-  $("#song-selection").select2();
+  $("#song-selection").select2({
+        data: satchmo_songs
+  });
 });
 
 // d3.selection.prototype.moveToFront = function() {
@@ -92,6 +93,14 @@ $('.plot-clip').width(width)
                 .height(height)
                 .css({'left': margin.left, 'top': margin.top});
 
+
+// Variables
+var lowestOpacity = 0.01;
+var lowerOpacity = 0.07;
+var lowOpacity = 0.1;
+var mediumOpacity = 0.3;
+var highOpacity = 0.5;
+var higherOpacity = 0.8;
 
 // Date formater
 var dateFormat = d3.time.format('%0d.%0m.%Y');
@@ -188,6 +197,10 @@ plotArea.append('clipPath')
 var dates = d3.time.day.range(new Date(1900,1,1), new Date(1971,7,8), 180);
 
 // Add sessions
+for (var i = satchmo_data.length - 1; i >= 0; i--) {
+    satchmo_data[i].id = i;
+};
+
 var sessions = plotArea.selectAll('circle').data(satchmo_data).enter()
         .append('circle')
         .attr('class', 'session')
@@ -257,6 +270,34 @@ var eventLines = plotArea.selectAll('line')
 
 // Interactivity
 
+$('#song-selection').on('change', selectSongs);
+var selected = new Set([]);
+function setSelected (selection, song_ids) {
+    if (song_ids) {
+        selection.each(function (d) { return (d.song_id_list.some(function (el) { return song_ids.indexOf((el).toString()) > -1; })) ? selected.add(d.id) : selected.delete(d.id); });
+    } else {
+        selected.clear();
+    }
+}
+
+function highlightSelected (selection, lowEnd, highEnd) {
+    lowEnd = typeof lowEnd !== 'undefined' ? lowEnd : lowerOpacity;
+    highEnd = typeof highEnd !== 'undefined' ? highEnd : lowerOpacity;
+    selection.attr('fill-opacity', function (d) { return (selected.has(d.id)) ? highEnd : lowEnd; });
+}
+
+function selectSongs () {
+    var song_ids = $('#song-selection').val();
+    sessions.call(setSelected, song_ids)
+    if (song_ids) {
+        sessions.call(highlightSelected, lowestOpacity, higherOpacity);
+    } else {
+        sessions.attr('fill-opacity', mediumOpacity)
+                .attr('stroke', 'none');
+    }
+};
+
+
 var source   = $("#session-template").html();
 var sessionTemplate = Handlebars.compile(source);
 var sessionInfo = d3.select('#session-info');
@@ -268,15 +309,21 @@ rect.on("mouseover", mouseover)
       .on("mousemove", mousemove);
 
 function mouseover () {
-    sessions.attr('fill-opacity', 0.07);
+    var lowEnd = (selected.size > 0) ? lowestOpacity : lowerOpacity;
+    sessions.call(highlightSelected, lowEnd, higherOpacity);
     sessionInfo.style('visibility', 'visible');
-    plotEvents.style('opacity', 0.1);
-    eventLines.attr('opacity', 0.1);
-    d3.selectAll('.legend').attr('opacity', 0.1);
+    plotEvents.style('opacity', lowOpacity);
+    eventLines.attr('opacity', lowOpacity);
+    d3.selectAll('.legend').attr('opacity', lowOpacity);
 }
 function mouseout () {
-    sessions.attr('fill-opacity', 0.3)
-            .attr('stroke', 'none');
+    if (selected.size > 0) {
+        sessions.call(highlightSelected, lowestOpacity, higherOpacity)
+                .attr('stroke', 'none');
+    } else {
+        sessions.attr('fill-opacity', mediumOpacity)
+                .attr('stroke', 'none');
+    }
 
     sessionInfo.style('visibility', 'hidden');
     plotEvents.style('opacity', 1);
@@ -306,13 +353,13 @@ function mousemove () {
                 })
                 .style('top', margin.top  + 'px');
 
-
+    var lowEnd = (selected.size > 0) ? lowestOpacity : lowerOpacity;
     sessions.filter(function (d) { return da != d; })
-            .attr('fill-opacity', 0.07)
+            .call(highlightSelected, lowEnd, higherOpacity)
             .attr('stroke', function (d) { return cScale(d.location_group); })
             .attr('stroke-dasharray', '3,2')
-            .attr('stroke-opacity', 0.5)
-            .attr('stroke-width', 0.5);
+            .attr('stroke-opacity', highOpacity)
+            .attr('stroke-width', highOpacity);
 
 }
 
@@ -455,9 +502,5 @@ function redrawChart() {
     eventLines.attr('x1', function (d) { return xScale(dateFormat.parse(d.date)); })
                 .attr('x2', function (d) { return xScale(dateFormat.parse(d.date)); });
 }
-// });
 
-$('#song-selection').on('change', function() {
-    sessions.attr('fill-opacity', function (d) { return (d.members.length > 15) ? 0.8 : 0.01; });
-});
 </script>
