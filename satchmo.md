@@ -22,8 +22,15 @@ published: true
 </div>
 <div class="row clear song-selection">
     <form action="#">
-        <label for="song-selection">Select a song: </label>
+        <label for="song-selection">Filter by songs: </label>
         <select id="song-selection" multiple='multiple' class='col-6'>
+        </select>
+    </form>
+</div>
+<div class="row clear song-selection">
+    <form action="#">
+        <label for="lineup-selection">Filter by band members: </label>
+        <select id="lineup-selection" multiple='multiple' class='col-6'>
         </select>
     </form>
 </div>
@@ -75,15 +82,23 @@ $(document).ready(function() {
   $("#song-selection").select2({
         data: satchmo_songs
   });
+  $("#lineup-selection").select2({
+        data: members
+  });
 });
 
-// d3.selection.prototype.moveToFront = function() {
-//   return this.each(function(){
-//     this.parentNode.appendChild(this);
-//   });
-// };
+// Helpers
+function sizeOf(obj) {
+    var count = 0;
 
-// $(document).ready(function () {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            ++count;
+    }
+
+    return count;
+}
+
 // Set the dimensions of the canvas / graph
 var margin = {top: 40, right: 40, bottom: 40, left: 50};
 var width = $('.post').width() - margin.left - margin.right;
@@ -271,25 +286,35 @@ var eventLines = plotArea.selectAll('line')
 // Interactivity
 
 $('#song-selection').on('change', selectSongs);
-var selected = new Set([]);
-function setSelected (selection, song_ids) {
+$('#lineup-selection').on('change', selectSongs);
+var selected = {};
+function setSelected (selection, song_ids, member_ids) {
+    var selectedSongs = {};
+    var selectedMembers = {};
     if (song_ids) {
-        selection.each(function (d) { return (d.song_id_list.some(function (el) { return song_ids.indexOf((el).toString()) > -1; })) ? selected.add(d.id) : selected.delete(d.id); });
+        selection.each(function (d) { return (d.song_id_list.some(function (el) { return song_ids.indexOf((el).toString()) > -1; })) ? (selectedSongs[d.id] = true) : (delete selectedSongs[d.id]); });
+    } 
+    if (member_ids) {
+        selection.each(function (d) { return (d.member_id_list.some(function (el) { return member_ids.indexOf((el).toString()) > -1; })) ? (selectedMembers[d.id] = true) : (delete selectedMembers[d.id]); });        
+    }
+    if (typeof song_ids !== 'undefined' | typeof member_ids !== 'undefined') {
+        selected = $.extend(selectedSongs, selectedMembers);
     } else {
-        selected.clear();
+        selected = {};
     }
 }
 
 function highlightSelected (selection, lowEnd, highEnd) {
     lowEnd = typeof lowEnd !== 'undefined' ? lowEnd : lowerOpacity;
     highEnd = typeof highEnd !== 'undefined' ? highEnd : lowerOpacity;
-    selection.attr('fill-opacity', function (d) { return (selected.has(d.id)) ? highEnd : lowEnd; });
+    selection.attr('fill-opacity', function (d) { return (d.id in selected) ? highEnd : lowEnd; });
 }
 
 function selectSongs () {
     var song_ids = $('#song-selection').val();
-    sessions.call(setSelected, song_ids)
-    if (song_ids) {
+    var member_ids = $('#lineup-selection').val();
+    sessions.call(setSelected, song_ids, member_ids)
+    if (typeof song_ids !== 'undefined' | typeof member_ids !== 'undefined') {
         sessions.call(highlightSelected, lowestOpacity, higherOpacity);
     } else {
         sessions.attr('fill-opacity', mediumOpacity)
@@ -309,7 +334,7 @@ rect.on("mouseover", mouseover)
       .on("mousemove", mousemove);
 
 function mouseover () {
-    var lowEnd = (selected.size > 0) ? lowestOpacity : lowerOpacity;
+    var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
     sessions.call(highlightSelected, lowEnd, higherOpacity);
     sessionInfo.style('visibility', 'visible');
     plotEvents.style('opacity', lowOpacity);
@@ -317,7 +342,7 @@ function mouseover () {
     d3.selectAll('.legend').attr('opacity', lowOpacity);
 }
 function mouseout () {
-    if (selected.size > 0) {
+    if (sizeOf(selected) > 0) {
         sessions.call(highlightSelected, lowestOpacity, higherOpacity)
                 .attr('stroke', 'none');
     } else {
@@ -353,7 +378,7 @@ function mousemove () {
                 })
                 .style('top', margin.top  + 'px');
 
-    var lowEnd = (selected.size > 0) ? lowestOpacity : lowerOpacity;
+    var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
     sessions.filter(function (d) { return da != d; })
             .call(highlightSelected, lowEnd, higherOpacity)
             .attr('stroke', function (d) { return cScale(d.location_group); })
