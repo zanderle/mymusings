@@ -169,22 +169,6 @@ var lineFunction = d3.svg.line()
                         .y(function (d) { return yScale(yValue(d)); })
                         .interpolate('basis');
 
-// var xScale = d3.scale.ordinal()
-//                     .rangeBands([0, width], 0.52, 0.05)
-//                     .domain(d3.range(d3.min(data, function(d) { return d.release_date - 1; }), d3.max(data, function(d) { return d.release_date + 1; })));
-// var yScale = d3.scale.ordinal()
-//                     .rangeBands([height, 0], 0, 0.1)
-//                     .domain(d3.range(0, maxPerYear));
-// var cScale = d3.scale.ordinal()
-//                 .range(["#a6cee3","#1f78b4","#b2df8a","#555","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928", "#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
-//                 .domain(data, function(d) { return d.recording_locations.join(' or '); });
-// var oScale = d3.scale.linear()
-//                 .range([0.2, 1.0])
-//                 .domain([0, 10]);
-// var rScale = d3.scale.linear()
-//                 .range([xScale.rangeBand()*0.7, xScale.rangeBand()*1.5])
-//                 .domain([0, 10]);
-
 // Set xAxis
 var xAxis = d3.svg.axis().scale(xScale).orient('bottom');
 var yAxis = d3.svg.axis().scale(yScale).orient('left');
@@ -216,6 +200,12 @@ for (var i = satchmo_data.length - 1; i >= 0; i--) {
     satchmo_data[i].id = i;
 };
 
+var rect = plotArea.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .style("fill", "none")
+    .style("pointer-events", "all");
+
 var sessions = plotArea.selectAll('circle').data(satchmo_data).enter()
         .append('circle')
         .attr('class', 'session')
@@ -224,20 +214,6 @@ var sessions = plotArea.selectAll('circle').data(satchmo_data).enter()
         .attr('cy', 3*height/4)
         .attr('fill', 'gray')
         .attr('fill-opacity', 0.3);
-
-var rect = plotArea.append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "none")
-    .style("pointer-events", "all");
-
-// Add line
-// var lineGraph = svg.append('path')
-//                     .attr('d', lineFunction(dates))
-//                     .attr('stroke', 'blue')
-//                     .attr('stroke-width', 1)
-//                     .attr('fill', 'none');
-
 
 
 // Events
@@ -266,7 +242,6 @@ var plotEvents = d3.select('#satchmo-container .plot-clip').selectAll('.importan
         .enter()
         .append('div')
         .attr('class', 'important-event')
-        // .style('clip-path', 'url(#plotAreaClip)')
         .style('left', function (d) { return xScale(dateFormat.parse(d.date)) + 'px'; })
         .style('top', 80 + 'px')
         .html(function (d) { return eventTemplate(d); });
@@ -298,7 +273,7 @@ function setSelected (selection, song_ids, member_ids) {
         selection.each(function (d) { return (d.member_id_list.some(function (el) { return member_ids.indexOf((el).toString()) > -1; })) ? (selectedMembers[d.id] = true) : (delete selectedMembers[d.id]); });        
     }
     if (typeof song_ids !== 'undefined' | typeof member_ids !== 'undefined') {
-        selected = $.extend(selectedSongs, selectedMembers);
+        selected = $.merge(selectedSongs, selectedMembers);
     } else {
         selected = {};
     }
@@ -333,6 +308,40 @@ rect.on("mouseover", mouseover)
       .on("mouseout", mouseout)
       .on("mousemove", mousemove);
 
+// TODO Check if it's ok to use the same mouseover and mouseout functions
+sessions.on("mouseover", mouseover)
+        .on("mouseout", mouseout)
+        .on('click', selectSession)
+        .on('mousemove', mousemove);
+
+function selectSession () {
+    da = d3.select(this);
+    session = da.data()[0];
+    sessionInfo.style('visibility', 'visible');
+    sessionInfo.html(sessionTemplate(session))
+                .style('left', function (d) {
+                    sessionInfoWidth = $(this).width();
+                    xPosition = xScale(dateFormat.parse(session.display_date));
+                    return xPosition  + sessionInfoWidth > width + margin.left ? (80 + xPosition - sessionInfoWidth + 'px') : (xPosition + 'px');
+                })
+                .style('top', margin.top  + 'px');
+
+    var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : 1;
+    da.call(highlightSelected, lowEnd, 1)
+        .attr('stroke', 'black')
+        .attr('stroke-dasharray', 'none')
+        .attr('stroke-opacity', 1)
+        .attr('stroke-width', 1);
+    var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
+    sessions.filter(function (d) { return session != d; })
+            .call(highlightSelected, lowEnd, higherOpacity)
+            .attr('stroke', function (d) { return cScale(d.location_group); })
+            .attr('stroke-dasharray', '3,2')
+            .attr('stroke-opacity', highOpacity)
+            .attr('stroke-width', highOpacity);
+
+}
+
 function mouseover () {
     var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
     sessions.call(highlightSelected, lowEnd, higherOpacity);
@@ -363,12 +372,13 @@ function mousemove () {
         d1 = satchmo_data[i],
         da = x0 - dateFormat.parse(d0.display_date) > dateFormat.parse(d1.display_date) - x0 ? d1 : d0;
 
+    var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : 1;
     sessions.filter(function (d) { return da == d; })
-            .attr('fill-opacity', 1)
+            .call(highlightSelected, lowEnd, 1)
             .attr('stroke', 'black')
             .attr('stroke-dasharray', 'none')
             .attr('stroke-opacity', 1)
-            .attr('stroke-width', 1)
+            .attr('stroke-width', 1);
 
     sessionInfo.html(sessionTemplate(da))
                 .style('left', function (d) {
