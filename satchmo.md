@@ -5,7 +5,24 @@ comments: false
 tags: Louis Armstrong Visualization
 published: true
 ---
-####Louis Armstrong's lifework visualized
+
+#### Louis Armstrong's lifework visualized
+
+I'm always excited when I create something that combines my passion with my profession. This is one such project, and I am very happy to share it with you.  
+
+Louis Armstrong doesn't get nearly as much attention as he deserves, given his vast and lasting impact on music. I talked about him more extensively [in my previous post]({% post_url 2014-11-16-The-One-And-Only-Louis-Armstrong %}), but this time I wanted to explore something else. I thought it would be interesting to see his career visualized. To get a closer look into how and when his music got captured on record. So this is my humble attempt at that.  
+
+This is a visualization of all sessions that comprise Louis Armstrong's discography. Each session is represented as a circle. The size of the circle represents the size of the band at that session, and the color is related to the location. The height of each session is given by the quantity of recording dates in a year around that session. So when he was busier recording, the circles will be higher.  
+The visualization is also interactive. You can zoom in closer to get a better look. By hovering over the sessions, you will be able to see the details about them. You can also highlight only specific recording dates; say you are interested in seeing all the recording dates with Jack Teagarden. You simply select his name in the form below and all the sessions with him present, will be highlighted. You could also search for something like "all the sessions with Jack Teagarden, when they played Blueberry Hill". Just input "Blueberry Hill" and "Jack Teagarden" and the sessions that fit that query will pop up. This means you can do some fun stuff with this visualization.  
+
+I invite you to explore it and let me know what you think. Let me know what are some of the things you looked for.  
+
+### Details about the visualizaton
+
+The main source of information for this visualization was [this online discography](http://michaelminn.net/discographies/armstrong/) by Michael Minn. Some recording dates or radio broadcasts have limited information about the dates, lineups and so on. This means that the uncertainty is also reflected in this visualization. Some sessions are excluded due to the lack of information. There are also some typos and other errors, which I am still cleaning up. If you find anything, let me know.  
+
+And a few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. I love it more and more, each time I use it. To get the data from the online discography, I used [import.io](http://import.io). And finally for parsing and cleaning up, Python was the way to go.
+
 
 <div id="satchmo-container">
     <div class="plot-clip">
