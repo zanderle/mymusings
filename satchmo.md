@@ -37,17 +37,15 @@ And a few technical details, for those interested. I used [d3](http://d3js.org/)
     </div>
     <div id="session-info"></div>
 </div>
-<div class="row clear song-selection">
+<div class="row clear song-selection hide-mobile">
     <form action="#">
-        <label for="song-selection">Filter by songs: </label>
-        <select id="song-selection" multiple='multiple' class='col-6'>
+        <label for="song-selection" class='col col-6 text-right'>Show sessions with these songs: </label>
+        <select id="song-selection" multiple='multiple' class='col col-4'>
         </select>
-    </form>
 </div>
-<div class="row clear song-selection">
-    <form action="#">
-        <label for="lineup-selection">Filter by band members: </label>
-        <select id="lineup-selection" multiple='multiple' class='col-6'>
+<div class="row clear song-selection hide-mobile">
+        <label for="lineup-selection" class='col col-6 text-right'>and these band members: </label>
+        <select id="lineup-selection" multiple='multiple' class='col col-4'>
         </select>
     </form>
 </div>
@@ -56,51 +54,68 @@ And a few technical details, for those interested. I used [d3](http://d3js.org/)
 
 <em class="ie-warning">This visualization might not work properly under your browser. Consider upgrading or getting a different browser.</em>
 
-<span class="font-small">A few technical details, for those interested. I used [d3](http://d3js.org/) library for the actual visualization. To get the data from the website I mentioned earlier, I used [import.io](http://import.io) (which was a joy to use, if I may add). And finally for parsing and cleaning up, Python was the way to go.</span>
-
 
 <script type="text/javascript" src="{{ "/js/d3.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/louis_armstrong.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/handlebars-v3.0.1.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/underscore.min.js" | prepend: site.baseurl }}"></script>
 
 <script id="event-template" type="text/x-handlebars-template">
 {% raw %}
   <div class="entry">
     <h3>{{title}}</h3>
-    <p>
-      {{body}}
-    </p>
+    <p>{{body}}</p>
   </div>
 {% endraw %}
 </script>
 <script id="session-template" type="text/x-handlebars-template">
 {% raw %}
-<h3>{{name}}</h3>
-<h4>{{display_date}} - {{location}}</h4>
-<div class="first-section">
-<div class="inline-block left split">
-{{lineup}}
-</div>
-<div class="inline-block left split">
-  {{{songs}}}
-</div>
-</div>
-<br/>
-<br/>
-<div class="no-split block">
-{{comments}}
+<div class="row">
+    <div class="col col-7 border-right">
+        <h4 class="text-center">{{print_date}}<h4>
+        <h3>{{name}}</h3>
+        <h4>{{location}}</h4>
+        <div class="first-section">
+            <div class="inline-block no-split">
+            {{#each members}}
+                {{this}}{{#unless @last}}, {{/unless}} 
+            {{/each}}
+            </div>
+            <div class="no-split inline-block">
+            {{comments}}
+            </div>
+        </div>
+    </div>
+    <div class="col col-5 text-left">
+        <div class="side-section inline-block text-left">
+        <ul class="list-unstyled">
+          {{#each song_list}}
+            <li>
+              <b>{{this}}</b>
+            </li>
+          {{/each}}
+        </ul>
+        </div>
+    </div>
 </div>
 {% endraw %}
 </script>
 
 <script async type="text/javascript">
+// Prepare the data
+satchmo_songs = satchmo_data['songs'];
+members = satchmo_data['members'];
+satchmo_data = satchmo_data['sessions'];
 
+// Filters
 $(document).ready(function() {
   $("#song-selection").select2({
-        data: satchmo_songs
+        data: satchmo_songs,
+        placeholder: 'Start typing a song'
   });
   $("#lineup-selection").select2({
-        data: members
+        data: members,
+        placeholder: "Start typing a musician's name"
   });
 });
 
@@ -121,7 +136,7 @@ var margin = {top: 40, right: 40, bottom: 40, left: 50};
 var width = $('.post').width() - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
-$('.plot-clip').width(width)
+$('.plot-clip').width(width + 180)
                 .height(height)
                 .css({'left': margin.left, 'top': margin.top});
 
@@ -152,6 +167,14 @@ var cScale = d3.scale.ordinal()
 var rScale = d3.scale.linear()
             .range([5, 18])
             .domain(d3.extent(satchmo_data, function (d) { return d.members.length; }));
+
+var mScale = d3.scale.quantize()
+                .range([0, 0.25, 0.75, 1])
+                .domain([0, width]);
+
+var hScale = d3.scale.quantize()
+                .range([0, 0.25, 0.4])
+                .domain([0, 1, 2]);
 
 // Zoom
 
@@ -239,17 +262,77 @@ var source   = $("#event-template").html();
 var eventTemplate = Handlebars.compile(source);
 
 var importantEvents = [{
-    title: '04 Aug 1901',
+    title: 'August 4th, 1901',
     body: "Armstrong was born into a very poor family in New Orleans, Louisiana, the grandson of slaves. He spent his youth in poverty, in a rough neighborhood, known as “the Battlefield”, which was part of the Storyville legal prostitution district.",
-    date: '04.08.1901'
+    date: '04.12.1901',
+    level: 3,
+    yPosition: 0
+},
+{
+    title: 'Little Louis is arrested',
+    body: "Louis got arrested on New Year's Eve for shooting a revolver. He was sent to the Colored Waif's Home for Boys. It would be a turning point of his life.",
+    date: '31.12.1912',
+    level: 3,
+    yPosition: 1
+},
+{
+    title: 'Leaving home',
+    body: "His old mentor, Joe King Oliver, called for him from Chicago. Louis wasn't going to leave New Orleans for anyone, except Joe King Oliver. So he went and joined the band.",
+    date: '8.8.1922',
+    level: 3,
+    yPosition: 0
+},
+{
+    title: 'Joe Glaser',
+    body: "After returning from Europe Louis didn't have a band, recording contract, anything. He sought out Glaser. They struck a deal and it began a long-lasting business relationship.",
+    date: '20.2.1935',
+    level: 3,
+    yPosition: 2
+},
+{
+    title: 'Lucille Armstrong',
+    body: "Louis and Lucille, his fourth and final wife, get married at Velma Middleton's home.",
+    date: '12.10.1942',
+    level: 2,
+    yPosition: 2
+},
+{
+    title: 'All Stars Band',
+    body: "The famous Town Hall Concert where the All Stars Band was born. A band that would define the rest of his career.",
+    date: '17.5.1947',
+    level: 3,
+    yPosition: 1
+},
+{
+    title: 'Little Rock incident',
+    body: "Armstrong stated publicly that Eisenhower was 'two-faced' and had 'no guts' as a response to the Little Rock incident.",
+    date: '17.09.1957',
+    level: 2,
+    yPosition: 1
+},
+{
+    title: 'Heart attack',
+    body: "Armstrong's grueling touring schedule caught up with him in 1959, when he had a heart attack while traveling in Spoleto, Italy. After taking a few weeks off to recover, he was back on the road, performing 300 nights a year.",
+    date: '23.06.1959',
+    level: 3,
+    yPosition: 0
 },
 {
     title: 'Hello, Dolly!',
-    body: 'Louis Armstrong records a song that would soon throw The Beatles of the first place on the charts!',
-    date: '03.12.1963'
+    body: 'Louis records a song that would soon throw The Beatles of the first place on the charts!',
+    date: '03.12.1963',
+    level: 3,
+    yPosition: 2
+},
+{
+    title: 'What a Wonderful World',
+    body: 'Armstrong records his last hit. A song that would remain loved to this day.',
+    date: '08.10.1967',
+    level: 3,
+    yPosition: 1
 }
 ];
-var importantEvents =[];
+// var importantEvents =[];
 
 
 // Plot Events
@@ -259,8 +342,10 @@ var plotEvents = d3.select('#satchmo-container .plot-clip').selectAll('.importan
         .enter()
         .append('div')
         .attr('class', 'important-event')
+        .style('visibility', function (d) { return (isEventVisible(d)) ? 'visible' : 'hidden'})
+        .attr('id', function (d, i) { return 'event-' + i; })
         .style('left', function (d) { return xScale(dateFormat.parse(d.date)) + 'px'; })
-        .style('top', 80 + 'px')
+        .style('top', function (d) { return hScale(d.yPosition) * height + 80 + 'px'; })
         .html(function (d) { return eventTemplate(d); });
 
 var eventLines = plotArea.selectAll('line')
@@ -269,10 +354,12 @@ var eventLines = plotArea.selectAll('line')
     .append('line')
     .style("stroke-dasharray", "5,2")
     .style('stroke', '#aaaaaa')
+    .style('visibility', function (d, i) { return ($('#event-' + i).css('visibility') == 'hidden') ? 'hidden' : 'visible'; })
     .attr('x1', function (d) { return xScale(dateFormat.parse(d.date)); })
     .attr('x2', function (d) { return xScale(dateFormat.parse(d.date)); })
-    .attr('y1', 220)
-    .attr('y2', height - 25);
+    .attr('y1', function (d, i) { return hScale(d.yPosition) * height + 80 + $('#event-' + i).height() + 'px'; })
+    .attr('y2', height - 25)
+    .style("pointer-events", "none");
 
 
 // Interactivity
@@ -283,14 +370,22 @@ var selected = {};
 function setSelected (selection, song_ids, member_ids) {
     var selectedSongs = {};
     var selectedMembers = {};
-    if (song_ids) {
+    if (song_ids !== null & typeof song_ids !== 'undefined') {
         selection.each(function (d) { return (d.song_id_list.some(function (el) { return song_ids.indexOf((el).toString()) > -1; })) ? (selectedSongs[d.id] = true) : (delete selectedSongs[d.id]); });
     } 
-    if (member_ids) {
+    if (member_ids !== null & typeof member_ids !== 'undefined') {
         selection.each(function (d) { return (d.member_id_list.some(function (el) { return member_ids.indexOf((el).toString()) > -1; })) ? (selectedMembers[d.id] = true) : (delete selectedMembers[d.id]); });        
     }
-    if (typeof song_ids !== 'undefined' | typeof member_ids !== 'undefined') {
-        selected = $.merge(selectedSongs, selectedMembers);
+    if ((song_ids !== null & typeof song_ids !== 'undefined') | (member_ids !== null & typeof member_ids !== 'undefined')) {
+        // console.log(selectedSongs);
+        // console.log(selectedMembers);
+        if (sizeOf(selectedMembers) == 0) {
+            selected = selectedSongs;
+        } else if (sizeOf(selectedSongs) == 0) {
+            selected = selectedMembers;
+        } else {
+            selected = _.pick(selectedSongs, _.keys(selectedMembers));
+        }
     } else {
         selected = {};
     }
@@ -305,8 +400,8 @@ function highlightSelected (selection, lowEnd, highEnd) {
 function selectSongs () {
     var song_ids = $('#song-selection').val();
     var member_ids = $('#lineup-selection').val();
-    sessions.call(setSelected, song_ids, member_ids)
-    if (typeof song_ids !== 'undefined' | typeof member_ids !== 'undefined') {
+    sessions.call(setSelected, song_ids, member_ids);
+    if ((song_ids !== null & typeof song_ids !== 'undefined') | (member_ids !== null & typeof member_ids !== 'undefined')) {
         sessions.call(highlightSelected, lowestOpacity, higherOpacity);
     } else {
         sessions.attr('fill-opacity', mediumOpacity)
@@ -321,9 +416,9 @@ var sessionInfo = d3.select('#session-info');
 
 bisectDate = d3.bisector(function(d) { return dateFormat.parse(d.display_date); }).left
 
-rect.on("mouseover", mouseover)
-      .on("mouseout", mouseout)
-      .on("mousemove", mousemove);
+// rect.on("mouseover", mouseover)
+//       .on("mouseout", mouseout)
+//       .on("mousemove", mousemove);
 
 // TODO Check if it's ok to use the same mouseover and mouseout functions
 sessions.on("mouseover", mouseover)
@@ -339,7 +434,7 @@ function selectSession () {
                 .style('left', function (d) {
                     sessionInfoWidth = $(this).width();
                     xPosition = xScale(dateFormat.parse(session.display_date));
-                    return xPosition  + sessionInfoWidth > width + margin.left ? (80 + xPosition - sessionInfoWidth + 'px') : (xPosition + 'px');
+                    return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
                 })
                 .style('top', margin.top  + 'px');
 
@@ -401,9 +496,9 @@ function mousemove () {
                 .style('left', function (d) {
                     sessionInfoWidth = $(this).width();
                     xPosition = xScale(dateFormat.parse(da.display_date));
-                    return xPosition  + sessionInfoWidth > width + margin.left ? (80 + xPosition - sessionInfoWidth + 'px') : (xPosition + 'px');
+                    return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
                 })
-                .style('top', margin.top  + 'px');
+                .style('top', 20  + 'px');
 
     var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
     sessions.filter(function (d) { return da != d; })
@@ -517,7 +612,7 @@ notFired = true;
 
 $(window).scroll(function () {
     if (notFired) {
-        if ((windowHeight + $(this).scrollTop()) >= (containerPosition.top + containerHeight)) {
+        if ((windowHeight + $(this).scrollTop()) >= (containerPosition.top + containerHeight - 100)) {
             notFired = false;
             setTimeout(transitionSessions, 1);
         }
@@ -547,12 +642,44 @@ function zoomed() {
     redrawChart();
 }
 
+function isEventVisible (da) {
+    var x1 = xScale(dateFormat.parse(da.date));
+    if (x1 > width) {
+        return false;
+    } else {
+        // Is it overlapping with any Events of the same or higher level?
+        x2 = x1 + 190;
+        // For each event
+        var overlapping = importantEvents.filter(function (d) {
+            // Are they on the same height?
+            if (d.yPosition != da.yPosition) {
+                return false;
+            } else if (da.level > d.level) {
+                return false;
+            } else {
+                var a1 = xScale(dateFormat.parse(d.date));
+                var a2 = a1 + 180;
+                if (a1 > x1 & a1 < x2) {
+                    return true;
+                } else if (a1 < x1 & a2 > x1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+        return overlapping.length == 0;
+    }
+}
+
 function redrawChart() {
     svg.select('.x.axis').call(xAxis);
     sessions.attr('cx', function (d) { return xScale(dateFormat.parse(d.display_date)); });
-    plotEvents.style('left', function (d) { return xScale(dateFormat.parse(d.date)) + 'px'; });
+    plotEvents.style('left', function (d) { return xScale(dateFormat.parse(d.date)) + 'px'; })
+                .style('visibility', function (d) { return (isEventVisible(d)) ? 'visible' : 'hidden'});
     eventLines.attr('x1', function (d) { return xScale(dateFormat.parse(d.date)); })
-                .attr('x2', function (d) { return xScale(dateFormat.parse(d.date)); });
+                .attr('x2', function (d) { return xScale(dateFormat.parse(d.date)); })
+                .style('visibility', function (d, i) { return ($('#event-' + i).css('visibility') == 'hidden') ? 'hidden' : 'visible'; });
 }
 
 </script>
