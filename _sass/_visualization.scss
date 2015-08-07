@@ -56,12 +56,19 @@
     #session-info {
         position: absolute;
         text-align: center;
-        width: 500px;
+        width: 600px;
         padding: 5px;
         font: 12px sans-serif;
         pointer-events: none;
+        .border-right {
+            border-right: 1px solid $dark-gray;
+            padding-right: 15px;
+        }
         .first-section {
             margin-bottom: 10px;
+        }
+        .side-section {
+            padding-left: 15px;
         }
         .split {
             width: 45%;
@@ -77,30 +84,35 @@
         font-size: 14px;
         path {
             fill: none;
-            stroke: #aaa;
+            stroke: #ccc;
         }
         line {
             fill: none;
-            stroke: $dark-gray;
+            stroke: #ccc;
+        }
+        .tick text {
+            fill: $dark-gray;
         }
     }
     .axis-label {
         font-family: 'Droid', sans-serif;
         font-size: 12px;
         font-weight: 600;
+        fill: $dark-gray;
     }
     .legend {
         font-family: 'Droid', sans-serif;
         font-size: 14px;
     }
     .important-event {
-        width: 300px;
+        width: 190px;
         position: absolute;
         p {
-            font-size: 12px;
+            font-size: 10px;
+            line-height: 1.2em;
         }
         h3 {
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 }
