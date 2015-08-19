@@ -132,9 +132,9 @@ function sizeOf(obj) {
 }
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 40, right: 40, bottom: 40, left: 50};
+var margin = {top: 20, right: 40, bottom: 40, left: 50};
 var width = $('.post').width() - margin.left - margin.right;
-var height = 600 - margin.top - margin.bottom;
+var height = 560 - margin.top - margin.bottom;
 
 $('.plot-clip').width(width + 180)
                 .height(height)
@@ -345,7 +345,7 @@ var plotEvents = d3.select('#satchmo-container .plot-clip').selectAll('.importan
         .style('visibility', function (d) { return (isEventVisible(d)) ? 'visible' : 'hidden'})
         .attr('id', function (d, i) { return 'event-' + i; })
         .style('left', function (d) { return xScale(dateFormat.parse(d.date)) + 'px'; })
-        .style('top', function (d) { return hScale(d.yPosition) * height + 80 + 'px'; })
+        .style('top', function (d) { return hScale(d.yPosition) * height + 30 + 'px'; })
         .html(function (d) { return eventTemplate(d); });
 
 var eventLines = plotArea.selectAll('line')
@@ -357,7 +357,7 @@ var eventLines = plotArea.selectAll('line')
     .style('visibility', function (d, i) { return ($('#event-' + i).css('visibility') == 'hidden') ? 'hidden' : 'visible'; })
     .attr('x1', function (d) { return xScale(dateFormat.parse(d.date)); })
     .attr('x2', function (d) { return xScale(dateFormat.parse(d.date)); })
-    .attr('y1', function (d, i) { return hScale(d.yPosition) * height + 80 + $('#event-' + i).height() + 'px'; })
+    .attr('y1', function (d, i) { return hScale(d.yPosition) * height + 30 + $('#event-' + i).height() + 'px'; })
     .attr('y2', height - 25)
     .style("pointer-events", "none");
 
@@ -498,7 +498,7 @@ function mousemove () {
                     xPosition = xScale(dateFormat.parse(da.display_date));
                     return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
                 })
-                .style('top', 20  + 'px');
+                .style('top', function (d) { return yScale(da.density) - 50 - $(this).height() + 'px'; });
 
     var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
     sessions.filter(function (d) { return da != d; })
@@ -591,7 +591,7 @@ svg.append("text")
     .attr('class', 'axis-label')
     .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
     .attr("transform", "translate(-"+ (margin.left - 7)+","+(2*height/3)+")rotate(90)")  // text is drawn off the screen top left, move down and out and rotate
-    .text("Number of recordings in a year");
+    .text("Number of recording dates in a year");
 
 svg.append("text")
     .attr('class', 'axis-label')
