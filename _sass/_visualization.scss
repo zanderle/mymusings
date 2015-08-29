@@ -1,3 +1,9 @@
+@mixin drop-shadow ($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
+    -webkit-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+    -moz-box-shadow:    $x $y $blur $spread rgba(0, 0, 0, $alpha);
+    box-shadow:     $x $y $blur $spread rgba(0, 0, 0, $alpha);
+}
+
 // Styles for data visualization
 
 #sunra-container {
@@ -40,5 +46,107 @@
     }
     .review-content {
         display: none;
+    }
+}
+
+#satchmo-container {
+    @include respond-to(handhelds) {
+        display: none;
+    }
+    position: relative;
+    .plot-clip {
+        position: absolute;
+        overflow-x: hidden;
+        pointer-events: none;
+    }
+    #session-info {
+        background-color: rgba(255,255,255,0.75);
+        @include border-radius(5px);
+        @include drop-shadow(1px, 1px, 5px, 0, 0.2);
+        visibility: hidden;
+        position: absolute;
+        text-align: center;
+        width: 600px;
+        padding: 5px;
+        font: 12px sans-serif;
+        pointer-events: none;
+        .border-right {
+            border-right: 1px solid $dark-gray;
+            padding-right: 15px;
+        }
+        .first-section {
+            margin-bottom: 10px;
+        }
+        .side-section {
+            padding-left: 15px;
+        }
+        .split {
+            width: 45%;
+        }
+        .no-split {
+            width: 100%;
+            clear: both;
+            margin-top: 10px;
+        }
+    }
+    .axis {
+        font-family: 'Droid', sans-serif;
+        font-size: 14px;
+        path {
+            fill: none;
+            stroke: #ccc;
+        }
+        line {
+            fill: none;
+            stroke: #ccc;
+        }
+        .tick text {
+            fill: $dark-gray;
+        }
+    }
+    .axis-label {
+        font-family: 'Droid', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        fill: $dark-gray;
+    }
+    .legend-text {
+        font-family: 'Droid', sans-serif;
+        font-size: 10px;
+        fill: $dark-gray;
+    }
+    .legend {
+        font-family: 'Droid', sans-serif;
+        font-size: 14px;
+        fill: $dark-gray;
+    }
+    .important-event {
+        width: 190px;
+        position: absolute;
+        p {
+            font-size: 10px;
+            line-height: 1.2em;
+        }
+        h3 {
+            font-size: 14px;
+        }
+    }
+    .color-legend-item {
+        &:hover,
+        &.active-location {
+            circle {
+                opacity: 1;
+            }
+            text {
+                fill: black;
+            }
+        }
+        &.active-location {
+            circle {
+                opacity: 1;
+                stroke-width: 1;
+                stroke: #000;
+            }
+        }
     }
 }

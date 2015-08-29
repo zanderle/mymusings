@@ -36,6 +36,8 @@ tags: Sun Ra Visualization
 
 <em class="none show-mobile">Unfortunately this interactive visualization is not supported on mobile devices. Come check it out on your tablet or computer.</em>
 
+<em class="ie-warning">This visualization might not work properly under your browser. Consider upgrading or getting a different browser.</em>
+
 [EDIT] Since I first posted this, I updated the visualization with some additional data from [allmusic](http://www.allmusic.com/artist/sun-ra-mn0000924232/discography).
 
 With over 1000 recorded songs spanned over more than 100 albums, Sun Ra was one of the most prolific artists of the 20th century. I decided to make a simple visualization of this enormous body of work. I soon realized, this is no easy task. For one, the discography data is confusing to say the least. For a lot of albums, it is unclear who was in the band or where or when it was recorded. The band members themselves often gave conflicting reports regarding these things. I did my best with the data I could find in the [discography online](http://www.the-temple.net/sunradisco/list.php).  
