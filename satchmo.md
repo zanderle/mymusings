@@ -39,13 +39,11 @@ And a few technical details, for those interested. I used [d3](http://d3js.org/)
 </div>
 <div class="row clear song-selection hide-mobile">
     <form action="#">
-        <label for="song-selection" class='col col-6 text-right'>Show sessions with these songs: </label>
-        <select id="song-selection" multiple='multiple' class='col col-4'>
+        <label for="song-selection" class='col col-3 inline-block text-right'>Show sessions that have</label>
+        <select id="song-selection" multiple='multiple' class='inline-block col col-3'>
         </select>
-</div>
-<div class="row clear song-selection hide-mobile">
-        <label for="lineup-selection" class='col col-6 text-right'>and these band members: </label>
-        <select id="lineup-selection" multiple='multiple' class='col col-4'>
+        <label for="lineup-selection" class='inline-block text-center col-1'>and </label>
+        <select id="lineup-selection" multiple='multiple' class='inline-block col col-4'>
         </select>
     </form>
 </div>
@@ -82,7 +80,7 @@ And a few technical details, for those interested. I used [d3](http://d3js.org/)
             {{/each}}
             </div>
             <div class="no-split inline-block">
-            {{comments}}
+            {{{comments}}}
             </div>
         </div>
     </div>
@@ -111,11 +109,11 @@ satchmo_data = satchmo_data['sessions'];
 $(document).ready(function() {
   $("#song-selection").select2({
         data: satchmo_songs,
-        placeholder: 'Start typing a song'
+        placeholder: 'these songs'
   });
   $("#lineup-selection").select2({
         data: members,
-        placeholder: "Start typing a musician's name"
+        placeholder: "these band members"
   });
 });
 
@@ -132,9 +130,9 @@ function sizeOf(obj) {
 }
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 20, right: 40, bottom: 40, left: 50};
+var margin = {top: 20, right: 40, bottom: 100, left: 50};
 var width = $('.post').width() - margin.left - margin.right;
-var height = 560 - margin.top - margin.bottom;
+var height = $(window).height() - margin.top - margin.bottom - 80;
 
 $('.plot-clip').width(width + 180)
                 .height(height)
@@ -161,8 +159,8 @@ var xScale = d3.time.scale()
             .domain([minDate, maxDate]);
 
 var cScale = d3.scale.ordinal()
-            .range(["#8dd3c7","#d5d500","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"])
-            .domain(satchmo_data, function (d) { d.location_group; });
+            .range(["#80b1d3", "#fdb462", "#fb8072", "#b3de69", "#bc80bd", "#d5d500", "#ccebc5", "#bebada", "#d9d9d9", "#fccde5", "#8dd3c7"])
+            .domain(satchmo_data.map(function (d) { return d.location_group; }));
 
 var rScale = d3.scale.linear()
             .range([5, 18])
@@ -223,8 +221,7 @@ var svg = d3.select("#satchmo").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var plotArea = svg.append('g')
-    .attr('clip-path', 'url(#plotAreaClip)')
-    .call(zoom);
+    .attr('clip-path', 'url(#plotAreaClip)');
 
 plotArea.append('clipPath')
     .attr('id', 'plotAreaClip')
@@ -327,7 +324,7 @@ var importantEvents = [{
 {
     title: 'What a Wonderful World',
     body: 'Armstrong records his last hit. A song that would remain loved to this day.',
-    date: '08.10.1967',
+    date: '16.08.1967',
     level: 3,
     yPosition: 1
 }
@@ -366,13 +363,25 @@ var eventLines = plotArea.selectAll('line')
 
 $('#song-selection').on('change', selectSongs);
 $('#lineup-selection').on('change', selectSongs);
-var selected = {};
+var selected = {},
+    selectedSession = false,
+    mouse_data = satchmo_data;
+
 function setSelected (selection, song_ids, member_ids) {
     var selectedSongs = {};
     var selectedMembers = {};
+    var selectedLocations = colorLegend.selectAll('.active-location').data().map(function (d) { return d.location; });
+    
+    // if (selectedLocations.length > 0) {
+    //     newSelection = selection.filter(function (d) { return selectedLocations.indexOf(d.location_group) > -1; });
+    //     selection = newSelection;
+    // }
+
+    // Update selectedSongs
     if (song_ids !== null & typeof song_ids !== 'undefined') {
         selection.each(function (d) { return (d.song_id_list.some(function (el) { return song_ids.indexOf((el).toString()) > -1; })) ? (selectedSongs[d.id] = true) : (delete selectedSongs[d.id]); });
-    } 
+    }
+    // Update selectedMembers
     if (member_ids !== null & typeof member_ids !== 'undefined') {
         selection.each(function (d) { return (d.member_id_list.some(function (el) { return member_ids.indexOf((el).toString()) > -1; })) ? (selectedMembers[d.id] = true) : (delete selectedMembers[d.id]); });        
     }
@@ -389,6 +398,17 @@ function setSelected (selection, song_ids, member_ids) {
     } else {
         selected = {};
     }
+
+    if (selectedLocations.length > 0) {
+        selection.each(function (d) { return (selectedLocations.indexOf(d.location_group) > -1) ? (selected[d.id] = true) : (delete selected[d.id]); });
+    }
+
+    // Have mouse hover work only on selected sessions
+    if (sizeOf(selected) > 0) {
+        mouse_data = satchmo_data.filter(function(d) { return d.id in selected; });
+    } else {
+        mouse_data = satchmo_data;
+    }
 }
 
 function highlightSelected (selection, lowEnd, highEnd) {
@@ -401,14 +421,19 @@ function selectSongs () {
     var song_ids = $('#song-selection').val();
     var member_ids = $('#lineup-selection').val();
     sessions.call(setSelected, song_ids, member_ids);
-    if ((song_ids !== null & typeof song_ids !== 'undefined') | (member_ids !== null & typeof member_ids !== 'undefined')) {
-        sessions.call(highlightSelected, lowestOpacity, higherOpacity);
+    if ((song_ids !== null & typeof song_ids !== 'undefined') | (member_ids !== null & typeof member_ids !== 'undefined') | (colorLegend.selectAll('.active-location')[0].length > 0)) {
+        sessions.call(highlightSelected, lowestOpacity, highOpacity);
     } else {
         sessions.attr('fill-opacity', mediumOpacity)
                 .attr('stroke', 'none');
     }
 };
 
+function selectLocation () {
+    clicked = d3.select(this);
+    clicked.classed('active-location', !clicked.classed('active-location'));
+    selectSongs();
+}
 
 var source   = $("#session-template").html();
 var sessionTemplate = Handlebars.compile(source);
@@ -416,56 +441,48 @@ var sessionInfo = d3.select('#session-info');
 
 bisectDate = d3.bisector(function(d) { return dateFormat.parse(d.display_date); }).left
 
-// rect.on("mouseover", mouseover)
-//       .on("mouseout", mouseout)
-//       .on("mousemove", mousemove);
+rect.on("mousemove", mousemove);
+    // .on('click', lockSession);
+svg.on('mouseleave', mouseout);
 
-// TODO Check if it's ok to use the same mouseover and mouseout functions
-sessions.on("mouseover", mouseover)
-        .on("mouseout", mouseout)
-        .on('click', selectSession)
-        .on('mousemove', mousemove);
+// sessions.on('click', lockSession)
+sessions.on('mousemove', mousemove);
 
-function selectSession () {
-    da = d3.select(this);
-    session = da.data()[0];
+function lockSession () {
+    session = selectedSession;
     sessionInfo.style('visibility', 'visible');
-    sessionInfo.html(sessionTemplate(session))
-                .style('left', function (d) {
-                    sessionInfoWidth = $(this).width();
-                    xPosition = xScale(dateFormat.parse(session.display_date));
-                    return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
-                })
-                .style('top', margin.top  + 'px');
 
-    var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : 1;
-    da.call(highlightSelected, lowEnd, 1)
-        .attr('stroke', 'black')
-        .attr('stroke-dasharray', 'none')
-        .attr('stroke-opacity', 1)
-        .attr('stroke-width', 1);
-    var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
-    sessions.filter(function (d) { return session != d; })
-            .call(highlightSelected, lowEnd, higherOpacity)
-            .attr('stroke', function (d) { return cScale(d.location_group); })
-            .attr('stroke-dasharray', '3,2')
-            .attr('stroke-opacity', highOpacity)
-            .attr('stroke-width', highOpacity);
+
+    // var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : 1;
+    // da.call(highlightSelected, lowEnd, 1)
+    //     .attr('stroke', 'black')
+    //     .attr('stroke-dasharray', 'none')
+    //     .attr('stroke-opacity', 1)
+    //     .attr('stroke-width', 1);
+    // var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
+    // sessions.filter(function (d) { return session != d; })
+    //         .call(highlightSelected, lowEnd, higherOpacity)
+    //         .attr('stroke', function (d) { return cScale(d.location_group); })
+    //         .attr('stroke-dasharray', '3,2')
+    //         .attr('stroke-opacity', highOpacity)
+    //         .attr('stroke-width', highOpacity);
 
 }
 
 function mouseover () {
     var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
-    sessions.call(highlightSelected, lowEnd, higherOpacity);
+    sessions.call(highlightSelected, lowEnd, highOpacity);
     sessionInfo.style('visibility', 'visible');
     plotEvents.style('opacity', lowOpacity);
     eventLines.attr('opacity', lowOpacity);
     d3.selectAll('.legend').attr('opacity', lowOpacity);
 }
+
 function mouseout () {
     if (sizeOf(selected) > 0) {
-        sessions.call(highlightSelected, lowestOpacity, higherOpacity)
-                .attr('stroke', 'none');
+        sessions.call(highlightSelected, lowestOpacity, highOpacity)
+            .attr('stroke', 'none');
+
     } else {
         sessions.attr('fill-opacity', mediumOpacity)
                 .attr('stroke', 'none');
@@ -478,52 +495,82 @@ function mouseout () {
 }
 
 function mousemove () {
-    var x0 = xScale.invert(d3.mouse(this)[0]),
-        i = bisectDate(satchmo_data, x0, 1),
-        d0 = satchmo_data[i - 1],
-        d1 = satchmo_data[i],
+    var xMouse = d3.mouse(this)[0],
+        yMouse = d3.mouse(this)[1],
+        x0 = xScale.invert(xMouse),
+        i = bisectDate(mouse_data, x0, 1),
+        d0 = mouse_data[i - 1],
+        d1 = mouse_data[i];
+    if (d0 != undefined & d1 != undefined) {
         da = x0 - dateFormat.parse(d0.display_date) > dateFormat.parse(d1.display_date) - x0 ? d1 : d0;
+    } else {
+        da = d0;
+    }
 
-    var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : 1;
-    sessions.filter(function (d) { return da == d; })
-            .call(highlightSelected, lowEnd, 1)
-            .attr('stroke', 'black')
-            .attr('stroke-dasharray', 'none')
-            .attr('stroke-opacity', 1)
-            .attr('stroke-width', 1);
+    closest = Math.abs(yMouse - yScale(da.density));
+    for (var j = i - 5; j <= i + 5; j++) {
+        if (j > 0 & j < mouse_data.length ) {
+            yDistance = Math.abs(yMouse - yScale(mouse_data[j].density));
+            if (yDistance < closest ) {
+                closest = yDistance;
+                da = mouse_data[j];
+            }
+        }
+    };
 
-    sessionInfo.html(sessionTemplate(da))
-                .style('left', function (d) {
-                    sessionInfoWidth = $(this).width();
-                    xPosition = xScale(dateFormat.parse(da.display_date));
-                    return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
-                })
-                .style('top', function (d) { return yScale(da.density) - 50 - $(this).height() + 'px'; });
+    if (Math.abs(xMouse - xScale(dateFormat.parse(da.display_date))) < 40 & closest < 40) {
+        mouseover();
+        var lowEnd = (sizeOf(selected) > 0) ? lowOpacity : higherOpacity;
+        selectedSession = sessions.filter(function (d) { return da == d; });
+        selectedSession.call(highlightSelected, lowEnd, 1)
+                .attr('stroke', 'black')
+                .attr('stroke-dasharray', 'none')
+                .attr('stroke-opacity', 1)
+                .attr('stroke-width', 1);
 
-    var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
-    sessions.filter(function (d) { return da != d; })
-            .call(highlightSelected, lowEnd, higherOpacity)
-            .attr('stroke', function (d) { return cScale(d.location_group); })
-            .attr('stroke-dasharray', '3,2')
-            .attr('stroke-opacity', highOpacity)
-            .attr('stroke-width', highOpacity);
+        sessionInfo.html(sessionTemplate(da))
+                    .style('left', function (d) {
+                        sessionInfoWidth = $(this).width();
+                        xPosition = xScale(dateFormat.parse(da.display_date));
+                        return xPosition - mScale(xPosition - margin.left) * sessionInfoWidth + 'px';
+                    })
+                    .style('top', function (d) { return yScale(da.density) - 50 - $(this).height() + 'px'; });
 
+        var lowEnd = (sizeOf(selected) > 0) ? lowestOpacity : lowerOpacity;
+        sessions.filter(function (d) { return da != d; })
+                .call(highlightSelected, lowEnd, mediumOpacity)
+                .attr('stroke', function (d) { return cScale(d.location_group); })
+                .attr('stroke-dasharray', '3,2')
+                .attr('stroke-opacity', highOpacity)
+                .attr('stroke-width', highOpacity);
+    } else {
+        selectedSession = false;
+        mouseout();
+    }
+
+}
+
+function getSessionInfoLine (instance) {
+    // Start at session right corner
+    // Go until sessionInfo middle point 
+    // Go up to sessionInfo y + sessionInfo.height() 
+    return false;
 }
 
 // Add legend
 
-var legend = svg.append('g')
+var sizeLegend = svg.append('g')
     .attr('class', 'legend')
     .attr('transform', function (d) { return 'translate(60, ' + (height - 60) + ')'; })
 
-legend.append('text')
-    .attr('fill', 'black')
+sizeLegend.append('text')
+    .attr('fill', '#aaaaaa')
     .attr('text-anchor', 'middle')
     .attr('x', 0)
     .attr('y', -rScale.range()[1] - 10)
     .text('Band size');
 
-legend.append('circle')
+sizeLegend.append('circle')
     .attr('r', rScale.range()[1])
     .attr('cx', 0)
     .attr('cy', 0)
@@ -532,7 +579,7 @@ legend.append('circle')
     .attr('stroke-dasharray', '2,2')
     .attr('stroke', '#555');
 
-legend.append('circle')
+sizeLegend.append('circle')
     .attr('r', rScale.range()[0])
     .attr('cx', 0)
     .attr('cy', rScale.range()[1] - rScale.range()[0])
@@ -541,38 +588,74 @@ legend.append('circle')
     .attr('stroke-dasharray', '2,2')
     .attr('stroke', '#555');
 
-legend.append('text')
+sizeLegend.append('text')
     .text(rScale.domain()[1])
-    .attr('fill', '#555')
+    .attr('fill', '#aaa')
     .attr('font-size', 12)
     .attr('text-anchor', 'left')
     .attr('dy', 4)
     .attr('x', rScale.range()[1] + 13);
 
-legend.append('line')
+sizeLegend.append('line')
     .attr('stroke-width', 1)
-    .attr('stroke', '#555')
+    .attr('stroke', '#aaa')
     .attr('x1', rScale.range()[1] + 2)
     .attr('x2', rScale.range()[1] + 10)
     .attr('y1', 0)
     .attr('y2', 0);
 
-legend.append('text')
+sizeLegend.append('text')
     .text('2')
-    .attr('fill', '#555')
+    .attr('fill', '#aaa')
     .attr('font-size', 12)
     .attr('text-anchor', 'left')
     .attr('dy', 4)
     .attr('x', rScale.range()[1] + 13)
     .attr('y', rScale.range()[1] - rScale.range()[0]);
 
-legend.append('line')
+sizeLegend.append('line')
     .attr('stroke-width', 1)
-    .attr('stroke', '#555')
+    .attr('stroke', '#aaa')
     .attr('x1', rScale.range()[0] + 2)
     .attr('x2', rScale.range()[1] + 10)
     .attr('y1', rScale.range()[1] - rScale.range()[0])
     .attr('y2', rScale.range()[1] - rScale.range()[0]);
+
+var colorLegend = svg.append('g')
+                .attr('class', 'legend')
+                .attr('transform', function () { return 'translate(0,' + (height + margin.bottom / 1.5) + ')'; });
+
+function getScaleObject (scale) {
+    var scaleObject = [];
+    var item;
+    for (var i = 0; i < scale.range().length; i++) {
+        item = {}
+        item.location = scale.domain()[i];
+        item.color = scale.range()[i];
+        scaleObject.push(item);
+    };
+    return scaleObject;
+}
+
+colorScaleObject = getScaleObject(cScale)
+
+var circlesLegend = colorLegend.selectAll('.color-legend-item')
+                    .data(colorScaleObject)
+                    .enter()
+                    .append('g')
+                    .attr('class', 'color-legend-item')
+                    .attr('transform', function (d, i) { return 'translate(' + (20 + i * width / colorScaleObject.length) + ',0)'; });
+circlesLegend.append('circle')
+                .attr('r', 10)
+                .attr('fill', function (d) { return d.color; })
+                .attr('opacity', highOpacity);
+circlesLegend.append('text')
+                .text(function (d) { return d.location; })
+                .attr('text-anchor', 'middle')
+                .attr('transform', 'translate(0, 20)')
+                .attr('class', 'legend-text');
+
+colorLegend.selectAll('.color-legend-item').on('click', selectLocation);
 
 // Add axis
 
@@ -596,7 +679,7 @@ svg.append("text")
 svg.append("text")
     .attr('class', 'axis-label')
     .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
-    .attr("transform", "translate("+ (width/2) +","+(height+margin.bottom)+")")  // centre below axis
+    .attr("transform", "translate("+ (width/2) +","+(height+margin.bottom / 3 + 5)+")")  // centre below axis
     .text("Date");
 
 
@@ -614,10 +697,12 @@ $(window).scroll(function () {
     if (notFired) {
         if ((windowHeight + $(this).scrollTop()) >= (containerPosition.top + containerHeight - 100)) {
             notFired = false;
+            plotArea.call(zoom);
             setTimeout(transitionSessions, 1);
         }
     }
 });
+
 function transitionSessions() {
     sessions.transition()
         .delay(function(d, i) { return 50 + i / n * duration; })

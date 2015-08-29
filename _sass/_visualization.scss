@@ -110,9 +110,15 @@
         font-weight: 600;
         fill: $dark-gray;
     }
+    .legend-text {
+        font-family: 'Droid', sans-serif;
+        font-size: 10px;
+        fill: $dark-gray;
+    }
     .legend {
         font-family: 'Droid', sans-serif;
         font-size: 14px;
+        fill: $dark-gray;
     }
     .important-event {
         width: 190px;
@@ -123,6 +129,24 @@
         }
         h3 {
             font-size: 14px;
+        }
+    }
+    .color-legend-item {
+        &:hover,
+        &.active-location {
+            circle {
+                opacity: 1;
+            }
+            text {
+                fill: black;
+            }
+        }
+        &.active-location {
+            circle {
+                opacity: 1;
+                stroke-width: 1;
+                stroke: #000;
+            }
         }
     }
 }
