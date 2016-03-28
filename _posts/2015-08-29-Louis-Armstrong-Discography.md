@@ -1,12 +1,12 @@
 ---
-layout: oo_post
+layout: post
 title: Louis Armstrong Discography
 comments: true
 tags: Louis Armstrong Visualization
 published: true
 social_share: true
 sdescription: Discover Louis Armstrong's life and music through this interactive discography.
-simage: /img/second-line.jpg
+simage: /img/louis-armstrong4.jpg
 ---
 
 
@@ -17,7 +17,7 @@ I'm always excited when I create something that combines my passion with my prof
 Louis Armstrong doesn't get nearly as much attention as he deserves, given his vast and lasting impact on music. I talked about him more extensively [in my previous post]({% post_url 2014-11-16-The-One-And-Only-Louis-Armstrong %}), but this time I wanted to explore something else. I thought it would be interesting to see his career visualized. To get a closer look into how and when his music got captured on record. So this is my humble attempt at that.  
 
 This is a visualization of all sessions that comprise Louis Armstrong's discography. Each session is represented as a circle. The size of the circle represents the size of the band at that session, and the color is related to the location. The height of each session is given by the quantity of recording dates in a year around that session. So when he was busier recording, the circles will be higher.  
-The visualization is also interactive. You can zoom in closer to get a better look. Scroll to zome and click & drag to move around. By hovering over the sessions, you will be able to see the details about them. You can also highlight only specific recording dates; say you are interested in seeing all the recording dates with Jack Teagarden. You simply select his name in the form below and all the sessions with him present, will be highlighted. You can also search by location by clicking the specific location below the graph. Or, if you're still not satisfied, you could also search for something like "all the sessions that happend in New York with Jack Teagarden, when they played Blueberry Hill". Just input "Blueberry Hill" and "Jack Teagarden", click "New York" and the sessions that fit that query will pop up. This means you can do some fun stuff with this visualization.  
+The visualization is also interactive. You can zoom in closer to get a better look. Scroll to zoom and click & drag to move around. By hovering over the sessions, you will be able to see the details about them. You can also highlight only specific recording dates; say you are interested in seeing all the recording dates with Jack Teagarden. You simply select his name in the form below and all the sessions with him present, will be highlighted. You can also search by location by clicking the specific location below the graph. Or, if you're still not satisfied, you could also search for something like "all the sessions that happend in New York with Jack Teagarden, when they played Blueberry Hill". Just input "Blueberry Hill" and "Jack Teagarden", click "New York" and the sessions that fit that query will pop up. This means you can do some fun stuff with this visualization.  
 
 I invite you to explore it and let me know what you think. Let me know what are some of the things you looked for.  
 
@@ -41,7 +41,7 @@ And a few technical details, for those interested. I used [d3](http://d3js.org/)
     </div>
     <div id="session-info"></div>
 </div>
-<div class="row clear song-selection hide-mobile">
+<div class="row clear song-selection no-mobile">
     <form action="#">
         <label for="song-selection" class='col col-3 inline-block text-right'>Show sessions that have</label>
         <select id="song-selection" multiple='multiple' class='inline-block col col-3'>
@@ -111,14 +111,16 @@ satchmo_data = satchmo_data['sessions'];
 
 // Filters
 $(document).ready(function() {
-  $("#song-selection").select2({
-        data: satchmo_songs,
-        placeholder: 'these songs'
-  });
-  $("#lineup-selection").select2({
-        data: members,
-        placeholder: "these band members"
-  });
+    if ($(window).width() > 739) {
+      $("#song-selection").select2({
+            data: satchmo_songs,
+            placeholder: 'these songs'
+      });
+      $("#lineup-selection").select2({
+            data: members,
+            placeholder: "these band members"
+      });
+    }
 });
 
 // Helpers
@@ -133,10 +135,21 @@ function sizeOf(obj) {
     return count;
 }
 
+if ($(window).width() > 739) {
+    doTheDance();
+}
+
+function doTheDance () {
+
+
 // Set the dimensions of the canvas / graph
 var margin = {top: 20, right: 40, bottom: 100, left: 50};
 var width = $('.post').width() - margin.left - margin.right;
 var height = $(window).height() - margin.top - margin.bottom - 80;
+if (height > 800) {
+    // Limit the height of the viz to 800 px
+    height = 800;
+}
 
 $('.plot-clip').width(width + 180)
                 .height(height)
@@ -404,7 +417,11 @@ function setSelected (selection, song_ids, member_ids) {
     }
 
     if (selectedLocations.length > 0) {
-        selection.each(function (d) { return (selectedLocations.indexOf(d.location_group) > -1) ? (selected[d.id] = true) : (delete selected[d.id]); });
+        if (sizeOf(selected) > 0) {
+            selection.each(function (d) { if (selectedLocations.indexOf(d.location_group) == -1) { (delete selected[d.id]); } });
+        } else {
+            selection.each(function (d) { return (selectedLocations.indexOf(d.location_group) > -1) ? (selected[d.id] = true) : (delete selected[d.id]); });
+        }
     }
 
     // Have mouse hover work only on selected sessions
@@ -699,7 +716,7 @@ notFired = true;
 
 $(window).scroll(function () {
     if (notFired) {
-        if ((windowHeight + $(this).scrollTop()) >= (containerPosition.top + containerHeight - 100)) {
+        if ((windowHeight + $(this).scrollTop()) >= (containerPosition.top + containerHeight)) {
             notFired = false;
             plotArea.call(zoom);
             setTimeout(transitionSessions, 1);
@@ -771,4 +788,5 @@ function redrawChart() {
                 .style('visibility', function (d, i) { return ($('#event-' + i).css('visibility') == 'hidden') ? 'hidden' : 'visible'; });
 }
 
+}
 </script>

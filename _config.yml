@@ -11,6 +11,7 @@ markdown: kramdown
 permalink: pretty
 destination: ../zanderle.github.io
 exclude: [LICENSE, README.md, feed.xml]
+gems: [jekyll-paginate]
 
 #Social media
 twitter_username: z_anderle
